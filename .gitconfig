@@ -1,0 +1,10 @@
+[user]
+	email = ¨elcomj31@gmail.com¨
+	name = ¨Elçom
+[credential]
+    helper = store
+
+[alias]
+    lg = lg1-specific --all
+
+    lg1-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
