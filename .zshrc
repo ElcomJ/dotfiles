@@ -25,7 +25,10 @@ alias la='ls -a'
 alias ll='ls -l'
 alias lla='ls -la'
 alias rm='rm -r'
+alias here='pwd'
 alias home='cd ~'
+
+alias att='sudo apt-get update && sudo apt-get upgrade'
 
 # Aplicativos
 
