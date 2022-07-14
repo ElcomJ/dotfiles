@@ -9,3 +9,18 @@ Sources.list ubuntu 22.04 LTS:
 To make neovim's TagBar work, install the universal ctags:
 
 - https://installati.one/ubuntu/22.04/universal-ctags/
+
+
+Install Programns:
+
+- Telegram Desktop
+- OnlyOffice
+- Discord
+- Ubuntu Cleaner
+- gnome-tweaks
+- Firewall
+- Gimp
+- Htop
+- Neofetch
+- Neovim
+- Dconf
