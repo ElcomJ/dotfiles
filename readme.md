@@ -30,3 +30,12 @@ Install Programns:
 - Neofetch
 - Neovim
 - Dconf
+
+
+Core Softwares:
+
+- Git
+- pip
+- Tmux
+- Ncspot
+- Rust + Cargo
