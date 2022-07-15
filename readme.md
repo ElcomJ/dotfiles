@@ -39,3 +39,5 @@ Core Softwares:
     - Tmux
     - Ncspot
     - Rust + Cargo
+    - Gufw (firewall)
+    - Golang
