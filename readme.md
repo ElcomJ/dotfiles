@@ -22,6 +22,10 @@ How to install Oracle Java:
     - https://www.linuxuprising.com/2021/09/how-to-install-oracle-java-17-lts-on.html
 
 
+How to set the JAVA_HOME environment variable
+
+    - https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04-pt
+
 Install Programns:
 
     - Telegram Desktop
