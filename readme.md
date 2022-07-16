@@ -17,6 +17,11 @@ How to install and configura zsh:
     - https://www.youtube.com/watch?v=5i3TpDR8muU
 
 
+How to install Oracle Java:
+
+    - https://www.linuxuprising.com/2021/09/how-to-install-oracle-java-17-lts-on.html
+
+
 Install Programns:
 
     - Telegram Desktop
