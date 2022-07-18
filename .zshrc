@@ -32,3 +32,4 @@ alias att='sudo apt-get update && sudo apt-get upgrade'
 
 # Aplicativos
 
+alias mysql='sudo mysql -u root -p'
