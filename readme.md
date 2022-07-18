@@ -26,6 +26,12 @@ How to set the JAVA_HOME environment variable
 
     - https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04-pt
 
+
+To use the neovim clipboard with your system you need to install xclip:
+
+    - sudo apt-get install xclip
+
+
 Install Programns:
 
     - Telegram Desktop
