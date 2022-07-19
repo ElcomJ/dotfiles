@@ -31,6 +31,18 @@ To use the neovim clipboard with your system you need to install xclip:
 
     - sudo apt-get install xclip
 
+DConf Editor Config:
+
+- /org/gnome/shell/extensions/dash-to-clock
+
+    - click-action = 'minimize-or-previews'
+    - background-opacity = 0.001
+    - dash-max-icon-size = 24
+    - dock-fixed = Dock always visible
+    - dock-position = 'LEFT'
+    - extend-height = 'VERDADEIRO'
+    - transparency-mode - 'FIXED'
+
 
 Install Programns:
 
