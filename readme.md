@@ -31,6 +31,20 @@ To use the neovim clipboard with your system you need to install xclip:
 
     - sudo apt-get install xclip
 
+
+Gnome integration extension and extensions:
+
+    - https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=pt-br
+    - https://extensions.gnome.org/
+
+Extensions:
+
+    - Clipboard Indicator
+    - No Titlebar When Maximized
+    - OpenWeather
+    - Transparent Top Bar
+
+
 DConf Editor Config:
 
 - /org/gnome/shell/extensions/dash-to-clock
