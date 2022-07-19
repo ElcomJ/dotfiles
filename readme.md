@@ -33,7 +33,7 @@ To use the neovim clipboard with your system you need to install xclip:
 
 DConf Editor Config:
 
- /org/gnome/shell/extensions/dash-to-clock
+- /org/gnome/shell/extensions/dash-to-clock
 
     - click-action = 'minimize-or-previews'
     - background-opacity = 0.001
