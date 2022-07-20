@@ -6,6 +6,10 @@ Sources.list ubuntu 22.04 LTS:
 
     - https://gist.github.com/ishad0w/2187a4eaab9273387645ac11905aca68
 
+    echo "content" | sudo tee  /etc/apt/sources.list
+
+    sudo apt-get update && sudo apt-get upgrade
+
 
 To make neovim's TagBar work, install the universal ctags:
 
