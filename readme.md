@@ -4,7 +4,7 @@ After upgrading the system, find the sources.list of the current ubuntu version 
 
 Sources.list ubuntu 22.04 LTS:
 
-    - https://gist.github.com/ishad0w/5c0e64c72a0d4400da1f20dab3521db6
+    - https://gist.github.com/ishad0w/2187a4eaab9273387645ac11905aca68
 
 
 To make neovim's TagBar work, install the universal ctags:
