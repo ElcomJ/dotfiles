@@ -12,9 +12,15 @@ To make neovim's TagBar work, install the universal ctags:
     - https://installati.one/ubuntu/22.04/universal-ctags/
 
 
-How to install and configura zsh:
+How to install and configure zsh:
 
     - https://www.youtube.com/watch?v=5i3TpDR8muU
+
+
+How to install and configure neovim:
+
+    - https://www.youtube.com/watch?v=lm7y2hI6zME
+    - https://www.manualdocodigo.com.br/vim-basico/
 
 
 How to install Oracle Java:
@@ -61,7 +67,7 @@ DConf Editor Config:
 Install Programns:
 
     - Telegram Desktop
-    - OnlyOffice
+    - OnlyOffice or LibreOffice
     - Discord
     - Ubuntu Cleaner
     - gnome-tweaks
@@ -70,7 +76,10 @@ Install Programns:
     - Htop
     - Neofetch
     - Neovim
-    - Dconf
+    - Dconf Editor
+    - VSCode
+    - DBeaver Community
+    - Postman (opcional)
 
 
 Core Softwares:
@@ -79,6 +88,7 @@ Core Softwares:
     - pip
     - Tmux
     - Ncspot
-    - Rust + Cargo
+    - Rust + Cargo (https://www.journaldev.com/39960/install-rust-on-ubuntu-linux)
     - Gufw (firewall)
-    - Golang
+    - Golang (opcional)
+    - Flatpak and Flatpak Store
