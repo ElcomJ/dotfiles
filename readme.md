@@ -47,6 +47,8 @@ Gnome integration extension and extensions:
     - https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=pt-br
     - https://extensions.gnome.org/
 
+Enable Insecured Mode on Ubuntu
+
 Extensions:
 
     - Clipboard Indicator
