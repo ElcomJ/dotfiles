@@ -98,3 +98,4 @@ Core Softwares:
     - Gufw (firewall)
     - Golang (opcional)
     - Flatpak and Flatpak Store
+    - live server (https://www.chiarulli.me/Neovim/20-live-server/)
