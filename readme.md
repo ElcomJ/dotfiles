@@ -5,6 +5,7 @@ After upgrading the system, find the sources.list of the current ubuntu version 
 
 How to install rtl8132eu-linx (usb wifi driver):
 
+    - Run the command 'lsusb' in linux terminal
     - https://github.com/clnhub/rtl8192eu-linux
 
 Sources.list ubuntu 22.04 LTS:
