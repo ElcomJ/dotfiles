@@ -2,6 +2,11 @@ Dotfiles
 
 After upgrading the system, find the sources.list of the current ubuntu version and add it to the system.
 
+
+How to install rtl8132eu-linx (usb wifi driver):
+
+    - https://github.com/clnhub/rtl8192eu-linux
+
 Sources.list ubuntu 22.04 LTS:
 
     - https://gist.github.com/ishad0w/2187a4eaab9273387645ac11905aca68
