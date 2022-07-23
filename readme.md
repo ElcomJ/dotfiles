@@ -106,3 +106,5 @@ Core Softwares:
     - Flatpak and Flatpak Store
     - live server (https://www.chiarulli.me/Neovim/20-live-server/)
     - gnome-sushi (sudo apt install gnome-sushi)
+    - mysql server
+    - postgresql
