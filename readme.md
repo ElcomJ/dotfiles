@@ -79,7 +79,7 @@ DConf Editor Config:
 Install Programns:
 
     - Telegram Desktop
-    - OnlyOffice or LibreOffice
+    - OnlyOffice (flatpak)
     - Discord
     - Ubuntu Cleaner
     - gnome-tweaks
