@@ -55,6 +55,18 @@ Gnome integration extension and extensions:
 
 Enable Insecured Mode on Ubuntu
 
+
+If diffview fails to start because of diffview.log, use the command below to be able to create the file in the nvim cache:
+
+Inside the home folder:
+
+    - cd .cache/nvim | touch diffview.log
+
+Keyboard mapping:
+
+    - Inglês(EUA,intern., com teclas mortas)
+
+
 Extensions:
 
     - Clipboard Indicator
