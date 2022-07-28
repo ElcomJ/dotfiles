@@ -111,6 +111,7 @@ Install Programns:
 Core Softwares:
 
     - Git
+    - Docker and Docker Compose
     - pip
     - Tmux
     - Ncspot
