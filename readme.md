@@ -91,6 +91,7 @@ DConf Editor Config:
 Install Programns:
 
     - Telegram Desktop
+    - Google Chrome
     - OnlyOffice (flatpak)
     - Discord
     - Ubuntu Cleaner
