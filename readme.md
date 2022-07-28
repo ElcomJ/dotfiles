@@ -104,6 +104,7 @@ Install Programns:
     - VSCode
     - DBeaver Community
     - Postman (opcional)
+    - Synaptic
 
 
 Core Softwares:
