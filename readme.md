@@ -67,7 +67,7 @@ Keyboard mapping:
     - Inglês(EUA,intern., com teclas mortas)
 
 
-Extensions:
+Gnome Extensions:
 
     - Clipboard Indicator
     - No Titlebar When Maximized
@@ -86,6 +86,14 @@ DConf Editor Config:
     - dock-position = 'LEFT'
     - extend-height = 'VERDADEIRO'
     - transparency-mode - 'FIXED'
+
+
+How to use code folding in nvim (create the view archive):
+
+    - zf (folding the selected code)
+    - zo (open the fold)
+    - zc (close the fold)
+    - zd (delete the fold)
 
 
 Install Programns:
@@ -112,6 +120,7 @@ Core Softwares:
 
     - Git
     - Docker and Docker Compose
+    - Portainer or Docker Desktop
     - pip
     - Tmux
     - Ncspot
