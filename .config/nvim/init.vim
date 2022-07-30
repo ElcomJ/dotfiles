@@ -470,13 +470,14 @@ highlight FoldColumn guibg=NONE
 " GitGutter
 
   highlight GitGutterAdd      guibg=NONE   guifg=#36e809
-  highlight GitGutterChange   guibg=NONE   guifg=#1512c9
+  highlight GitGutterChange   guibg=NONE   guifg=#e0da14
   highlight GitGutterDelete   guibg=NONE   guifg=#e80909
 
 
 " NERD Commenter
 
-  " Nerd Commenter configurations here
+  " <leader> cc comment   lines
+  " <leader> cu uncomment lines
 
 
 " Multiple-cursors
