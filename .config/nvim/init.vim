@@ -573,6 +573,10 @@ highlight FoldColumn guibg=NONE
   nnoremap fg $
   vnoremap fd _
   vnoremap fg $
+
+
+  " <C-y> select the autocomplete option
+  " <C-e> close the autocomplete menu
   
 
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
