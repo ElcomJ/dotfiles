@@ -407,8 +407,6 @@ highlight FoldColumn guibg=NONE
   nmap <silent> gy <Plug>(coc-type-definition)
   nmap <silent> gi <Plug>(coc-implementation)
 
-  nmap <silent> cd :CocDiagnostics<CR>
-
   nnoremap <silent> K :call <SID>show_documentation()<CR>
   inoremap <silent><expr> <c-space> coc#refresh()
 
@@ -421,9 +419,14 @@ highlight FoldColumn guibg=NONE
   endfunction
   
 
- " coc-explorer
+" coc-explorer
 
-   nnoremap <C-a> :CocCommand explorer<CR>
+  nnoremap <C-a> :CocCommand explorer<CR>
+
+
+" coc-diagnostics
+
+  nmap <silent> cd :CocDiagnostics<CR>
 
 
 " Telescope
