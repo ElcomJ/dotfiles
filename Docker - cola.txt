@@ -1,0 +1,2 @@
+mongo = docker run -p 27017:27017 --name mongodb -d mongo
+mysql = docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=1547852145 -d mysql
