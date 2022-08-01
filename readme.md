@@ -123,7 +123,7 @@ Core Softwares:
     - Portainer or Docker Desktop
     - pip
     - Tmux
-    - Ncspot
+    - Ncspot add 104.199.240.237 ap-gue1.spotify.com in /etc/hosts
     - Rust + Cargo (https://www.journaldev.com/39960/install-rust-on-ubuntu-linux)
     - Gufw (firewall)
     - Golang (opcional)
