@@ -35,7 +35,7 @@ alias w='whoami; who'
 
 # Aplicativos
 
-alias mysql='sudo mysql -u root -p'
+
 
 
 # Tmux
@@ -44,3 +44,14 @@ alias tas='tmux attach-session -t'
 alias tls='tmux ls'
 alias tns='tmux new-session'
 alias tks='tmux kill-session -t'
+
+
+# Docker
+
+alias dcon='docker container ls -a'
+alias dimg='docker images'
+alias dvol='docker volume ls'
+alias dps='docker ps'
+alias dstart='docker start'
+alias dstop='docker stop'
+alias dexec='docker exec -it'
