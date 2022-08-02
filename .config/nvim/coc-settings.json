@@ -44,6 +44,8 @@
     "coc.preferences.colorSupport": true,
     "coc.preferences.formatOnType": true,
 
+    "snippets.userSnippetsDirectory": "~/.config/nvim/snippets",
+
     
     "explorer.width": 30,
     "explorer.position": "left",
