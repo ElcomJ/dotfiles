@@ -451,9 +451,10 @@ highlight FoldColumn guibg=NONE
 
 " Tagbar
 
-  let g:tagbar_width = 45
-  let g:tagbar_autofocus = 1
+  let g:tagbar_width = 30
+  let g:tagbar_autofocus = 0
   let g:tagbar_indent = 2
+  let g:tagbar_sort = 0
 
   nmap <F8> :TagbarToggle<CR>
 
