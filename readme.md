@@ -132,3 +132,4 @@ Core Softwares:
     - gnome-sushi (sudo apt install gnome-sushi)
     - mysql server
     - postgresql
+    - ranger
