@@ -133,3 +133,4 @@ Core Softwares:
     - mysql server
     - postgresql
     - ranger
+    - trash-cli
