@@ -133,4 +133,5 @@ Core Softwares:
     - mysql server
     - postgresql
     - ranger
+    - ueberzug (ranger image preview) - sudo apt install libxext-dev
     - trash-cli
