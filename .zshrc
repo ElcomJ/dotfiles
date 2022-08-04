@@ -35,7 +35,7 @@ alias w='whoami; who'
 
 # Aplicativos
 
-
+alias chrome='google-chrome'
 
 
 # Tmux
