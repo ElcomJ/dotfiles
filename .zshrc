@@ -36,6 +36,8 @@ alias w='whoami; who'
 # Aplicativos
 
 alias chrome='google-chrome'
+alias files='nautilus'
+alias code='code .'
 
 
 # Tmux
