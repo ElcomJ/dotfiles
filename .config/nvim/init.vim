@@ -297,7 +297,6 @@ lua << END
 END
 
   nnoremap <leader>r :RunFile<CR>
-" nnoremap <leader>rp :RunProject<CR>
 
 
 " Diffview
