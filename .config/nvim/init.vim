@@ -43,25 +43,25 @@ set encoding=utf-8
 set clipboard=unnamedplus
 set termguicolors
 set number
-set relativenumber               
+set relativenumber
 set tabstop=4
-set cursorline       
-set softtabstop=4    
-set shiftwidth=4     
-set expandtab        
-set smarttab         
-set smartindent      
-set hidden           
-set incsearch        
-set ignorecase       
-set smartcase        
-set scrolloff=8         
-set cmdheight=1      
-set updatetime=100     
-set nobackup         
+set cursorline
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set smarttab
+set smartindent
+set hidden
+set incsearch
+set ignorecase
+set smartcase
+set scrolloff=8
+set cmdheight=1
+set updatetime=100
+set nobackup
 set nowritebackup
-set splitright       
-set splitbelow       
+set splitright
+set splitbelow
 set autoread
 set foldmethod=manual
 set mouse=a
@@ -69,13 +69,13 @@ set t_Co=256
 
 " set signcolumn=yes:2
 
-set fillchars+=diff:╱  
-set fillchars+=eob:\        
+set fillchars+=diff:╱
+set fillchars+=eob:.
 
 
 filetype on
 filetype plugin on
-filetype indent on 
+filetype indent on
 
 
 let g:gruvbox_contrast_dark='hard'
@@ -290,8 +290,8 @@ lua << END
       position = "vert",
       size = 60
     },
-	    
-	  filetype = {	
+
+	  filetype = {
 		  python = "python3"
 	  },
   }
@@ -307,11 +307,11 @@ lua << END
   local actions = require("diffview.actions")
 
   require('diffview').setup{
-    diff_binaries = false,    
-    enhanced_diff_hl = false, 
-    git_cmd = { "git" },      
-    use_icons = true,         
-    icons = {                 
+    diff_binaries = false,
+    enhanced_diff_hl = false,
+    git_cmd = { "git" },
+    use_icons = true,
+    icons = {
       folder_closed = "",
       folder_open = "",
     },
@@ -321,19 +321,19 @@ lua << END
     },
 
     file_panel = {
-      listing_style = "tree",             
-      tree_options = {                    
-        flatten_dirs = true,              
-        folder_statuses = "only_folded",  
+      listing_style = "tree",
+      tree_options = {
+        flatten_dirs = true,
+        folder_statuses = "only_folded",
       },
-      win_config = {                      
+      win_config = {
         position = "left",
         width = 30,
      },
     },
 
     file_history_panel = {
-      log_options = {   
+      log_options = {
         single_file = {
           diff_merges = "combined",
         },
@@ -341,18 +341,18 @@ lua << END
           diff_merges = "first-parent",
         },
       },
-      win_config = {   
+      win_config = {
         position = "bottom",
         height = 15,
       },
     },
 
       commit_log_panel = {
-        win_config = {},  
+        win_config = {},
       },
 
       hooks = {
-         
+
       },
     }
 END
@@ -403,7 +403,7 @@ END
   nmap <silent> gd <Plug>(coc-definition)
   nmap <silent> gr <Plug>(coc-references)
   nmap <silent> rn <Plug>(coc-rename)
-  
+
   nmap <silent> gy <Plug>(coc-type-definition)
   nmap <silent> gi <Plug>(coc-implementation)
 
@@ -419,7 +419,7 @@ END
       call CocAction('doHover')
     endif
   endfunction
-  
+
 
 " coc-explorer
 
@@ -505,7 +505,7 @@ END
 " Vim-pydocstring
 
   let g:pydocstring_formatter = 'numpy'
-  
+
   nmap <leader>d  :Pydocstring<CR>
   nmap <leader>df :PydocstringFormat<CR>
 
@@ -542,7 +542,7 @@ END
 
 
 " Remaps
-  
+
   map <C-Left> <C-w>h
   map <C-Down> <C-w>j
   map <C-Up> <C-w>k
@@ -562,7 +562,7 @@ END
   nmap te :tabe<CR>
   nmap tc :tabclose<CR>
   nmap tn :tabnext<CR>
-  
+
 
   inoremap <C-s> <esc>:w<cr>
   nnoremap <C-q> :exit<cr>
@@ -586,9 +586,12 @@ END
   vnoremap fg $
 
 
+  nnoremap <F3> :noh<CR>
+
+
   " <C-y> select the autocomplete option
   " <C-e> close the autocomplete menu
-  
+
 
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
