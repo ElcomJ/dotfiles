@@ -31,6 +31,7 @@ Plug 'mbbill/undotree'
 Plug 'hrsh7th/nvim-compe'
 Plug 'MattesGroeger/vim-bookmarks'
 Plug 'tom-anders/telescope-vim-bookmarks.nvim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for': 'markdown' }
 
 call plug#end()
 
@@ -297,6 +298,7 @@ lua << END
 END
 
   nnoremap <leader>r :RunFile<CR>
+" nnoremap <leader>rp :RunProject<CR>
 
 
 " Diffview
@@ -533,6 +535,11 @@ highlight FoldColumn guibg=NONE
 
   highlight BookmarkSign guifg=DodgerBlue2
   highlight BookmarkAnnotationSign guifg=Green
+
+
+" Markdown-preview
+
+  nnoremap <leader>p <Esc>:MarkdownPreviewToggle<cr>
 
 
 " Remaps
