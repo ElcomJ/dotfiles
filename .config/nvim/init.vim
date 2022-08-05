@@ -298,7 +298,6 @@ lua << END
 END
 
   nnoremap <leader>r :RunFile<CR>
-" nnoremap <leader>rp :RunProject<CR>
 
 
 " Diffview
@@ -358,10 +357,10 @@ lua << END
     }
 END
 
-nnoremap <leader>gd :DiffviewOpen<CR>
-nnoremap <leader>gh :DiffviewFileHistory<CR>
+  nnoremap <leader>gd :DiffviewOpen<CR>
+  nnoremap <leader>gh :DiffviewFileHistory<CR>
 
-highlight FoldColumn guibg=NONE
+  highlight FoldColumn guibg=NONE
 
 
 " Ale
