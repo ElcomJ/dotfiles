@@ -120,7 +120,6 @@ Core Softwares:
 
     - Git
     - Docker and Docker Compose
-    - Portainer or Docker Desktop
     - pip
     - Tmux
     - Ncspot add 104.199.240.237 ap-gue1.spotify.com in /etc/hosts
