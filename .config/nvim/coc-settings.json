@@ -33,8 +33,7 @@
     },
 
     "coc.preferences.formatOnSaveFiletypes": [
-        "dockerfile",
-        "sql"
+        "dockerfile"
       ],
 
     "diagnostic.displayByAle": true,

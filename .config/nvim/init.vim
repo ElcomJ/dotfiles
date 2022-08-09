@@ -605,8 +605,8 @@ command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 " Autocmd
 
 autocmd BufWritePre *.py Black
-autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview
+" autocmd BufWinLeave *.* mkview
+" autocmd BufWinEnter *.* silent loadview
 
 function! HighlightWordUnderCursor()
     if getline(".")[col(".")-1] !~# '[[:punct:][:blank:]]'
