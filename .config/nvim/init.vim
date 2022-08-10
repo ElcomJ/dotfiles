@@ -592,6 +592,7 @@ END
   vnoremap fg $
 
 
+  nnoremap <F2> :/
   nnoremap <F3> :noh<CR>
 
 
