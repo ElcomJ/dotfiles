@@ -57,3 +57,8 @@ alias dps='docker ps'
 alias dstart='docker start'
 alias dstop='docker stop'
 alias dexec='docker exec -it'
+
+
+# Scripts
+
+alias tdev='cd ~/Documentos/ ; sh tmux-dev.sh'
