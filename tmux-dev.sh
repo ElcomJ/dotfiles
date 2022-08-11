@@ -19,4 +19,8 @@ window=1
 tmux new-window -n ranger
 tmux send-keys -t ranger 'ranger' Enter
 
+tmux select-window -t 0:1
+tmux send-keys -t 0:1 '..' Enter
+tmux send-keys -t 0:1 'clear' Enter
+
 tmux attach-session -t 0
