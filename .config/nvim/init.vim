@@ -35,29 +35,19 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for':
 
 call plug#end()
 
-
-syntax on
-
-set background=dark
 set encoding=utf-8
+set scrolloff=8
+set cmdheight=1
+set updatetime=100
+
 set clipboard=unnamedplus
-set termguicolors
 set number
 set relativenumber
-set tabstop=4
 set cursorline
-set softtabstop=4
-set shiftwidth=4
-set expandtab
-set smarttab
-set smartindent
 set hidden
 set incsearch
 set ignorecase
 set smartcase
-set scrolloff=8
-set cmdheight=1
-set updatetime=100
 set nobackup
 set nowritebackup
 set splitright
@@ -65,6 +55,18 @@ set splitbelow
 set autoread
 set foldmethod=manual
 set mouse=a
+
+set softtabstop=4
+set shiftwidth=4
+set tabstop=4
+set expandtab
+set smarttab
+set smartindent
+set colorcolumn=79
+
+syntax on
+set background=dark
+set termguicolors
 set t_Co=256
 
 " set signcolumn=yes:2
@@ -110,6 +112,7 @@ let &t_ZR="\e[23m"
   hi DiffDelete   gui=bold    guifg=NONE       guibg=#542426
   hi DiffText     gui=none    guifg=NONE       guibg=#1E4273
 
+
 let mapleader = "\<Space>"
 
 
@@ -124,18 +127,9 @@ require("toggleterm").setup({
 	shade_terminals = true,
 	shading_factor = 2,
 	start_in_insert = true,
-	insert_mappings = true,
-	persist_size = true,
 	direction = "float",
-	close_on_exit = true,
-	shell = vim.o.shell,
 	float_opts = {
 		border = "curved",
-		winblend = 0,
-		highlights = {
-			border = "Normal",
-			background = "Normal",
-		},
 	},
 })
 END
@@ -197,85 +191,36 @@ END
 
 lua << END
   require'nvim-treesitter.configs'.setup {
-    ensure_installed = "all",
-    sync_install = false,
-    ignore_install = { "" },
-    autopairs = {
-      enable = true,
-    },
-
     highlight = {
       enable = false,
       disable = { "" },
       additional_vim_regex_highlighting = true,
     },
-
-    indent = { enable = true, disable = { "yaml" } },
-      context_commentstring = {
-      enable = true,
-      enable_autocmd = false,
-    },
-
   }
 END
-
-  nmap <F5> :TSDisable highlight<CR>
-  nmap <F6> :TSEnable highlight<CR>
 
 
 " Indent-blankline
 
 lua << END
-  local status_ok, indent_blankline = pcall(require, "indent_blankline")
-    if not status_ok then
-	  return
-  end
+  require("indent_blankline").setup {
+    buftype_exclude = {"terminal", "nofile"},
+    show_current_context = true,
+    use_treesitter = false,
+    show_trailing_blankline_indent = false,
 
-  vim.g.indent_blankline_buftype_exclude = { "terminal", "nofile" }
-  vim.g.indent_blankline_filetype_exclude = {
-	  "help",
-	  "startify",
-	  "dashboard",
-	  "packer",
-	  "neogitstatus",
-	  "NvimTree",
-	  "Trouble",
+    filetype_exclude = {
+      "help", "startify", "dashboard", "packer", "neogitstatus", "NvimTree",
+      "Trouble"
+    },
+
+    context_patterns = {
+      "class", "return", "function", "method", "^if", "^while", "jsx_element",
+	    "^for", "^object", "^table", "block", "arguments", "if_statement",
+	    "else_clause", "jsx_element", "jsx_self_closing_element", "try_statement",
+	    "catch_clause", "import_statement", "operation_type"
+    },
   }
-
-  vim.g.indentLine_enabled = 1
-  vim.g.indent_blankline_char = "┆"
-  vim.g.indent_blankline_show_trailing_blankline_indent = false
-  vim.g.indent_blankline_show_first_indent_level = true
-  vim.g.indent_blankline_use_treesitter = true
-  vim.g.indent_blankline_show_current_context = true
-  vim.g.indent_blankline_context_patterns = {
-	  "class",
-	  "return",
-	  "function",
-	  "method",
-	  "^if",
-	  "^while",
-	  "jsx_element",
-	  "^for",
-	  "^object",
-	  "^table",
-	  "block",
-	  "arguments",
-	  "if_statement",
-	  "else_clause",
-	  "jsx_element",
-	  "jsx_self_closing_element",
-	  "try_statement",
-	  "catch_clause",
-	  "import_statement",
-	  "operation_type",
-  }
-
-  vim.wo.colorcolumn = "79"
-
-  indent_blankline.setup({
-	  show_current_context = true,
-  })
 END
 
 
