@@ -540,8 +540,9 @@ END
 
 
   nnoremap <F1> :on<CR>
-  nnoremap <F2> :/
-  nnoremap <F3> :noh<CR>
+  nnoremap <F2> :%bd<bar>e#<bar>bd#<CR>
+  nnoremap <F3> :/
+  nnoremap <F4> :noh<CR>
 
 
   " <C-y> select the autocomplete option
