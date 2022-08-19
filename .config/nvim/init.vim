@@ -35,6 +35,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for':
 
 call plug#end()
 
+
 set encoding=utf-8
 set scrolloff=8
 set cmdheight=1
@@ -381,6 +382,7 @@ END
   nnoremap <leader>ff <cmd>Telescope find_files<cr>
   nnoremap <leader>fg <cmd>Telescope live_grep<cr>
   nnoremap <leader>fb <cmd>Telescope buffers<cr>
+  nnoremap <leader>fo <cmd>Telescope oldfiles<cr>
   nnoremap <leader>fh <cmd>Telescope help_tags<cr>
   nnoremap <leader>fbb <cmd>Telescope vim_bookmarks all<cr>
 
@@ -406,12 +408,12 @@ END
   let g:tagbar_indent = 2
   let g:tagbar_sort = 0
 
-  nmap <F8> :TagbarToggle<CR>
+  nmap <F6> :TagbarToggle<CR>
 
 
 " Undotree
 
-  nmap <F7> :UndotreeToggle<CR>
+  nmap <F5> :UndotreeToggle<CR>
 
   let g:undotree_WindowLayout = 2
   let g:undotree_SetFocusWhenToggle = 1
@@ -537,6 +539,7 @@ END
   vnoremap fg $
 
 
+  nnoremap <F1> :on<CR>
   nnoremap <F2> :/
   nnoremap <F3> :noh<CR>
 
