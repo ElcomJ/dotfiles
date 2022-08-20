@@ -126,7 +126,8 @@ Core Softwares:
     - Rust + Cargo (https://www.journaldev.com/39960/install-rust-on-ubuntu-linux)
     - Gufw (firewall)
     - Golang (opcional)
-    - Flatpak and Flatpak Store
+    - Flatpak Support
+    - Gnome Store
     - live server (https://www.chiarulli.me/Neovim/20-live-server/)
     - gnome-sushi (sudo apt install gnome-sushi)
     - mysql server
