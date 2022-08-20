@@ -376,6 +376,8 @@ END
 
   nmap <silent> cd :CocDiagnostics<CR>
 
+  highlight QuickFixLine ctermbg=none
+
 
 " Telescope
 
