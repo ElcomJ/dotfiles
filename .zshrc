@@ -9,7 +9,7 @@ ZSH_THEME="spaceship"
 
 
 # Plugins here
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-completions)
 
 source $ZSH/oh-my-zsh.sh
 
