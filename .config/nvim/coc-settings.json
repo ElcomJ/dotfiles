@@ -54,7 +54,7 @@
     "explorer.previewAction.onHover": false,
     "explorer.expandStores": false,
     "explorer.keyMappings.global": {
-    "<cr>": ["expandable?", "expand", "open"],  
+    "<cr>": ["expandable?",  ["expanded?", "collapse", "expand"], "open"],  
     "rr" : "rename",
     "af" : "addFile",
     "ad" : "addDirectory",

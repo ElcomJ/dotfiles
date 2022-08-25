@@ -176,7 +176,7 @@ END
 lua << END
   require("bufferline").setup{
     options = {
-      indicator_icon = " ",
+      indicator_style = " ",
       show_buffer_close_icons = false,
       tab_size = 16
     }
@@ -238,7 +238,7 @@ lua << END
     },
 
 	  filetype = {
-		  python = "python3"
+		  python = "python"
 	  },
   }
 END
