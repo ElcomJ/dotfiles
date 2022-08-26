@@ -29,22 +29,24 @@
     },
 
     "languageserver": {
-        
+
     },
 
     "coc.preferences.formatOnSaveFiletypes": [
-        "dockerfile"
+
       ],
 
     "diagnostic.displayByAle": true,
     "diagnostic.refreshOnInsertMode": true,
-    
+
     "coc.preferences.colorSupport": true,
     "coc.preferences.formatOnType": true,
 
     "snippets.userSnippetsDirectory": "~/.config/nvim/snippets",
 
-    
+    "pyright.inlayHints.enable": false,
+
+
     "explorer.width": 30,
     "explorer.position": "left",
     "explorer.mouseMode": "none",
@@ -54,7 +56,7 @@
     "explorer.previewAction.onHover": false,
     "explorer.expandStores": false,
     "explorer.keyMappings.global": {
-    "<cr>": ["expandable?",  ["expanded?", "collapse", "expand"], "open"],  
+    "<cr>": ["expandable?",  ["expanded?", "collapse", "expand"], "open"],
     "rr" : "rename",
     "af" : "addFile",
     "ad" : "addDirectory",
@@ -63,7 +65,7 @@
     "h"  : "open:split"
     },
 
-    
+
     "explorer.git.enable": true
 
 

@@ -29,8 +29,6 @@ Plug 'sindrets/diffview.nvim'
 Plug 'vim-test/vim-test'
 Plug 'mbbill/undotree'
 Plug 'hrsh7th/nvim-compe'
-Plug 'MattesGroeger/vim-bookmarks'
-Plug 'tom-anders/telescope-vim-bookmarks.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for': 'markdown' }
 
 call plug#end()
@@ -353,6 +351,8 @@ END
   nmap <silent> gy <Plug>(coc-type-definition)
   nmap <silent> gi <Plug>(coc-implementation)
 
+  " highlight CocInlayHint  guibg=grey19
+
   inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 
   nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -386,7 +386,6 @@ END
   nnoremap <leader>fb <cmd>Telescope buffers<cr>
   nnoremap <leader>fo <cmd>Telescope oldfiles<cr>
   nnoremap <leader>fh <cmd>Telescope help_tags<cr>
-  nnoremap <leader>fbb <cmd>Telescope vim_bookmarks all<cr>
 
   nnoremap <leader>fgc <cmd>Telescope git_commits<cr>
   nnoremap <leader>fgb <cmd>Telescope git_branches<cr>
@@ -480,15 +479,6 @@ END
 
   let g:compe.source = {}
   let g:compe.source.path = v:true
-
-
-" Vim-bookmarks
-
-  nmap <Leader>b <Plug>BookmarkToggle
-  nmap <Leader>ba <Plug>BookmarkAnnotate
-
-  highlight BookmarkSign guifg=DodgerBlue2
-  highlight BookmarkAnnotationSign guifg=Green
 
 
 " Markdown-preview
