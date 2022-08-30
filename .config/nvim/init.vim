@@ -26,6 +26,8 @@ Plug 'psf/black'
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 Plug 'sindrets/diffview.nvim'
 
+Plug 'MattesGroeger/vim-bookmarks'
+Plug 'tom-anders/telescope-vim-bookmarks.nvim'
 Plug 'vim-test/vim-test'
 Plug 'mbbill/undotree'
 Plug 'hrsh7th/nvim-compe'
@@ -33,6 +35,12 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for':
 
 call plug#end()
 
+" Using Powershell shell in windows
+
+set shell=powershell
+set shellcmdflag=-command
+set shellquote=\"
+set shellxquote=
 
 set encoding=utf-8
 set scrolloff=8
@@ -386,6 +394,7 @@ END
   nnoremap <leader>fb <cmd>Telescope buffers<cr>
   nnoremap <leader>fo <cmd>Telescope oldfiles<cr>
   nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+  nnoremap <leader>fbb <cmd>Telescope vim_bookmarks all<cr>
 
   nnoremap <leader>fgc <cmd>Telescope git_commits<cr>
   nnoremap <leader>fgb <cmd>Telescope git_branches<cr>
@@ -479,6 +488,15 @@ END
 
   let g:compe.source = {}
   let g:compe.source.path = v:true
+
+
+" Vim-bookmarks
+
+  nmap <Leader>b <Plug>BookmarkToggle
+  nmap <Leader>ba <Plug>BookmarkAnnotate
+
+  highlight BookmarkSign guifg=DodgerBlue2
+  highlight BookmarkAnnotationSign guifg=Green
 
 
 " Markdown-preview
