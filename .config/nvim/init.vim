@@ -22,7 +22,6 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'CRAG666/code_runner.nvim'
 
-Plug 'psf/black'
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 Plug 'sindrets/diffview.nvim'
 
@@ -318,11 +317,12 @@ END
 " Ale
 
   let g:ale_linters = {
-  \   'python'  : ['pyright', 'flake8'],
+  \   'python': ['pyright', 'flake8'],
   \}
 
   let g:ale_fixers = {
-  \   '*': ['trim_whitespace'],
+  \   '*': ['trim_whitespace', 'remove_trailing_lines'],
+  \   'python': ['black'],
   \}
 
 
@@ -364,7 +364,7 @@ END
   inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 
   nnoremap <silent> K :call <SID>show_documentation()<CR>
-  inoremap <silent><expr> <c-space> coc#refresh()
+  inoremap <silent><expr> <c-f> coc#refresh()
 
   function! s:show_documentation()
     if (index(['vim','help'], &filetype) >= 0)
@@ -564,7 +564,6 @@ command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
 " Autocmd
 
-autocmd BufWritePre *.py Black
 " autocmd BufWinLeave *.* mkview
 " autocmd BufWinEnter *.* silent loadview
 
