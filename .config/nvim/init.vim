@@ -317,12 +317,12 @@ END
 " Ale
 
   let g:ale_linters = {
-  \   'python': ['pyright', 'flake8'],
+  \   'python': ['flake8', 'pyright'],
   \}
 
   let g:ale_fixers = {
   \   '*': ['trim_whitespace', 'remove_trailing_lines'],
-  \   'python': ['black'],
+  \   'python': ['black', 'isort'],
   \}
 
 
@@ -529,18 +529,18 @@ END
 
   inoremap <C-s> <esc>:w<cr>
   nnoremap <C-q> :exit<cr>
-  nnoremap <M-Right>          :vertical resize -2<CR>
-  nnoremap <M-Left>           :vertical resize +2<CR>
-  nnoremap <M-Up>             :resize -2<CR>
-  nnoremap <M-Down>           :resize +2<CR>
+  nnoremap <S-Right>          :vertical resize -2<CR>
+  nnoremap <S-Left>           :vertical resize +2<CR>
+  nnoremap <S-Up>             :resize -2<CR>
+  nnoremap <S-Down>           :resize +2<CR>
 
 
-  nnoremap <C-j> :m .+1<CR>==
-  nnoremap <C-k> :m .-2<CR>==
-  inoremap <C-j> <Esc>:m .+1<CR>==gi
-  inoremap <C-k> <Esc>:m .-2<CR>==gi
-  vnoremap <C-j> :m '>+1<CR>gv=gv
-  vnoremap <C-k> :m '<-2<CR>gv=gv
+  nnoremap <S-j> :m .+1<CR>==
+  nnoremap <S-k> :m .-2<CR>==
+  inoremap <S-j> <Esc>:m .+1<CR>==gi
+  inoremap <S-k> <Esc>:m .-2<CR>==gi
+  vnoremap <S-j> :m '>+1<CR>gv=gv
+  vnoremap <S-k> :m '<-2<CR>gv=gv
 
 
   nnoremap fd _
