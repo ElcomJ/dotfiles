@@ -317,7 +317,7 @@ END
 " Ale
 
   let g:ale_linters = {
-  \   'python': ['flake8', 'pyright'],
+  \   'python': ['flake8', 'mypy', 'pydocstyle', 'pyright'],
   \}
 
   let g:ale_fixers = {
@@ -363,7 +363,7 @@ END
 
   inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 
-  nnoremap <silent> K :call <SID>show_documentation()<CR>
+  nnoremap <silent> ; :call <SID>show_documentation()<CR>
   inoremap <silent><expr> <c-f> coc#refresh()
 
   function! s:show_documentation()
