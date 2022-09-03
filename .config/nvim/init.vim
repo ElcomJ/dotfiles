@@ -467,8 +467,8 @@ END
 
 " Vim-pydocstring
 
-  let g:pydocstring_formatter = 'numpy'
-  let g:pydocstring_doq_path = 'C:\Dev\Cursos\CursoPythonDSA\cursoDSAenv\Scripts\doq.exe'
+  let g:pydocstring_formatter = 'google'
+  let g:pydocstring_doq_path = 'C:\Dev\venv\Scripts\doq.exe'
 
   nmap <leader>d  :Pydocstring<CR>
   nmap <leader>df :PydocstringFormat<CR>
@@ -567,6 +567,7 @@ command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
 autocmd FileType sql setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
+autocmd FileType vim setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
 " autocmd BufWinLeave *.* mkview
 " autocmd BufWinEnter *.* silent loadview
