@@ -1,0 +1,4 @@
+Linters   = 'flake8', 'mypy', 'pydocstyle'
+Fixers    = 'black', 'isort'
+
+Docstring = 'doq'
