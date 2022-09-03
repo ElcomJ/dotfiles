@@ -62,10 +62,6 @@ set autoread
 set foldmethod=manual
 set mouse=a
 
-set softtabstop=4
-set shiftwidth=4
-set tabstop=4
-set expandtab
 set smarttab
 set smartindent
 set colorcolumn=79
@@ -350,7 +346,11 @@ END
 
 " COC
 
-  let g:coc_global_extensions = []
+  let g:coc_global_extensions = [
+  \   'coc-explorer',
+  \   'coc-pyright',
+  \   'coc-tabnine'
+  \]
 
   nmap <silent> gd <Plug>(coc-definition)
   nmap <silent> gr <Plug>(coc-references)
@@ -468,6 +468,7 @@ END
 " Vim-pydocstring
 
   let g:pydocstring_formatter = 'numpy'
+  let g:pydocstring_doq_path = 'C:\Dev\Cursos\CursoPythonDSA\cursoDSAenv\Scripts\doq.exe'
 
   nmap <leader>d  :Pydocstring<CR>
   nmap <leader>df :PydocstringFormat<CR>
@@ -563,6 +564,9 @@ command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
 
 " Autocmd
+
+autocmd FileType sql setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 
 " autocmd BufWinLeave *.* mkview
 " autocmd BufWinEnter *.* silent loadview
