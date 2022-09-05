@@ -349,7 +349,8 @@ END
   let g:coc_global_extensions = [
   \   'coc-explorer',
   \   'coc-pyright',
-  \   'coc-tabnine'
+  \   'coc-tabnine',
+  \   'coc-snippets'
   \]
 
   nmap <silent> gd <Plug>(coc-definition)
@@ -549,6 +550,8 @@ END
   vnoremap fd _
   vnoremap fg $
 
+  nnoremap <leader>a ggVG
+  vnoremap ft gq
 
   nnoremap <F1> :on<CR>
   nnoremap <F2> :%bd<bar>e#<bar>bd#<CR>
@@ -566,8 +569,8 @@ command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 " Autocmd
 
 autocmd FileType sql setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
-autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
-autocmd FileType vim setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab textwidth=79
+autocmd FileType vim setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab colorcolumn=100
 
 " autocmd BufWinLeave *.* mkview
 " autocmd BufWinEnter *.* silent loadview

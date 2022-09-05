@@ -42,7 +42,7 @@
     "coc.preferences.colorSupport": true,
     "coc.preferences.formatOnType": true,
 
-    "snippets.userSnippetsDirectory": "~/.config/nvim/snippets",
+    "snippets.userSnippetsDirectory": "~/AppData/Local/nvim/snippets",
 
     "pyright.inlayHints.enable": false,
 
@@ -66,7 +66,14 @@
     },
 
 
-    "explorer.git.enable": true
-
+    "explorer.git.enable": true,
+    "explorer.git.icon.status.added": "✚",
+    "explorer.git.icon.status.deleted": "✖",
+    "explorer.git.icon.status.renamed": "➜",
+    "explorer.git.icon.status.unmerged": "≠",
+    "explorer.git.icon.status.untracked": "?",
+    "explorer.git.icon.status.modified": "✹",
+    "explorer.git.icon.status.ignored": "☒",
+    "explorer.git.icon.status.mixed": "*"
 
 }
