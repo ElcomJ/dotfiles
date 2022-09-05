@@ -13,9 +13,5 @@ Docstring = 'doq'
 ---------------------------------------------------------------------
 Python Work Libraries:
 
-pip install pynvim
-	    			pandas numpy matplotlib seaborn
-      			requests beautifulsoup4
-	    			flake8 mypy pydocstyle
-            black isort
-            doq
+Data Enginner = 'pandas', 'numpy', 'matplotlib', 'seaborn'
+Web Scraping  = 'requests', 'beautifulsoup4'
