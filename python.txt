@@ -10,6 +10,8 @@ Fixers    = 'black', 'isort'
 
 Docstring = 'doq'
 
+Neovim = 'pynvim'
+
 ---------------------------------------------------------------------
 Python Work Libraries:
 
