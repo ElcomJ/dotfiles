@@ -17,3 +17,9 @@ Python Work Libraries:
 
 Data Enginner = 'pandas', 'numpy', 'matplotlib', 'seaborn'
 Web Scraping  = 'requests', 'beautifulsoup4'
+
+---------------------------------------------------------------------
+Python Notebooks:
+
+pip install jupyterlab (Recommended)
+pip install notebook
