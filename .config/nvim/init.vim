@@ -468,7 +468,7 @@ END
 
 " Vim-pydocstring
 
-  let g:pydocstring_formatter = 'numpy'
+  let g:pydocstring_formatter = 'google'
   let g:pydocstring_doq_path = 'C:\Dev\venv\Scripts\doq.exe'
 
   nmap <leader>d  :Pydocstring<CR>
@@ -539,8 +539,8 @@ END
 
   nnoremap <S-j> :m .+1<CR>==
   nnoremap <S-k> :m .-2<CR>==
-  inoremap <S-j> <Esc>:m .+1<CR>==gi
-  inoremap <S-k> <Esc>:m .-2<CR>==gi
+  inoremap <C-j> <Esc>:m .+1<CR>==gi
+  inoremap <C-k> <Esc>:m .-2<CR>==gi
   vnoremap <S-j> :m '>+1<CR>gv=gv
   vnoremap <S-k> :m '<-2<CR>gv=gv
 

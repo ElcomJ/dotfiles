@@ -43,6 +43,7 @@
     "coc.preferences.formatOnType": true,
 
     "snippets.userSnippetsDirectory": "~/AppData/Local/nvim/snippets",
+    "snippets.ultisnips.enable": false,
 
     "pyright.inlayHints.enable": false,
 
