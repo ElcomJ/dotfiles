@@ -468,7 +468,7 @@ END
 
 " Vim-pydocstring
 
-  let g:pydocstring_formatter = 'google'
+  let g:pydocstring_formatter = 'numpy'
   let g:pydocstring_doq_path = 'C:\Dev\venv\Scripts\doq.exe'
 
   nmap <leader>d  :Pydocstring<CR>
