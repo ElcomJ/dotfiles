@@ -388,6 +388,11 @@ END
   highlight QuickFixLine ctermbg=none
 
 
+" coc-snippets
+
+  nnoremap <leader>i :CocList snippets<CR>
+
+
 " Telescope
 
   nnoremap <leader>ff <cmd>Telescope find_files<cr>
