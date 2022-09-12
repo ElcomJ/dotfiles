@@ -571,6 +571,7 @@ command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 autocmd FileType sql setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab textwidth=79
 autocmd FileType vim setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab colorcolumn=100
+autocmd BufWinEnter *.txt setlocal colorcolumn=100 textwidth=100
 
 " autocmd BufWinLeave *.* mkview
 " autocmd BufWinEnter *.* silent loadview
