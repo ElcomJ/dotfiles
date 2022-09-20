@@ -2,6 +2,9 @@ Ativar env python no windows:
 
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 
+Windows = venv/Scripts/Activate
+Linux   = source venv/bin/activate
+
 ---------------------------------------------------------------------
 Python Libraries:
 
