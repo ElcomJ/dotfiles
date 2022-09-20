@@ -1,3 +1,5 @@
+Plug 'glepnir/dashboard-nvim'
+
 lua << END
 require("dashboard").setup {
 
