@@ -563,13 +563,14 @@ END
   nnoremap <F2> :%bd<bar>e#<bar>bd#<CR>
   nnoremap <F3> :/
   nnoremap <F4> :noh<CR>
+  nnoremap <F9> :PlugUpdate <bar> CocUpdate<CR>
 
 
   " <C-y> select the autocomplete option
   " <C-e> close the autocomplete menu
 
 
-command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
+" command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
 
 " Autocmd
