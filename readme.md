@@ -88,14 +88,6 @@ DConf Editor Config:
     - transparency-mode - 'FIXED'
 
 
-How to use code folding in nvim (create the view archive):
-
-    - zf (folding the selected code)
-    - zo (open the fold)
-    - zc (close the fold)
-    - zd (delete the fold)
-
-
 Install Programns:
 
     - Telegram Desktop
@@ -105,7 +97,6 @@ Install Programns:
     - Ubuntu Cleaner
     - gnome-tweaks
     - Firewall
-    - Gimp
     - Htop
     - Neofetch
     - Neovim
@@ -125,13 +116,10 @@ Core Softwares:
     - Ncspot add 104.199.240.237 ap-gue1.spotify.com in /etc/hosts
     - Rust + Cargo (https://www.journaldev.com/39960/install-rust-on-ubuntu-linux)
     - Gufw (firewall)
-    - Golang (opcional)
     - Flatpak Support
     - Gnome Store
     - live server (https://www.chiarulli.me/Neovim/20-live-server/)
     - gnome-sushi (sudo apt install gnome-sushi)
-    - mysql server
-    - postgresql
     - ranger
     - ueberzug (ranger image preview) - sudo apt install libxext-dev
     - trash-cli

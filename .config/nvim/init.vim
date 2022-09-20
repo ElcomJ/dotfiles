@@ -581,6 +581,14 @@ autocmd BufWinEnter *.txt setlocal colorcolumn=100 textwidth=100
 " autocmd BufWinLeave *.* mkview
 " autocmd BufWinEnter *.* silent loadview
 
+" How to use code folding in vim(create view archive in nvim folder):
+
+"   zf (folding the selected code)
+"   zo (open the fold)
+"   zc (close the fold)
+"   zd (delete the fold)
+
+
 function! HighlightWordUnderCursor()
     if getline(".")[col(".")-1] !~# '[[:punct:][:blank:]]'
         exec 'match' 'Search' '/\V\<'.expand('<cword>').'\>/'
