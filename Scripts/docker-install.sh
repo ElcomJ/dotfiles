@@ -25,4 +25,6 @@ sudo groupadd docker
 
 sudo usermod -aG docker $USER
 
+echo "Docker Installed !"
+
 # Reboot Now !
