@@ -64,7 +64,6 @@ set mouse=a
 
 set smarttab
 set smartindent
-set colorcolumn=79
 
 syntax on
 set background=dark
@@ -207,7 +206,7 @@ END
 lua << END
   require("indent_blankline").setup {
     buftype_exclude = {"terminal", "nofile"},
-    filetype_exclude = {"help", "dashboard", "neogitstatus", "Trouble"},
+    filetype_exclude = {"help", "dashboard", "neogitstatus"},
     show_current_context = true,
     use_treesitter = false,
     show_trailing_blankline_indent = false,
@@ -216,8 +215,8 @@ lua << END
     context_patterns = {
       "class", "return", "function", "method", "^if",
       "^while", "^for", "^object", "^table", "block",
-      "arguments", "if_statement", "else_clause", "try_statement", "catch_clause",
-      "import_statement", "operation_type"
+      "arguments", "if_statement", "else_clause", "try_statement",
+      "catch_clause", "import_statement", "operation_type"
     },
   }
 END
@@ -571,10 +570,10 @@ END
 
 " Autocmd
 
-autocmd FileType sql setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
-autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab textwidth=79
-autocmd FileType vim setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab colorcolumn=100
-autocmd BufWinEnter *.txt setlocal colorcolumn=100 textwidth=100
+autocmd FileType sql setlocal ts=2 sw=2 sts=2 cc=100 et
+autocmd FileType python setlocal ts=4 sw=4 sts=4 cc=79 tw=79 et
+autocmd FileType vim setlocal ts=2 sw=2 sts=2 cc=100 et
+autocmd BufWinEnter *.txt setlocal cc=100 tw=100
 
 " autocmd BufWinLeave *.* mkview
 " autocmd BufWinEnter *.* silent loadview
