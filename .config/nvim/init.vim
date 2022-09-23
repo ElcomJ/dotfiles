@@ -193,18 +193,11 @@ END
 
 lua << END
   require'nvim-treesitter.configs'.setup {
-    -- ensure_installed = { "python" },
-    -- sync_install = false,
     highlight = {
       enable = false,
       disable = { "" },
       additional_vim_regex_highlighting = true,
     },
-
-    -- indent = {
-      -- enable = true,
-      -- disable = { "python" }
-    -- },
   }
 END
 
