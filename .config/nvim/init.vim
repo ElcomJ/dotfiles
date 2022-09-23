@@ -193,12 +193,18 @@ END
 
 lua << END
   require'nvim-treesitter.configs'.setup {
-    -- ensure_installed = { "python", "vim" },
+    -- ensure_installed = { "python" },
+    -- sync_install = false,
     highlight = {
       enable = false,
       disable = { "" },
       additional_vim_regex_highlighting = true,
     },
+
+    -- indent = {
+      -- enable = true,
+      -- disable = { "python" }
+    -- },
   }
 END
 
@@ -208,20 +214,17 @@ END
 lua << END
   require("indent_blankline").setup {
     buftype_exclude = {"terminal", "nofile"},
+    filetype_exclude = {"help", "dashboard", "neogitstatus", "Trouble"},
     show_current_context = true,
     use_treesitter = false,
     show_trailing_blankline_indent = false,
 
-    filetype_exclude = {
-      "help", "startify", "dashboard", "packer", "neogitstatus", "NvimTree",
-      "Trouble"
-    },
 
     context_patterns = {
-      "class", "return", "function", "method", "^if", "^while", "jsx_element",
-	    "^for", "^object", "^table", "block", "arguments", "if_statement",
-	    "else_clause", "jsx_element", "jsx_self_closing_element", "try_statement",
-	    "catch_clause", "import_statement", "operation_type"
+      "class", "return", "function", "method", "^if",
+      "^while", "^for", "^object", "^table", "block",
+      "arguments", "if_statement", "else_clause", "try_statement", "catch_clause",
+      "import_statement", "operation_type"
     },
   }
 END
