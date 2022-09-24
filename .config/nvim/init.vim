@@ -437,6 +437,8 @@ END
 
   highlight gitmessengerPopupNormal guibg=#232324
 
+  let g:git_messenger_date_format = "%Y/%m/%d - %X"
+
 
 " GitGutter
 
