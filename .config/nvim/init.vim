@@ -433,9 +433,9 @@ END
 
 " Git-messenger
 
-  highlight gitmessengerPopupNormal guibg=#232324
-
   nmap <leader>g <Plug>(git-messenger)
+
+  highlight gitmessengerPopupNormal guibg=#232324
 
 
 " GitGutter
