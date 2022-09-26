@@ -512,6 +512,8 @@ END
 
 " Easymotion
 
+  nmap ] <Plug>(easymotion-overwin-f2)
+
   map \ <Plug>(easymotion-bd-jk)
   nmap \ <Plug>(easymotion-overwin-line)
 
