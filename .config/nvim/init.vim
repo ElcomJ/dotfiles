@@ -24,6 +24,7 @@ Plug 'CRAG666/code_runner.nvim'
 
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 Plug 'sindrets/diffview.nvim'
+Plug 'easymotion/vim-easymotion'
 
 Plug 'MattesGroeger/vim-bookmarks'
 Plug 'tom-anders/telescope-vim-bookmarks.nvim'
@@ -507,6 +508,15 @@ END
 " Markdown-preview
 
   nnoremap <leader>p <Esc>:MarkdownPreviewToggle<cr>
+
+
+" Easymotion
+
+  map \ <Plug>(easymotion-bd-jk)
+  nmap \ <Plug>(easymotion-overwin-line)
+
+  map  / <Plug>(easymotion-bd-w)
+  nmap / <Plug>(easymotion-overwin-w)
 
 
 " Remaps
