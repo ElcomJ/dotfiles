@@ -136,6 +136,8 @@ require("toggleterm").setup({
 })
 END
 
+  nnoremap <C-x> :ToggleTerm size=12 direction=horizontal<CR>
+
 
 " Lualine
 
@@ -542,6 +544,9 @@ END
   nmap te :tabe<CR>
   nmap tc :tabclose<CR>
   nmap tn :tabnext<CR>
+
+
+  tnoremap <A-Up> <C-\><C-n><C-w>k
 
 
   inoremap <C-s> <esc>:w<cr>
