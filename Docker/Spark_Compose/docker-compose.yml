@@ -16,6 +16,7 @@ services:
       - '4040:4040'
     volumes:
       - ".:/opt/spark/"
+
   spark-worker-1:
     image: docker.io/bitnami/spark:3.3
     container_name: spark_worker_1
