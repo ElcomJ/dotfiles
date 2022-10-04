@@ -90,7 +90,7 @@ colorscheme gruvbox
 " Highlights
 
 hi CursorLine                     guibg=grey19
-hi CursorLineNr    guifg=#9403ad  guibg=NONE
+hi CursorLineNr    guifg=#b57504  guibg=NONE
 hi Visual          guifg=none     guibg=grey22  gui=none
 
 hi ColorColumn     guibg=grey19
@@ -593,6 +593,7 @@ autocmd FileType sql setlocal ts=2 sw=2 sts=2 cc=100 tw=95 et
 autocmd FileType python setlocal ts=4 sw=4 sts=4 cc=79 tw=75 et
 autocmd FileType vim setlocal ts=2 sw=2 sts=2 cc=100 tw=95 et
 autocmd BufWinEnter *.txt setlocal cc=100 tw=95
+autocmd BufWinEnter *.yml setlocal cc=100 sw=2 ts=2 tw=95
 
 " autocmd BufWinLeave *.* mkview
 " autocmd BufWinEnter *.* silent loadview
