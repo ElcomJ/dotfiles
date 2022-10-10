@@ -90,22 +90,22 @@ colorscheme gruvbox
 
 " Highlights
 
-hi CursorLine                     guibg=grey19
-hi CursorLineNr    guifg=#b57504  guibg=NONE
-hi Visual          guifg=none     guibg=grey22  gui=none
+  hi CursorLine                     guibg=grey19
+  hi CursorLineNr    guifg=#b57504  guibg=NONE
+  hi Visual          guifg=none     guibg=grey22  gui=none
 
-hi ColorColumn     guibg=grey19
+  hi ColorColumn     guibg=grey19
 
-highlight clear SignColumn
+  highlight clear SignColumn
 
-highlight Normal         guibg=NONE  ctermbg=NONE
-highlight EndOfBuffer    guibg=NONE  ctermbg=NONE
+  highlight Normal         guibg=NONE  ctermbg=NONE
+  highlight EndOfBuffer    guibg=NONE  ctermbg=NONE
 
 
 " Italics
 
-let &t_ZH="\e[3m"
-let &t_ZR="\e[23m"
+  let &t_ZH="\e[3m"
+  let &t_ZR="\e[23m"
 
 
 " Git highlight
@@ -526,17 +526,17 @@ END
 
 " Vimspector
 
-nnoremap <Leader>dd :call vimspector#Launch()<CR>
-nnoremap <Leader>de :call vimspector#Reset()<CR>
-nnoremap <Leader>dc :call vimspector#Continue()<CR>
+  nnoremap <Leader>dd :call vimspector#Launch()<CR>
+  nnoremap <Leader>de :call vimspector#Reset()<CR>
+  nnoremap <Leader>dc :call vimspector#Continue()<CR>
 
-nnoremap <Leader>dt :call vimspector#ToggleBreakpoint()<CR>
-nnoremap <Leader>dT :call vimspector#ClearBreakpoints()<CR>
+  nnoremap <Leader>dt :call vimspector#ToggleBreakpoint()<CR>
+  nnoremap <Leader>dT :call vimspector#ClearBreakpoints()<CR>
 
-nmap <Leader>dk <Plug>VimspectorRestart
-nmap <Leader>dh <Plug>VimspectorStepOut
-nmap <Leader>dl <Plug>VimspectorStepInto
-nmap <Leader>dj <Plug>VimspectorStepOver
+  nmap <Leader>dk <Plug>VimspectorRestart
+  nmap <Leader>dh <Plug>VimspectorStepOut
+  nmap <Leader>dl <Plug>VimspectorStepInto
+  nmap <Leader>dj <Plug>VimspectorStepOver
 
 
 " Remaps
@@ -600,28 +600,28 @@ nmap <Leader>dj <Plug>VimspectorStepOver
   " <C-e> close the autocomplete menu
 
 
-" command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
+  " command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
 
 " Autocmd
 
-autocmd FileType sql         setlocal ts=2 sw=2 sts=2 cc=100 tw=95 et
-autocmd FileType python      setlocal ts=4 sw=4 sts=4 cc=79 tw=75 et
-autocmd FileType vim         setlocal ts=2 sw=2 sts=2 cc=100 tw=95 et
-autocmd BufWinEnter *.md     setlocal cc=100 tw=95
-autocmd BufWinEnter *.txt    setlocal cc=100 tw=95
-autocmd BufWinEnter *.yml    setlocal cc=100 sw=2 ts=2 tw=95
-autocmd BufWinEnter *.json   setlocal cc=100 sw=2 ts=2 tw=95
+  autocmd FileType sql         setlocal ts=2 sw=2 sts=2 cc=100 tw=95 et
+  autocmd FileType python      setlocal ts=4 sw=4 sts=4 cc=79 tw=75 et
+  autocmd FileType vim         setlocal ts=2 sw=2 sts=2 cc=100 tw=95 et
+  autocmd BufWinEnter *.md     setlocal cc=100 tw=95
+  autocmd BufWinEnter *.txt    setlocal cc=100 tw=95
+  autocmd BufWinEnter *.yml    setlocal cc=100 sw=2 ts=2 tw=95
+  autocmd BufWinEnter *.json   setlocal cc=100 sw=2 ts=2 tw=95
 
-" autocmd BufWinLeave *.* mkview
-" autocmd BufWinEnter *.* silent loadview
+  " autocmd BufWinLeave *.* mkview
+  " autocmd BufWinEnter *.* silent loadview
 
-" How to use code folding in vim(create view archive in nvim folder):
+  " How to use code folding in vim(create view archive in nvim folder):
 
-"   zf (folding the selected code)
-"   zo (open the fold)
-"   zc (close the fold)
-"   zd (delete the fold)
+  "   zf (folding the selected code)
+  "   zo (open the fold)
+  "   zc (close the fold)
+  "   zd (delete the fold)
 
 
 function! HighlightWordUnderCursor()
