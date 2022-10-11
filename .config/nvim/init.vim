@@ -532,8 +532,10 @@ END
 
   nnoremap <Leader>dt :call vimspector#ToggleBreakpoint()<CR>
   nnoremap <Leader>dT :call vimspector#ClearBreakpoints()<CR>
+  nnoremap <Leader>dL :call vimspector#ListBreakpoints()<CR>
 
   nmap <Leader>dr <Plug>VimspectorRestart
+  nmap <Leader>ds <Plug>VimspectorStop
   nmap <Leader>dh <Plug>VimspectorStepOut
   nmap <Leader>dl <Plug>VimspectorStepInto
   nmap <Leader>dj <Plug>VimspectorStepOver
