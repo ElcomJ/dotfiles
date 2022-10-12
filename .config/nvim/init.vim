@@ -622,7 +622,9 @@ END
 
   "   zf (folding the selected code)
   "   zo (open the fold)
+  "   zO (open the fold and sub-fold)
   "   zc (close the fold)
+  "   zC (close the fold and sub-fold)
   "   zd (delete the fold)
 
 
