@@ -1,8 +1,14 @@
+Scoop:
+
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 irm get.scoop.sh | iex
 
+Telescope Requisites:
+
 scoop install fd
 scoop install ripgrep
+
+Tagbar Requisites:
 
 scoop bucket add extras
 scoop install universal-ctags
