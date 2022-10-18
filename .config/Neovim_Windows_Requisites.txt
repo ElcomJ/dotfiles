@@ -1,0 +1,8 @@
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+irm get.scoop.sh | iex
+
+scoop install fd
+scoop install ripgrep
+
+scoop bucket add extras
+scoop install universal-ctags
