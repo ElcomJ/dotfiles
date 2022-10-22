@@ -26,6 +26,8 @@ Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 Plug 'sindrets/diffview.nvim'
 Plug 'easymotion/vim-easymotion'
 Plug 'puremourning/vimspector'
+Plug 'AckslD/nvim-neoclip.lua'
+Plug 'tpope/vim-surround'
 
 Plug 'MattesGroeger/vim-bookmarks'
 Plug 'tom-anders/telescope-vim-bookmarks.nvim'
@@ -310,6 +312,15 @@ END
   highlight FoldColumn guibg=NONE
 
 
+" Neoclip
+
+lua << END
+  require('neoclip').setup{
+    default_register = '+'
+  }
+END
+
+
 " Ale
 
   let g:ale_linters = {
@@ -394,16 +405,21 @@ END
 
 " Telescope
 
-  nnoremap <leader>ff <cmd>Telescope find_files<cr>
-  nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-  nnoremap <leader>fb <cmd>Telescope buffers<cr>
-  nnoremap <leader>fo <cmd>Telescope oldfiles<cr>
-  nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+lua << END
+  require('telescope').load_extension('neoclip')
+END
+
+  nnoremap <leader>ff  <cmd>Telescope find_files<cr>
+  nnoremap <leader>fg  <cmd>Telescope live_grep<cr>
+  nnoremap <leader>fb  <cmd>Telescope buffers<cr>
+  nnoremap <leader>fo  <cmd>Telescope oldfiles<cr>
+  nnoremap <leader>fh  <cmd>Telescope help_tags<cr>
   nnoremap <leader>fbb <cmd>Telescope vim_bookmarks all<cr>
 
   nnoremap <leader>fgc <cmd>Telescope git_commits<cr>
   nnoremap <leader>fgb <cmd>Telescope git_branches<cr>
   nnoremap <leader>fgs <cmd>Telescope git_stash<cr>
+  nnoremap <leader>fy  <cmd>Telescope neoclip<cr>
 
 
 " Rainbow Brackets
@@ -511,6 +527,14 @@ END
 " Markdown-preview
 
   nnoremap <leader>p <Esc>:MarkdownPreviewToggle<cr>
+
+
+" Vim-surround
+
+  " ysiw)     = hello   > (hello)
+  " df)       = (hello) > hello
+  " yswfprint = hello   > print(hello)
+  " cs([      = (hello) > [hello]
 
 
 " Easymotion
