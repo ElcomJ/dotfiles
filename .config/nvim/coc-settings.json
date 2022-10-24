@@ -45,7 +45,8 @@
     "snippets.userSnippetsDirectory": "~/AppData/Local/nvim/snippets",
     "snippets.ultisnips.enable": false,
 
-    "pyright.inlayHints.enable": false,
+    "inlayHint.display": true,
+    "inlayHint.refreshOnInsertMode": true,
 
 
     "explorer.width": 30,
