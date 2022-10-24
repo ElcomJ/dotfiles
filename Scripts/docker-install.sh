@@ -1,8 +1,8 @@
 #!/bin/bash
 
-sudo apt-get update
+sudo apt-get -y update
 
-sudo apt-get install \
+sudo apt-get -y install \
     ca-certificates \
     curl \
     gnupg \
@@ -16,9 +16,9 @@ echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-sudo apt-get update
+sudo apt-get -y update
 
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 # add current user to docker group so there is no need to use sudo when running docker
 sudo groupadd docker
