@@ -241,7 +241,7 @@ lua << END
     },
 
 	  filetype = {
-		  python = "python"
+		  python = "python -u"
 	  },
   }
 END
