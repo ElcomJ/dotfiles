@@ -73,6 +73,7 @@ Gnome Extensions:
     - No Titlebar When Maximized
     - OpenWeather
     - Transparent Top Bar
+    - Rounded Window Corners
 
 
 DConf Editor Config:
