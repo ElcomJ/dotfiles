@@ -22,6 +22,7 @@ sudo apt-get -y install gnome-tweaks
 sudo apt-get -y install dconf-editor
 sudo apt-get -y install neofetch
 sudo apt-get -y install gnome-software
+sudo apt-get -y install gnome-shell-extension-manager
 
 pip install trash-cli
 
