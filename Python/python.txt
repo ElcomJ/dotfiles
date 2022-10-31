@@ -10,6 +10,7 @@ Python Libraries:
 
 Linters   = 'flake8', 'mypy', 'pydocstyle'
 Fixers    = 'black', 'isort'
+Testing   = 'pytest'
 
 Docstring = 'doq'
 
