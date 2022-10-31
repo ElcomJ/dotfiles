@@ -370,6 +370,7 @@ END
 
   nmap <silent> gy <Plug>(coc-type-definition)
   nmap <silent> gi <Plug>(coc-implementation)
+  nmap <F7> :CocSearch
 
 
   inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
