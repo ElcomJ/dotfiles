@@ -590,6 +590,7 @@ END
 
 
   tnoremap <A-Up> <C-\><C-n><C-w>k
+  tnoremap <A-Left> <C-\><C-n><C-w>h
 
 
   inoremap <C-s> <esc>:w<cr>
@@ -620,6 +621,7 @@ END
   nnoremap <F2> :%bd<bar>e#<bar>bd#<CR>
   nnoremap <F3> :/
   nnoremap <F4> :noh<CR>
+  nnoremap <F8> :terminal<CR>
   nnoremap <F9> :PlugUpdate <bar> CocUpdate<CR>
 
 
