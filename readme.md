@@ -74,6 +74,7 @@ Gnome Extensions:
     - OpenWeather
     - Transparent Top Bar
     - Rounded Window Corners
+    - Emoji Selector
 
 
 DConf Editor Config:
