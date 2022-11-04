@@ -609,6 +609,9 @@ END
   vnoremap <S-k> :m '<-2<CR>gv=gv
 
 
+  nnoremap rw <C-w>r
+
+
   nnoremap fd _
   nnoremap fg $
   vnoremap fd _
