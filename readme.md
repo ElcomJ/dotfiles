@@ -75,6 +75,7 @@ Gnome Extensions:
     - Transparent Top Bar
     - Rounded Window Corners
     - Emoji Selector
+    - Search Light
 
 
 DConf Editor Config:
