@@ -94,7 +94,7 @@ colorscheme gruvbox
 
   hi CursorLine                     guibg=grey19
   hi CursorLineNr    guifg=#b57504  guibg=NONE
-  hi Visual          guifg=none     guibg=grey22  gui=none
+  hi Visual          guifg=none     guibg=grey30  gui=none
 
   hi ColorColumn     guibg=grey19
 
