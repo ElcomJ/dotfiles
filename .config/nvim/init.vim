@@ -64,7 +64,7 @@ set splitright
 set splitbelow
 set autoread
 set foldmethod=manual
-set mouse=a
+set mouse=
 
 set smarttab
 set smartindent
