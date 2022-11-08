@@ -1,0 +1,61 @@
+Linux programns and extensions:
+
+
+Gnome Extensions:
+
+  - Clipboard Indicator
+  - No Titlebar When Maximized
+  - OpenWeather
+  - Transparent Top Bar
+  - Rounded Window Corners
+  - Emoji Selector
+  - Search Light
+
+
+DConf Editor Config:
+
+- /org/gnome/shell/extensions/dash-to-clock
+
+  - click-action = 'minimize-or-previews'
+  - background-opacity = 0.001
+  - dash-max-icon-size = 24
+  - dock-fixed = Dock always visible
+  - dock-position = 'LEFT'
+  - extend-height = 'VERDADEIRO'
+  - transparency-mode - 'FIXED'
+
+
+Install Programns:
+
+  - Telegram Desktop
+  - Google Chrome
+  - OnlyOffice (flatpak)
+  - Discord
+  - Ubuntu Cleaner
+  - gnome-tweaks
+  - Htop
+  - Neofetch
+  - Neovim
+  - Dconf Editor
+  - VSCode
+  - DBeaver Community
+  - Postman (opcional)
+  - Synaptic
+
+
+Core Softwares:
+
+  - Git
+  - Docker and Docker Compose
+  - pip
+  - Tmux
+  - Ncspot add 104.199.240.237 ap-gue1.spotify.com in /etc/hosts
+  - Rust + Cargo (https://www.journaldev.com/39960/install-rust-on-ubuntu-linux)
+  - Gufw (firewall)
+  - Flatpak Support
+  - Gnome Store
+  - live server (https://www.chiarulli.me/Neovim/20-live-server/)
+  - gnome-sushi (sudo apt install gnome-sushi)
+  - ranger
+  - ueberzug (ranger image preview) - sudo apt install libxext-dev
+  - trash-cli
