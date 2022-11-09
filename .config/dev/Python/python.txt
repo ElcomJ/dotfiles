@@ -8,7 +8,7 @@ Linux   = source venv/bin/activate
 ---------------------------------------------------------------------
 Python Libraries:
 
-Linters   = 'flake8', 'mypy', 'pydocstyle'
+Linters   = 'flake8', 'mypy', 'bandit', 'pydocstyle'
 Fixers    = 'black', 'isort'
 Testing   = 'pytest'
 

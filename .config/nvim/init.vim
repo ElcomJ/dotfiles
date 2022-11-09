@@ -324,7 +324,7 @@ END
 " Ale
 
   let g:ale_linters = {
-  \   'python': ['flake8', 'mypy', 'pydocstyle', 'pyright'],
+  \   'python': ['flake8', 'mypy', 'bandit', 'pydocstyle', 'pyright'],
   \}
 
   let g:ale_fixers = {
