@@ -643,6 +643,7 @@ END
   autocmd BufWinEnter *.md     setlocal cc=100 tw=95
   autocmd BufWinEnter *.txt    setlocal cc=100 tw=95
   autocmd BufWinEnter *.yml    setlocal cc=100 sw=2 ts=2 tw=95
+  autocmd BufWinEnter *.yaml   setlocal cc=100 sw=2 ts=2 tw=95
   autocmd BufWinEnter *.json   setlocal cc=100 sw=2 ts=2 tw=95
 
   " autocmd BufWinLeave *.* mkview
