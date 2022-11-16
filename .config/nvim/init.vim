@@ -21,6 +21,7 @@ Plug 'akinsho/toggleterm.nvim', { 'tag': 'v2.*' }
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'CRAG666/code_runner.nvim'
+Plug 'karoliskoncevicius/vim-sendtowindow'
 
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 Plug 'sindrets/diffview.nvim'
@@ -536,6 +537,14 @@ END
   " df)       = (hello) > hello
   " yswfprint = hello   > print(hello)
   " cs([      = (hello) > [hello]
+
+
+" Vim-sendtowindow
+
+  " <leader>l = Move to right
+  " <leader>h = Move to left
+  " <leader>k = Move to up
+  " <leader>j = Move to down
 
 
 " Easymotion
