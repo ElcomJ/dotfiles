@@ -644,6 +644,11 @@ END
   " command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
 
+" Terminals
+
+  nnoremap <leader>tp :vsplit<bar>terminal ipython<CR>
+
+
 " Autocmd
 
   autocmd FileType sql         setlocal ts=2 sw=2 sts=2 cc=100 tw=95 et
