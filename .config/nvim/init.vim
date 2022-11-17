@@ -646,6 +646,7 @@ END
 
 " Terminals
 
+  nnoremap <leader>tt :vsplit<bar>terminal<CR>
   nnoremap <leader>tp :vsplit<bar>terminal ipython<CR>
 
 
