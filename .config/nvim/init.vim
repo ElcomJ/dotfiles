@@ -602,20 +602,20 @@ END
   tnoremap <A-Left> <C-\><C-n><C-w>h
 
 
-  inoremap <C-s> <esc>:w<cr>
-  nnoremap <C-q> :exit<cr>
-  nnoremap <S-Right>          :vertical resize -2<CR>
-  nnoremap <S-Left>           :vertical resize +2<CR>
-  nnoremap <S-Up>             :resize -2<CR>
-  nnoremap <S-Down>           :resize +2<CR>
+  inoremap <C-s> <esc>      :w<cr>
+  nnoremap <C-q>            :exit<cr>
+  nnoremap <S-Right>        :vertical resize -2<CR>
+  nnoremap <S-Left>         :vertical resize +2<CR>
+  nnoremap <S-Up>           :resize -2<CR>
+  nnoremap <S-Down>         :resize +2<CR>
 
 
-  nnoremap <S-j> :m .+1<CR>==
-  nnoremap <S-k> :m .-2<CR>==
-  inoremap <C-j> <Esc>:m .+1<CR>==gi
-  inoremap <C-k> <Esc>:m .-2<CR>==gi
-  vnoremap <S-j> :m '>+1<CR>gv=gv
-  vnoremap <S-k> :m '<-2<CR>gv=gv
+  nnoremap <S-j>            :m .+1<CR>==
+  nnoremap <S-k>            :m .-2<CR>==
+  inoremap <C-j> <Esc>      :m .+1<CR>==gi
+  inoremap <C-k> <Esc>      :m .-2<CR>==gi
+  vnoremap <S-j>            :m '>+1<CR>gv=gv
+  vnoremap <S-k>            :m '<-2<CR>gv=gv
 
 
   nnoremap rw <C-w>r
