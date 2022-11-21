@@ -27,7 +27,7 @@ Plug 'nvim-telescope/telescope-file-browser.nvim'
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 Plug 'sindrets/diffview.nvim'
 Plug 'easymotion/vim-easymotion'
-"Plug 'puremourning/vimspector'
+" Plug 'puremourning/vimspector'
 Plug 'AckslD/nvim-neoclip.lua'
 Plug 'tpope/vim-surround'
 
@@ -563,19 +563,19 @@ END
 
 " Vimspector
 
-  "nnoremap <Leader>dd :call vimspector#Launch()<CR>
-  "nnoremap <Leader>de :call vimspector#Reset()<CR>
-  "nnoremap <Leader>dc :call vimspector#Continue()<CR>
+  " nnoremap <Leader>dd :call vimspector#Launch()<CR>
+  " nnoremap <Leader>de :call vimspector#Reset()<CR>
+  " nnoremap <Leader>dc :call vimspector#Continue()<CR>
 
-  "nnoremap <Leader>dt :call vimspector#ToggleBreakpoint()<CR>
-  "nnoremap <Leader>dT :call vimspector#ClearBreakpoints()<CR>
-  "nnoremap <Leader>dL :call vimspector#ListBreakpoints()<CR>
+  " nnoremap <Leader>dt :call vimspector#ToggleBreakpoint()<CR>
+  " nnoremap <Leader>dT :call vimspector#ClearBreakpoints()<CR>
+  " nnoremap <Leader>dL :call vimspector#ListBreakpoints()<CR>
 
-  "nmap <Leader>dr <Plug>VimspectorRestart
-  "nmap <Leader>ds <Plug>VimspectorStop
-  "nmap <Leader>dh <Plug>VimspectorStepOut
-  "nmap <Leader>dl <Plug>VimspectorStepInto
-  "nmap <Leader>dj <Plug>VimspectorStepOver
+  " nmap <Leader>dr <Plug>VimspectorRestart
+  " nmap <Leader>ds <Plug>VimspectorStop
+  " nmap <Leader>dh <Plug>VimspectorStepOut
+  " nmap <Leader>dl <Plug>VimspectorStepInto
+  " nmap <Leader>dj <Plug>VimspectorStepOver
 
 
 " Remaps
