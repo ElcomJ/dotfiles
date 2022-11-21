@@ -9,7 +9,7 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'dense-analysis/ale'
 Plug 'morhetz/gruvbox'
 Plug 'luochen1990/rainbow'
-Plug 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
@@ -20,7 +20,7 @@ Plug 'preservim/nerdcommenter'
 Plug 'akinsho/toggleterm.nvim', { 'tag': 'v2.*' }
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'CRAG666/code_runner.nvim'
+Plug 'CRAG666/code_runner.nvim', {'for': 'python'}
 Plug 'karoliskoncevicius/vim-sendtowindow'
 Plug 'nvim-telescope/telescope-file-browser.nvim'
 
@@ -33,8 +33,8 @@ Plug 'tpope/vim-surround'
 
 Plug 'MattesGroeger/vim-bookmarks'
 Plug 'tom-anders/telescope-vim-bookmarks.nvim'
-Plug 'vim-test/vim-test'
-Plug 'mbbill/undotree'
+Plug 'vim-test/vim-test', {'for': 'python'}
+Plug 'mbbill/undotree', {'on': 'UndotreeToggle'}
 Plug 'hrsh7th/nvim-compe'
 Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for': 'markdown' }
 
