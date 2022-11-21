@@ -22,11 +22,12 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'CRAG666/code_runner.nvim'
 Plug 'karoliskoncevicius/vim-sendtowindow'
+Plug 'nvim-telescope/telescope-file-browser.nvim'
 
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 Plug 'sindrets/diffview.nvim'
 Plug 'easymotion/vim-easymotion'
-Plug 'puremourning/vimspector'
+"Plug 'puremourning/vimspector'
 Plug 'AckslD/nvim-neoclip.lua'
 Plug 'tpope/vim-surround'
 
@@ -409,6 +410,7 @@ END
 
 lua << END
   require('telescope').load_extension('neoclip')
+  require('telescope').load_extension('file_browser')
 END
 
   nnoremap <leader>ff  <cmd>Telescope find_files<cr>
@@ -422,6 +424,7 @@ END
   nnoremap <leader>fgb <cmd>Telescope git_branches<cr>
   nnoremap <leader>fgs <cmd>Telescope git_stash<cr>
   nnoremap <leader>fy  <cmd>Telescope neoclip<cr>
+  nnoremap <leader>fa  <cmd>Telescope file_browser<cr>
 
 
 " Rainbow Brackets
@@ -539,14 +542,6 @@ END
   " cs([      = (hello) > [hello]
 
 
-" Vim-sendtowindow
-
-  " <leader>l = Move to right
-  " <leader>h = Move to left
-  " <leader>k = Move to up
-  " <leader>j = Move to down
-
-
 " Easymotion
 
   nmap ] <Plug>(easymotion-overwin-f2)
@@ -558,21 +553,29 @@ END
   nmap / <Plug>(easymotion-overwin-w)
 
 
+" Vim-sendtowindow
+
+  " <leader>l = Move to right
+  " <leader>h = Move to left
+  " <leader>k = Move to up
+  " <leader>j = Move to down
+
+
 " Vimspector
 
-  nnoremap <Leader>dd :call vimspector#Launch()<CR>
-  nnoremap <Leader>de :call vimspector#Reset()<CR>
-  nnoremap <Leader>dc :call vimspector#Continue()<CR>
+  "nnoremap <Leader>dd :call vimspector#Launch()<CR>
+  "nnoremap <Leader>de :call vimspector#Reset()<CR>
+  "nnoremap <Leader>dc :call vimspector#Continue()<CR>
 
-  nnoremap <Leader>dt :call vimspector#ToggleBreakpoint()<CR>
-  nnoremap <Leader>dT :call vimspector#ClearBreakpoints()<CR>
-  nnoremap <Leader>dL :call vimspector#ListBreakpoints()<CR>
+  "nnoremap <Leader>dt :call vimspector#ToggleBreakpoint()<CR>
+  "nnoremap <Leader>dT :call vimspector#ClearBreakpoints()<CR>
+  "nnoremap <Leader>dL :call vimspector#ListBreakpoints()<CR>
 
-  nmap <Leader>dr <Plug>VimspectorRestart
-  nmap <Leader>ds <Plug>VimspectorStop
-  nmap <Leader>dh <Plug>VimspectorStepOut
-  nmap <Leader>dl <Plug>VimspectorStepInto
-  nmap <Leader>dj <Plug>VimspectorStepOver
+  "nmap <Leader>dr <Plug>VimspectorRestart
+  "nmap <Leader>ds <Plug>VimspectorStop
+  "nmap <Leader>dh <Plug>VimspectorStepOut
+  "nmap <Leader>dl <Plug>VimspectorStepInto
+  "nmap <Leader>dj <Plug>VimspectorStepOver
 
 
 " Remaps
