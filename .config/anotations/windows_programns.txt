@@ -1,0 +1,9 @@
+List of Programns to install using Windows Store:
+
+App Installer
+Windows Terminal
+Sticky Notes
+
+If you use WSL2:
+
+Ubuntu 20.04.5 LTS
