@@ -23,6 +23,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'CRAG666/code_runner.nvim', {'for': 'python'}
 Plug 'karoliskoncevicius/vim-sendtowindow'
 Plug 'nvim-telescope/telescope-file-browser.nvim'
+Plug 'norcalli/nvim-colorizer.lua'
 
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 Plug 'sindrets/diffview.nvim'
@@ -320,6 +321,13 @@ lua << END
   require('neoclip').setup{
     default_register = '+'
   }
+END
+
+
+" Colorizer
+
+lua << END
+  require('colorizer').setup()
 END
 
 
