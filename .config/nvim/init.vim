@@ -613,7 +613,6 @@ END
   tnoremap <A-Left> <C-\><C-n><C-w>h
 
 
-  inoremap <C-s> <esc>      :w<cr>
   nnoremap <C-q>            :exit<cr>
   nnoremap <S-Right>        :vertical resize -2<CR>
   nnoremap <S-Left>         :vertical resize +2<CR>
