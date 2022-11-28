@@ -1,5 +1,5 @@
 {
-
+  // Icons
   "suggest.completionItemKindLabels": {
     "method": "  ",
     "function": "  ",
@@ -28,27 +28,42 @@
     "enumMember": "  "
     },
 
+    // Language Server
     "languageserver": {
 
     },
 
+    // Format Filetypes
     "coc.preferences.formatOnSaveFiletypes": [
 
       ],
 
+    // Coc Diagnostics
     "diagnostic.displayByAle": true,
     "diagnostic.refreshOnInsertMode": true,
 
+    // Coc Preferences
     "coc.preferences.colorSupport": true,
     "coc.preferences.formatOnType": true,
 
+    // Coc Snippets
     "snippets.userSnippetsDirectory": "~/AppData/Local/nvim/snippets",
     "snippets.ultisnips.enable": false,
 
+    // Inlay Hint
     "inlayHint.display": true,
     "inlayHint.refreshOnInsertMode": true,
 
+    // Spell Checker
+    "cSpell.enabledLanguageIds": [
+      "markdown",
+      "text",
+      "python",
+      "yaml",
+      "yml"
+    ],
 
+    // Coc Explorer
     "explorer.width": 30,
     "explorer.position": "left",
     "explorer.mouseMode": "none",
@@ -67,7 +82,7 @@
     "h"  : "open:split"
     },
 
-
+    // Git
     "explorer.git.enable": true,
     "explorer.git.icon.status.added": "✚",
     "explorer.git.icon.status.deleted": "✖",

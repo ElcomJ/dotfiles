@@ -371,7 +371,8 @@ END
   \   'coc-explorer',
   \   'coc-pyright',
   \   'coc-tabnine',
-  \   'coc-snippets'
+  \   'coc-snippets',
+  \   'coc-spell-checker'
   \]
 
   nmap <silent> gd <Plug>(coc-definition)
@@ -412,6 +413,12 @@ END
 " coc-snippets
 
   nnoremap <leader>i :CocList snippets<CR>
+
+
+" coc-spell-checker
+
+  vmap <leader>sc <Plug>(coc-codeaction-selected)
+  nmap <leader>sc <Plug>(coc-codeaction-selected)
 
 
 " Telescope
