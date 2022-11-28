@@ -55,6 +55,7 @@
     "inlayHint.refreshOnInsertMode": true,
 
     // Spell Checker
+    "cSpell.language": "en",
     "cSpell.enabledLanguageIds": [
       "markdown",
       "text",
