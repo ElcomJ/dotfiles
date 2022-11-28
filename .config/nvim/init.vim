@@ -372,7 +372,8 @@ END
   \   'coc-pyright',
   \   'coc-tabnine',
   \   'coc-snippets',
-  \   'coc-spell-checker'
+  \   'coc-spell-checker',
+  \   'coc-cspell-dicts'
   \]
 
   nmap <silent> gd <Plug>(coc-definition)

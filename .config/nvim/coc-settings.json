@@ -55,7 +55,8 @@
     "inlayHint.refreshOnInsertMode": true,
 
     // Spell Checker
-    "cSpell.language": "en",
+    "cSpellExt.enableDictionaries": ["portuguese-brazilian"],
+    "cSpell.language": "en, pt, pt_BR",
     "cSpell.enabledLanguageIds": [
       "markdown",
       "text",
