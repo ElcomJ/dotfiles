@@ -24,6 +24,7 @@ Plug 'CRAG666/code_runner.nvim', {'for': 'python'}
 Plug 'karoliskoncevicius/vim-sendtowindow'
 Plug 'nvim-telescope/telescope-file-browser.nvim'
 Plug 'norcalli/nvim-colorizer.lua'
+Plug 'junegunn/vim-emoji'
 
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 Plug 'sindrets/diffview.nvim'
