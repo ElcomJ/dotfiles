@@ -23,6 +23,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'CRAG666/code_runner.nvim', {'for': 'python'}
 Plug 'karoliskoncevicius/vim-sendtowindow'
 Plug 'nvim-telescope/telescope-file-browser.nvim'
+Plug 'xiyaowong/telescope-emoji.nvim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'junegunn/vim-emoji'
 
@@ -428,6 +429,7 @@ END
 lua << END
   require('telescope').load_extension('neoclip')
   require('telescope').load_extension('file_browser')
+  require("telescope").load_extension("emoji")
 END
 
   nnoremap <leader>ff  <cmd>Telescope find_files<cr>
@@ -442,6 +444,7 @@ END
   nnoremap <leader>fgs <cmd>Telescope git_stash<cr>
   nnoremap <leader>fy  <cmd>Telescope neoclip<cr>
   nnoremap <leader>fa  <cmd>Telescope file_browser<cr>
+  nnoremap <leader>fe  <cmd>Telescope emoji<cr>
 
 
 " Rainbow Brackets
