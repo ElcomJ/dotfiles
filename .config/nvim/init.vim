@@ -624,6 +624,8 @@ END
 
   tnoremap <A-Up> <C-\><C-n><C-w>k
   tnoremap <A-Left> <C-\><C-n><C-w>h
+  tnoremap <A-Down> <C-\><C-n><C-w>j
+  tnoremap <A-Right> <C-\><C-n><C-w>l
 
 
   nnoremap <C-q>            :exit<cr>
