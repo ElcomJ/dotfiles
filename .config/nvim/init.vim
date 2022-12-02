@@ -26,6 +26,7 @@ Plug 'nvim-telescope/telescope-file-browser.nvim'
 Plug 'xiyaowong/telescope-emoji.nvim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'junegunn/vim-emoji'
+Plug 'Pocco81/auto-save.nvim'
 
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 Plug 'sindrets/diffview.nvim'
@@ -330,6 +331,16 @@ END
 
 lua << END
   require('colorizer').setup()
+END
+
+
+" Auto-save
+
+lua << END
+  require('auto-save').setup{
+    enable = true,
+    trigger_events = {"InsertLeave", "TextChangedI"}
+  }
 END
 
 
