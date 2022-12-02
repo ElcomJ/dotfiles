@@ -339,7 +339,7 @@ END
 lua << END
   require('auto-save').setup{
     enable = true,
-    trigger_events = {"InsertLeave", "TextChanged"}
+    trigger_events = {"InsertLeave"}
   }
 END
 
