@@ -1,101 +1,108 @@
-call plug#begin()
+" Plugins
 
-Plug 'sheerun/vim-polyglot'
-Plug 'airblade/vim-gitgutter'
-Plug 'jiangmiao/auto-pairs'
-Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'dense-analysis/ale'
-Plug 'morhetz/gruvbox'
-Plug 'luochen1990/rainbow'
-Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
-Plug 'nvim-lualine/lualine.nvim'
-Plug 'kyazdani42/nvim-web-devicons'
-Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
-Plug 'rhysd/git-messenger.vim'
+  call plug#begin()
 
-Plug 'nvim-treesitter/nvim-treesitter'
-Plug 'preservim/nerdcommenter'
-Plug 'akinsho/toggleterm.nvim', { 'tag': 'v2.*' }
-Plug 'lukas-reineke/indent-blankline.nvim'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'CRAG666/code_runner.nvim', {'for': 'python'}
-Plug 'karoliskoncevicius/vim-sendtowindow'
-Plug 'nvim-telescope/telescope-file-browser.nvim'
-Plug 'xiyaowong/telescope-emoji.nvim'
-Plug 'norcalli/nvim-colorizer.lua'
-Plug 'junegunn/vim-emoji'
-Plug 'voldikss/vim-browser-search'
-Plug 'voldikss/vim-translator'
-"Plug 'Pocco81/auto-save.nvim'
+  Plug 'sheerun/vim-polyglot'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'jiangmiao/auto-pairs'
+  Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-telescope/telescope.nvim'
+  Plug 'dense-analysis/ale'
+  Plug 'morhetz/gruvbox'
+  Plug 'luochen1990/rainbow'
+  Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
+  Plug 'nvim-lualine/lualine.nvim'
+  Plug 'kyazdani42/nvim-web-devicons'
+  Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+  Plug 'rhysd/git-messenger.vim'
 
-Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
-Plug 'sindrets/diffview.nvim'
-Plug 'easymotion/vim-easymotion'
-" Plug 'puremourning/vimspector'
-Plug 'AckslD/nvim-neoclip.lua'
-Plug 'tpope/vim-surround'
+  Plug 'nvim-treesitter/nvim-treesitter'
+  Plug 'preservim/nerdcommenter'
+  Plug 'akinsho/toggleterm.nvim', { 'tag': 'v2.*' }
+  Plug 'lukas-reineke/indent-blankline.nvim'
+  Plug 'terryma/vim-multiple-cursors'
+  Plug 'CRAG666/code_runner.nvim', {'for': 'python'}
+  Plug 'karoliskoncevicius/vim-sendtowindow'
+  Plug 'nvim-telescope/telescope-file-browser.nvim'
+  Plug 'xiyaowong/telescope-emoji.nvim'
+  Plug 'norcalli/nvim-colorizer.lua'
+  Plug 'junegunn/vim-emoji'
+  Plug 'voldikss/vim-browser-search'
+  Plug 'voldikss/vim-translator'
+  "Plug 'Pocco81/auto-save.nvim'
 
-Plug 'MattesGroeger/vim-bookmarks'
-Plug 'tom-anders/telescope-vim-bookmarks.nvim'
-Plug 'vim-test/vim-test', {'for': 'python'}
-Plug 'mbbill/undotree', {'on': 'UndotreeToggle'}
-Plug 'hrsh7th/nvim-compe'
-Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for': 'markdown' }
+  Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
+  Plug 'sindrets/diffview.nvim'
+  Plug 'easymotion/vim-easymotion'
+  " Plug 'puremourning/vimspector'
+  Plug 'AckslD/nvim-neoclip.lua'
+  Plug 'tpope/vim-surround'
 
-call plug#end()
+  Plug 'MattesGroeger/vim-bookmarks'
+  Plug 'tom-anders/telescope-vim-bookmarks.nvim'
+  Plug 'vim-test/vim-test', {'for': 'python'}
+  Plug 'mbbill/undotree', {'on': 'UndotreeToggle'}
+  Plug 'hrsh7th/nvim-compe'
+  Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for': 'markdown' }
 
-" Using Powershell shell in windows
-
-set shell=powershell
-set shellcmdflag=-command
-set shellquote=\"
-set shellxquote=
-
-set encoding=utf-8
-set scrolloff=8
-set cmdheight=1
-set updatetime=100
-
-set clipboard=unnamedplus
-set number
-set relativenumber
-set cursorline
-set hidden
-set incsearch
-set ignorecase
-set smartcase
-set nobackup
-set nowritebackup
-set splitright
-set splitbelow
-set autoread
-set foldmethod=manual
-set mouse=
-
-set smarttab
-set smartindent
-
-syntax on
-set background=dark
-set termguicolors
-set t_Co=256
-
-" set signcolumn=yes:2
-
-set fillchars+=diff:╱
-set fillchars+=eob:.
+  call plug#end()
 
 
-filetype on
-filetype plugin on
-filetype indent on
+" Sets
+
+  " Using Powershell shell in windows
+
+  set shell=powershell
+  set shellcmdflag=-command
+  set shellquote=\"
+  set shellxquote=
+
+  set encoding=utf-8
+  set scrolloff=8
+  set cmdheight=1
+  set updatetime=100
+
+  set clipboard=unnamedplus
+  set number
+  set relativenumber
+  set cursorline
+  set hidden
+  set incsearch
+  set ignorecase
+  set smartcase
+  set nobackup
+  set nowritebackup
+  set splitright
+  set splitbelow
+  set autoread
+  set foldmethod=manual
+  set mouse=
+
+  set smarttab
+  set smartindent
+
+  syntax on
+  set background=dark
+  set termguicolors
+  set t_Co=256
+
+  " set signcolumn=yes:2
+
+  set fillchars+=diff:╱
+  set fillchars+=eob:.
 
 
-let g:gruvbox_contrast_dark='hard'
-let g:gruvbox_italic=1
-colorscheme gruvbox
+  filetype on
+  filetype plugin on
+  filetype indent on
+
+
+" Colorscheme
+
+  let g:gruvbox_contrast_dark='hard'
+  let g:gruvbox_italic=1
+  colorscheme gruvbox
 
 
 " Highlights
