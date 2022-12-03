@@ -4,3 +4,4 @@ black
 isort
 ipython
 pytest
+pynvim

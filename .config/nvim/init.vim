@@ -27,7 +27,8 @@ Plug 'xiyaowong/telescope-emoji.nvim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'junegunn/vim-emoji'
 Plug 'voldikss/vim-browser-search'
-" Plug 'Pocco81/auto-save.nvim'
+Plug 'voldikss/vim-translator'
+"Plug 'Pocco81/auto-save.nvim'
 
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 Plug 'sindrets/diffview.nvim'
@@ -597,6 +598,20 @@ END
 " Browser-Search
 
   vmap <leader>sw :BrowserSearch<CR>
+
+
+" Vim-translator
+
+  let g:translator_source_lang = 'auto'
+  let g:translator_target_lang = 'en'
+  let g:translator_history_enable = 0
+  let g:translator_default_engines = ['bing', 'google', 'haici', 'youdao']
+  let g:translator_window_max_height = 0.7
+  let g:translator_window_max_width = 0.7
+  let g:translator_proxy_url = ''
+
+  vmap <Leader>st1 <Plug>TranslateWV
+  vmap <Leader>st2 <Plug>TranslateRV
 
 
 " Vimspector
