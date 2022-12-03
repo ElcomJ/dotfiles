@@ -26,7 +26,8 @@ Plug 'nvim-telescope/telescope-file-browser.nvim'
 Plug 'xiyaowong/telescope-emoji.nvim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'junegunn/vim-emoji'
-Plug 'Pocco81/auto-save.nvim'
+Plug 'voldikss/vim-browser-search'
+"Plug 'Pocco81/auto-save.nvim'
 
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 Plug 'sindrets/diffview.nvim'
@@ -336,12 +337,12 @@ END
 
 " Auto-save
 
-lua << END
-  require('auto-save').setup{
-    enable = true,
-    trigger_events = {"InsertLeave"}
-  }
-END
+"lua << END
+  "require('auto-save').setup{
+    "enable = true,
+    "trigger_events = {"InsertLeave"}
+  "}
+"END
 
 
 " Ale
@@ -591,6 +592,11 @@ END
   " <leader>h = Move to left
   " <leader>k = Move to up
   " <leader>j = Move to down
+
+
+" Browser-Search
+
+  vmap <leader>sw :BrowserSearch<CR>
 
 
 " Vimspector
