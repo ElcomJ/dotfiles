@@ -27,7 +27,7 @@ Plug 'xiyaowong/telescope-emoji.nvim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'junegunn/vim-emoji'
 Plug 'voldikss/vim-browser-search'
-"Plug 'Pocco81/auto-save.nvim'
+" Plug 'Pocco81/auto-save.nvim'
 
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 Plug 'sindrets/diffview.nvim'
