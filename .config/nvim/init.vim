@@ -717,7 +717,7 @@ END
 " Autocmd
 
   autocmd FileType sql         setlocal ts=2 sw=2 sts=2 cc=100 tw=95 et
-  autocmd FileType python      setlocal ts=4 sw=4 sts=4 cc=79 tw=75 et
+  autocmd FileType python      setlocal ts=4 sw=4 sts=4 cc=79,99 tw=95 et
   autocmd FileType vim         setlocal ts=2 sw=2 sts=2 cc=100 tw=95 et
   autocmd BufWinEnter *.md     setlocal cc=100 tw=95
   autocmd BufWinEnter *.txt    setlocal cc=100 tw=95
