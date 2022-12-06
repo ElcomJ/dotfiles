@@ -154,8 +154,6 @@ require("toggleterm").setup({
 })
 END
 
-  nnoremap <C-x> :ToggleTerm size=12 direction=horizontal<CR>
-
 
 " Lualine
 
@@ -710,7 +708,7 @@ END
 
 " Terminals
 
-  nnoremap <leader>tt :vsplit<bar>terminal<CR>
+  nnoremap <leader>tt :split<bar>terminal<CR>
   nnoremap <leader>tp :vsplit<bar>terminal ipython<CR>
 
 
@@ -724,6 +722,7 @@ END
   autocmd BufWinEnter *.yml    setlocal cc=100 sw=2 ts=2 tw=95
   autocmd BufWinEnter *.yaml   setlocal cc=100 sw=2 ts=2 tw=95
   autocmd BufWinEnter *.json   setlocal cc=100 sw=2 ts=2 tw=95
+  autocmd TermOpen *           setlocal nonumber norelativenumber
 
   " autocmd BufWinLeave *.* mkview
   " autocmd BufWinEnter *.* silent loadview
