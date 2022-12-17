@@ -395,7 +395,9 @@ END
   \   'coc-tabnine',
   \   'coc-snippets',
   \   'coc-spell-checker',
-  \   'coc-cspell-dicts'
+  \   'coc-cspell-dicts',
+  \   'coc-xml',
+  \   'coc-prettier'
   \]
 
   nmap <silent> gd <Plug>(coc-definition)
@@ -705,7 +707,7 @@ END
   " <C-e> close the autocomplete menu
 
 
-  " command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
+  command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
 
 " Terminals

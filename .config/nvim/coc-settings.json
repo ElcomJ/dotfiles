@@ -35,7 +35,7 @@
 
     // Format Filetypes
     "coc.preferences.formatOnSaveFiletypes": [
-
+      "xml"
       ],
 
     // Coc Diagnostics
@@ -44,6 +44,7 @@
 
     // Coc Preferences
     "coc.preferences.colorSupport": true,
+    "coc.preferences.formatOnSave": true,
     "coc.preferences.formatOnType": true,
 
     // Coc Snippets
