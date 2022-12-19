@@ -35,7 +35,10 @@
 
     // Format Filetypes
     "coc.preferences.formatOnSaveFiletypes": [
-      "xml"
+      "xml",
+      "yaml",
+      "yml",
+      "json"
       ],
 
     // Coc Diagnostics
