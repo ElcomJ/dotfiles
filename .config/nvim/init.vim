@@ -397,6 +397,8 @@ END
   \   'coc-spell-checker',
   \   'coc-cspell-dicts',
   \   'coc-xml',
+  \   'coc-yaml',
+  \   'coc-json',
   \   'coc-prettier'
   \]
 
