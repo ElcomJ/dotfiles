@@ -396,6 +396,7 @@ END
   \   'coc-snippets',
   \   'coc-spell-checker',
   \   'coc-cspell-dicts',
+  \   'coc-docker',
   \   'coc-xml',
   \   'coc-yaml',
   \   'coc-json',
