@@ -33,6 +33,12 @@
 
     },
 
+    // YAML Schemas
+    "yaml.schemas": {
+      "kubernetes": ["/*.yaml"],
+      "https://raw.githubusercontent.com/docker/compose/master/compose/config/compose_spec.json": ["/docker-compose.yml"]
+    },
+
     // Format Filetypes
     "coc.preferences.formatOnSaveFiletypes": [
       "xml",
