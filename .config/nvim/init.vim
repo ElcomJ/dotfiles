@@ -31,6 +31,7 @@
   Plug 'voldikss/vim-browser-search'
   Plug 'voldikss/vim-translator'
   Plug 'LinArcX/telescope-env.nvim'
+  Plug 'ekalinin/Dockerfile.vim'
   "Plug 'Pocco81/auto-save.nvim'
 
   Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
