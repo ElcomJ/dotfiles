@@ -30,6 +30,7 @@
   Plug 'junegunn/vim-emoji'
   Plug 'voldikss/vim-browser-search'
   Plug 'voldikss/vim-translator'
+  Plug 'LinArcX/telescope-env.nvim'
   "Plug 'Pocco81/auto-save.nvim'
 
   Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
@@ -455,22 +456,24 @@ lua << END
   require('telescope').load_extension('neoclip')
   require('telescope').load_extension('file_browser')
   require("telescope").load_extension("emoji")
+  require('telescope').load_extension('env')
 END
 
-  nnoremap <leader>ff  <cmd>Telescope find_files<cr>
-  nnoremap <leader>fg  <cmd>Telescope live_grep<cr>
-  nnoremap <leader>fb  <cmd>Telescope buffers<cr>
-  nnoremap <leader>fo  <cmd>Telescope oldfiles<cr>
-  nnoremap <leader>fh  <cmd>Telescope help_tags<cr>
+  nnoremap <leader>ff   <cmd>Telescope find_files<cr>
+  nnoremap <leader>fg   <cmd>Telescope live_grep<cr>
+  nnoremap <leader>fb   <cmd>Telescope buffers<cr>
+  nnoremap <leader>fo   <cmd>Telescope oldfiles<cr>
+  nnoremap <leader>fh   <cmd>Telescope help_tags<cr>
 
-  nnoremap <leader>fgc <cmd>Telescope git_commits<cr>
-  nnoremap <leader>fgb <cmd>Telescope git_branches<cr>
-  nnoremap <leader>fgs <cmd>Telescope git_stash<cr>
+  nnoremap <leader>fgc  <cmd>Telescope git_commits<cr>
+  nnoremap <leader>fgb  <cmd>Telescope git_branches<cr>
+  nnoremap <leader>fgs  <cmd>Telescope git_stash<cr>
 
-  nnoremap <leader>fbb <cmd>Telescope vim_bookmarks all<cr>
-  nnoremap <leader>fy  <cmd>Telescope neoclip<cr>
-  nnoremap <leader>fa  <cmd>Telescope file_browser<cr>
-  nnoremap <leader>fe  <cmd>Telescope emoji<cr>
+  nnoremap <leader>fbb  <cmd>Telescope vim_bookmarks all<cr>
+  nnoremap <leader>fy   <cmd>Telescope neoclip<cr>
+  nnoremap <leader>fa   <cmd>Telescope file_browser<cr>
+  nnoremap <leader>fe   <cmd>Telescope emoji<cr>
+  nnoremap <leader>fee  <cmd>Telescope env<cr>
 
 
 " Rainbow Brackets
