@@ -40,6 +40,7 @@
   " Plug 'puremourning/vimspector'
   Plug 'AckslD/nvim-neoclip.lua'
   Plug 'tpope/vim-surround'
+  Plug 'hashivim/vim-vagrant'
 
   Plug 'MattesGroeger/vim-bookmarks'
   Plug 'tom-anders/telescope-vim-bookmarks.nvim'
@@ -630,6 +631,18 @@ END
   vmap <Leader>st2 <Plug>TranslateRV
 
 
+" Netrw
+
+  let g:netrw_banner = 0
+  let g:netrw_winsize = 15
+  let g:netrw_liststyle = 0
+  let g:netrw_browse_split = 4
+  let g:netrw_keepdir = 0
+  let g:netrw_localcopydircmd = 'cp -r'
+
+  nnoremap <leader>e :Lexplore<CR>
+
+
 " Vimspector
 
   " nnoremap <Leader>dd :call vimspector#Launch()<CR>
@@ -728,6 +741,7 @@ END
   autocmd FileType sql         setlocal ts=2 sw=2 sts=2 cc=100 tw=95 et
   autocmd FileType python      setlocal ts=4 sw=4 sts=4 cc=79,99 tw=95 et
   autocmd FileType vim         setlocal ts=2 sw=2 sts=2 cc=100 tw=95 et
+  autocmd FileType ruby        setlocal ts=2 sw=2 cc=100 tw=95
   autocmd BufWinEnter *.md     setlocal cc=100 tw=95
   autocmd BufWinEnter *.txt    setlocal cc=100 tw=95
   autocmd BufWinEnter *.yml    setlocal cc=100 sw=2 ts=2 tw=95

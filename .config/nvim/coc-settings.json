@@ -44,7 +44,8 @@
       "xml",
       "yaml",
       "yml",
-      "json"
+      "json",
+      "ruby"
       ],
 
     // Coc Diagnostics
