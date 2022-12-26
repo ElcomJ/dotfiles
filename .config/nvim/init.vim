@@ -42,7 +42,7 @@
   Plug 'tpope/vim-surround'
   Plug 'hashivim/vim-vagrant'
 
-  Plug 'MattesGroeger/vim-bookmarks'
+  Plug 'MattesGroeger/vim-bookmarks', { 'on': 'BookmarkToggle' }
   Plug 'tom-anders/telescope-vim-bookmarks.nvim'
   Plug 'vim-test/vim-test', {'for': 'python'}
   Plug 'mbbill/undotree', {'on': 'UndotreeToggle'}
