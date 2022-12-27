@@ -40,7 +40,8 @@
   " Plug 'puremourning/vimspector'
   Plug 'AckslD/nvim-neoclip.lua'
   Plug 'tpope/vim-surround'
-  Plug 'hashivim/vim-vagrant'
+  Plug 'hashivim/vim-vagrant', { 'for': ['vagrant', 'Vagrantfile'] }
+  Plug 'hashivim/vim-terraform', { 'for': ['hcl', 'terraform', 'tf'] }
 
   Plug 'MattesGroeger/vim-bookmarks', { 'on': 'BookmarkToggle' }
   Plug 'tom-anders/telescope-vim-bookmarks.nvim'
