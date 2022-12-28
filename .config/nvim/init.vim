@@ -496,12 +496,12 @@ END
   let g:tagbar_indent = 2
   let g:tagbar_sort = 0
 
-  nmap <F6> :TagbarToggle<CR>
+  nmap <leader>tb :TagbarToggle<CR>
 
 
 " Undotree
 
-  nmap <F5> :UndotreeToggle<CR>
+  nmap <leader>ut :UndotreeToggle<CR>
 
   let g:undotree_WindowLayout = 2
   let g:undotree_SetFocusWhenToggle = 1
