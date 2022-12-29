@@ -45,7 +45,9 @@
       "yaml",
       "yml",
       "json",
-      "ruby"
+      "ruby",
+      "html",
+      "css"
       ],
 
     // Coc Diagnostics
