@@ -47,7 +47,9 @@
       "json",
       "ruby",
       "html",
-      "css"
+      "css",
+      "javascript",
+      "markdown"
       ],
 
     // Coc Diagnostics
