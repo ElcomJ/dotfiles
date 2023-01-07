@@ -404,6 +404,7 @@ END
   \   'coc-xml',
   \   'coc-yaml',
   \   'coc-json',
+  \   'coc-lists',
   \   'coc-prettier'
   \]
 
