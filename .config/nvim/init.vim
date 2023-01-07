@@ -405,8 +405,13 @@ END
   \   'coc-yaml',
   \   'coc-json',
   \   'coc-lists',
+  \   '@yaegassy/coc-ansible',
   \   'coc-prettier'
   \]
+
+  let g:coc_filetype_map = {
+  \ 'yaml.ansible': 'ansible',
+  \ }
 
   nmap <silent> gd <Plug>(coc-definition)
   nmap <silent> gr <Plug>(coc-references)
