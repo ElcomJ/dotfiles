@@ -408,6 +408,7 @@ END
   \   '@yaegassy/coc-ansible',
   \   'coc-html',
   \   'coc-css',
+  \   'coc-emmet',
   \   'coc-sh',
   \   'coc-prettier'
   \]
