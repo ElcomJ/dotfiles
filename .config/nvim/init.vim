@@ -406,6 +406,9 @@ END
   \   'coc-json',
   \   'coc-lists',
   \   '@yaegassy/coc-ansible',
+  \   'coc-html',
+  \   'coc-css',
+  \   'coc-sh',
   \   'coc-prettier'
   \]
 
