@@ -33,19 +33,12 @@
 
     },
 
-    // YAML Schemas
-    "yaml.schemas": {
-      "kubernetes": ["/*.yaml"],
-      "https://raw.githubusercontent.com/docker/compose/master/compose/config/compose_spec.json": ["/docker-compose.yml"]
-    },
-
     // Format Filetypes
     "coc.preferences.formatOnSaveFiletypes": [
       "xml",
       "yaml",
       "yml",
       "json",
-      "ruby",
       "html",
       "css",
       "javascript",
@@ -59,25 +52,17 @@
     // Coc Preferences
     "coc.preferences.colorSupport": true,
     "coc.preferences.formatOnSave": true,
-    "coc.preferences.formatOnType": true,
-
-    // Coc Snippets
-    "snippets.userSnippetsDirectory": "~/AppData/Local/nvim/snippets",
-    "snippets.ultisnips.enable": false,
 
     // Inlay Hint
     "inlayHint.display": true,
     "inlayHint.refreshOnInsertMode": true,
 
     // Spell Checker
-    "cSpellExt.enableDictionaries": ["portuguese-brazilian"],
-    "cSpell.language": "en, pt, pt_BR",
+    "cSpell.language": "en",
     "cSpell.enabledLanguageIds": [
       "markdown",
       "text",
-      "python",
-      "yaml",
-      "yml"
+      "python"
     ],
 
     // Coc Explorer
@@ -108,6 +93,7 @@
     "explorer.git.icon.status.untracked": "?",
     "explorer.git.icon.status.modified": "✹",
     "explorer.git.icon.status.ignored": "☒",
-    "explorer.git.icon.status.mixed": "*"
+    "explorer.git.icon.status.mixed": "*",
+    "snippets.ultisnips.pythonPrompt": false
 
 }
