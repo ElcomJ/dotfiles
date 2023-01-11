@@ -13,9 +13,7 @@
   Plug 'nvim-lualine/lualine.nvim'
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
-  Plug 'nvim-treesitter/nvim-treesitter'
   Plug 'preservim/nerdcommenter'
-  Plug 'lukas-reineke/indent-blankline.nvim'
   Plug 'easymotion/vim-easymotion'
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-fugitive'
@@ -25,9 +23,8 @@
 
 
 " Neovim Configs
-
-  " Using Powershell shell in windows
-
+  
+  set shell=powershell
   set number
   set relativenumber
   set cursorline
@@ -93,13 +90,6 @@ lua << END
 END
 
   nnoremap <silent>bp  :BufferLineTogglePin<CR>
-
-
-" Indent-blankline
-
-lua << END
-  require("indent_blankline").setup {}
-END
 
 
 " COC
