@@ -93,7 +93,6 @@
     "explorer.git.icon.status.modified": "✹",
     "explorer.git.icon.status.ignored": "☒",
     "explorer.git.icon.status.mixed": "*",
-    "snippets.ultisnips.pythonPrompt": false,
-    "git.addGBlameToVirtualText": true
+    "snippets.ultisnips.pythonPrompt": false
 
 }
