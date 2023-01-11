@@ -1,45 +1,42 @@
-" Plugins
+call plug#begin()
 
-  call plug#begin()
+Plug 'dstein64/vim-startuptime'
+Plug 'sheerun/vim-polyglot'
+Plug 'jiangmiao/auto-pairs'
+Plug 'airblade/vim-gitgutter'
+Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'rebelot/kanagawa.nvim'
+Plug 'luochen1990/rainbow'
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+Plug 'preservim/nerdcommenter'
+Plug 'easymotion/vim-easymotion'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
+Plug 'mbbill/undotree', {'on': 'UndotreeToggle'}
 
-  Plug 'sheerun/vim-polyglot'
-  Plug 'jiangmiao/auto-pairs'
-  Plug 'airblade/vim-gitgutter'
-  Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
-  Plug 'nvim-lua/plenary.nvim'
-  Plug 'nvim-telescope/telescope.nvim'
-  Plug 'rebelot/kanagawa.nvim'
-  Plug 'luochen1990/rainbow'
-  Plug 'nvim-lualine/lualine.nvim'
-  Plug 'kyazdani42/nvim-web-devicons'
-  Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
-  Plug 'preservim/nerdcommenter'
-  Plug 'easymotion/vim-easymotion'
-  Plug 'tpope/vim-surround'
-  Plug 'tpope/vim-fugitive'
-  Plug 'mbbill/undotree', {'on': 'UndotreeToggle'}
-
-  call plug#end()
+call plug#end()
 
 
-" Neovim Configs
-  
-  set shell=powershell
-  set number
-  set relativenumber
-  set cursorline
-  set colorcolumn=79,99
-  set nobackup
-  set nowritebackup
-  set splitright splitbelow
-  set mouse=
-  set smarttab
-  set smartindent
-  set background=dark
-  set termguicolors
-  set t_Co=256
+set encoding=UTF-8
+set number
+set relativenumber
+set cursorline
+set colorcolumn=100
+set nobackup
+set nowritebackup
+set splitright splitbelow
+set mouse=
+set smarttab
+set smartindent
+set background=dark
+set termguicolors
+set t_Co=256
 
-  colorscheme kanagawa
+colorscheme kanagawa
 
 
 " Highlights
