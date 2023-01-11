@@ -61,8 +61,7 @@
     "cSpell.language": "en",
     "cSpell.enabledLanguageIds": [
       "markdown",
-      "text",
-      "python"
+      "text"
     ],
 
     // Coc Explorer
@@ -94,6 +93,7 @@
     "explorer.git.icon.status.modified": "✹",
     "explorer.git.icon.status.ignored": "☒",
     "explorer.git.icon.status.mixed": "*",
-    "snippets.ultisnips.pythonPrompt": false
+    "snippets.ultisnips.pythonPrompt": false,
+    "git.addGBlameToVirtualText": true
 
 }

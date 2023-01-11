@@ -15,12 +15,10 @@
   Plug 'nvim-lualine/lualine.nvim'
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
-  Plug 'rhysd/git-messenger.vim'
   Plug 'nvim-treesitter/nvim-treesitter'
   Plug 'preservim/nerdcommenter'
   Plug 'akinsho/toggleterm.nvim', { 'tag': 'v2.*' }
   Plug 'lukas-reineke/indent-blankline.nvim'
-  Plug 'nvim-telescope/telescope-file-browser.nvim'
   Plug 'norcalli/nvim-colorizer.lua'
   Plug 'junegunn/vim-emoji'
   Plug 'sindrets/diffview.nvim'
@@ -201,57 +199,7 @@ lua << END
 
   local actions = require("diffview.actions")
 
-  require('diffview').setup{
-    diff_binaries = false,
-    enhanced_diff_hl = false,
-    git_cmd = { "git" },
-    use_icons = true,
-    icons = {
-      folder_closed = "",
-      folder_open = "",
-    },
-    signs = {
-      fold_closed = "",
-      fold_open = "",
-    },
-
-    file_panel = {
-      listing_style = "tree",
-      tree_options = {
-        flatten_dirs = true,
-        folder_statuses = "only_folded",
-      },
-      win_config = {
-        position = "left",
-        width = 30,
-     },
-    },
-
-    file_history_panel = {
-      log_options = {
-        git = {
-          single_file = {
-            diff_merges = "combined",
-          },
-          multi_file = {
-            diff_merges = "first-parent",
-          },
-        },
-      },
-      win_config = {
-        position = "bottom",
-        height = 15,
-      },
-    },
-
-      commit_log_panel = {
-        win_config = {},
-      },
-
-      hooks = {
-
-      },
-    }
+  require('diffview').setup{}
 END
 
   nnoremap <leader>gd :DiffviewOpen<CR>
@@ -284,7 +232,7 @@ END
   let g:ale_echo_msg_error_str = 'E'
   let g:ale_echo_msg_warning_str = 'W'
   let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
-  let g:ale_sign_error = '✘'
+  let g:ale_sign_error = '⭕'
   let g:ale_sign_warning = '⭕'
 
   highlight ALEErrorSign    guibg=NONE   guifg=Red
@@ -295,17 +243,14 @@ END
 
   let g:coc_global_extensions = [
   \   'coc-explorer',
-  \   'coc-pyright',
+  \   'coc-git',
   \   'coc-tabnine',
   \   'coc-spell-checker',
-  \   'coc-lists',
   \   'coc-html',
   \   'coc-css',
   \   'coc-emmet',
   \   'coc-prettier'
   \]
-
-" COC Commands
 
   nmap <silent> gd <Plug>(coc-definition)
   nmap <silent> gr <Plug>(coc-references)
@@ -324,7 +269,6 @@ END
     endif
   endfunction
 
-  hi default CocInlayHint ctermfg=71
 
 " coc-explorer
 
@@ -338,11 +282,6 @@ END
   highlight QuickFixLine ctermbg=none
 
 
-" coc-snippets
-
-  nnoremap <leader>i :CocList snippets<CR>
-
-
 " coc-spell-checker
 
   vmap <leader>sc <Plug>(coc-codeaction-selected)
@@ -352,7 +291,7 @@ END
 " Telescope
 
 lua << END
-  require('telescope').load_extension('file_browser')
+
 END
 
   nnoremap <leader>ff   <cmd>Telescope find_files<cr>
@@ -363,7 +302,6 @@ END
   nnoremap <leader>fgb  <cmd>Telescope git_branches<cr>
 
   nnoremap <leader>fb   <cmd>Telescope vim_bookmarks all<cr>
-  nnoremap <leader>fa   <cmd>Telescope file_browser<cr>
 
 
 " Rainbow Brackets
@@ -392,15 +330,6 @@ END
 
   let g:undotree_WindowLayout = 2
   let g:undotree_SetFocusWhenToggle = 1
-
-
-" Git-messenger
-
-  nmap <leader>g <Plug>(git-messenger)
-
-  highlight gitmessengerPopupNormal guibg=#232324
-
-  let g:git_messenger_date_format = "%Y/%m/%d - %X"
 
 
 " GitGutter
@@ -499,8 +428,8 @@ END
 
 " Terminals
 
-  nnoremap <leader>tt :split<bar>terminal<CR>
-  nnoremap <leader>tp :vsplit<bar>terminal ipython<CR>
+  nnoremap <leader>th :vsplit<bar>terminal<CR>
+  nnoremap <leader>tv :split<bar>terminal<CR>
 
 
 " Autocmd
