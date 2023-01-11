@@ -2,7 +2,6 @@
 
   call plug#begin()
 
-  Plug 'dstein64/vim-startuptime'
   Plug 'sheerun/vim-polyglot'
   Plug 'jiangmiao/auto-pairs'
   Plug 'airblade/vim-gitgutter'
