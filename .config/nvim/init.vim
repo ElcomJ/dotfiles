@@ -29,7 +29,6 @@ set ignorecase
 set number
 set relativenumber
 set cursorline
-set colorcolumn=100
 set nobackup
 set nowritebackup
 set splitright splitbelow
@@ -50,10 +49,10 @@ hi CursorLineNr    guifg=#b57504  guibg=NONE
 hi Visual          guifg=none     guibg=grey30  gui=none
 hi ColorColumn     guibg=grey19
 
-highlight clear SignColumn
+hi clear SignColumn
 
-highlight Normal         guibg=NONE  ctermbg=NONE
-highlight EndOfBuffer    guibg=NONE  ctermbg=NONE
+hi Normal         guibg=NONE  ctermbg=NONE
+hi EndOfBuffer    guibg=NONE  ctermbg=NONE
 
 
 " Italics
@@ -80,13 +79,7 @@ END
 " Bufferline
 
 lua << END
-  require("bufferline").setup{
-    options = {
-      indicator_style = " ",
-      show_buffer_close_icons = false,
-      tab_size = 16
-    }
-  }
+  require("bufferline").setup{}
 END
 
 nnoremap <silent>bp  :BufferLineTogglePin<CR>
@@ -129,9 +122,9 @@ let g:undotree_SetFocusWhenToggle = 1
 
 " GitGutter
 
-highlight GitGutterAdd      guibg=NONE   guifg=#36e809
-highlight GitGutterChange   guibg=NONE   guifg=#e0da14
-highlight GitGutterDelete   guibg=NONE   guifg=#e80909
+hi GitGutterAdd      guibg=NONE   guifg=#36e809
+hi GitGutterChange   guibg=NONE   guifg=#e0da14
+hi GitGutterDelete   guibg=NONE   guifg=#e80909
 
 
 " Easymotion
