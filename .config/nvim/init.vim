@@ -77,11 +77,6 @@ inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 nnoremap <C-a> :CocCommand explorer<CR>
 
 
-" FZF
-
-nnoremap <leader>f :FZF<CR>
-
-
 " Rainbow Brackets
 
 let g:rainbow_active = 1
