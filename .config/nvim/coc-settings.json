@@ -28,16 +28,12 @@
     "enumMember": "  "
     },
 
-    // Language Server
-    "languageserver": {
-
-    },
-
     // Format Filetypes
     "coc.preferences.formatOnSaveFiletypes": [
       "xml",
       "yaml",
       "yml",
+      "java",
       "json",
       "html",
       "css",
@@ -56,13 +52,6 @@
     // Inlay Hint
     "inlayHint.display": true,
     "inlayHint.refreshOnInsertMode": true,
-
-    // Spell Checker
-    "cSpell.language": "en",
-    "cSpell.enabledLanguageIds": [
-      "markdown",
-      "text"
-    ],
 
     // Coc Explorer
     "explorer.width": 30,

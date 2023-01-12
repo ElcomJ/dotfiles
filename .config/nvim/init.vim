@@ -4,6 +4,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
+Plug 'dense-analysis/ale'
 Plug 'rebelot/kanagawa.nvim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -14,7 +15,6 @@ Plug 'preservim/nerdcommenter'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
-Plug 'mbbill/undotree', {'on': 'UndotreeToggle'}
 
 call plug#end()
 
@@ -74,7 +74,25 @@ nnoremap <silent>bp  :BufferLineTogglePin<CR>
 " COC
 
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+inoremap <silent><expr> <c-f> coc#refresh()
 nnoremap <C-a> :CocCommand explorer<CR>
+nnoremap <silent> cd :CocDiagnostics<CR>
+
+hi QuickFixLine ctermbg=none
+
+
+" ALE
+
+let g:ale_fixers = {
+\   '*': ['trim_whitespace', 'remove_trailing_lines'],
+\}
+
+let g:ale_fix_on_save = 1
+let g:ale_sign_error = '⭕'
+let g:ale_sign_warning = '⭕'
+
+hi ALEErrorSign    guibg=NONE   guifg=Red
+hi ALEWarningSign  guibg=NONE   guifg=Yellow
 
 
 " Rainbow Brackets
@@ -85,14 +103,6 @@ let g:rainbow_conf = {
 \  'operators': '_,\|+\|-\|*\|\/\|===\|!==_',
 \  'guis': ['bold']
 \}
-
-
-" Undotree
-
-nmap <leader>ut :UndotreeToggle<CR>
-
-let g:undotree_WindowLayout = 2
-let g:undotree_SetFocusWhenToggle = 1
 
 
 " GitGutter
