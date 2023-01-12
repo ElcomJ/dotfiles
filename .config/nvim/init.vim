@@ -1,15 +1,13 @@
 call plug#begin()
 
-Plug 'dstein64/vim-startuptime'
 Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
 Plug 'rebelot/kanagawa.nvim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'luochen1990/rainbow'
-Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'preservim/nerdcommenter'
@@ -60,21 +58,9 @@ hi EndOfBuffer    guibg=NONE  ctermbg=NONE
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
 
+" ======================================================================
 
 let mapleader = "\<Space>"
-
-
-" Lualine
-
-lua << END
-  require('lualine').setup {
-    options = {
-      icons_enabled = true,
-      theme = 'kanagawa',
-    },
-  }
-END
-
 
 " Bufferline
 
@@ -87,19 +73,13 @@ nnoremap <silent>bp  :BufferLineTogglePin<CR>
 
 " COC
 
-let g:coc_global_extensions = [
-\   'coc-explorer',
-\   'coc-prettier'
-\]
-
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 nnoremap <C-a> :CocCommand explorer<CR>
 
 
-" Telescope
+" FZF
 
-nnoremap <leader>ff   <cmd>Telescope find_files<cr>
-nnoremap <leader>fg   <cmd>Telescope live_grep<cr>
+nnoremap <leader>f :FZF<CR>
 
 
 " Rainbow Brackets
