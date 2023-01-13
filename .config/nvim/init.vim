@@ -77,7 +77,11 @@ inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 inoremap <silent><expr> <c-f> coc#refresh()
 nnoremap <C-a> :CocCommand explorer<CR>
 nnoremap <silent> cd :CocDiagnostics<CR>
-nnoremap <silent> ac  <Plug>(coc-codeaction-cursor)
+
+nnoremap <silent> ac <Plug>(coc-codeaction-cursor)
+nnoremap <silent> gd <Plug>(coc-definition)
+nnoremap <silent> gr <Plug>(coc-references)
+nnoremap <silent> rn <Plug>(coc-rename)
 
 hi QuickFixLine ctermbg=none
 
