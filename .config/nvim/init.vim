@@ -4,7 +4,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
-Plug 'dense-analysis/ale'
 Plug 'rebelot/kanagawa.nvim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -74,32 +73,9 @@ nnoremap <silent>bp  :BufferLineTogglePin<CR>
 " COC
 
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
-inoremap <silent><expr> <c-f> coc#refresh()
 nnoremap <C-a> :CocCommand explorer<CR>
-nnoremap <silent> cd :CocDiagnostics<CR>
-
-nnoremap <silent> ac <Plug>(coc-codeaction-cursor)
-nnoremap <silent> gd <Plug>(coc-definition)
-nnoremap <silent> gr <Plug>(coc-references)
-nnoremap <silent> rn <Plug>(coc-rename)
-
-hi QuickFixLine ctermbg=none
 
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
-
-
-" ALE
-
-let g:ale_fixers = {
-\   '*': ['trim_whitespace', 'remove_trailing_lines'],
-\}
-
-let g:ale_fix_on_save = 1
-let g:ale_sign_error = '⭕'
-let g:ale_sign_warning = '⭕'
-
-hi ALEErrorSign    guibg=NONE   guifg=Red
-hi ALEWarningSign  guibg=NONE   guifg=Yellow
 
 
 " Rainbow Brackets
