@@ -30,10 +30,6 @@
 
     // Format Filetypes
     "coc.preferences.formatOnSaveFiletypes": [
-      "xml",
-      "yaml",
-      "yml",
-      "java",
       "json",
       "html",
       "css",
