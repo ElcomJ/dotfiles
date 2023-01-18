@@ -1,14 +1,9 @@
-Scoop:
+Chocolatey:
 
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-irm get.scoop.sh | iex
+https://chocolatey.org/install
 
-Telescope Requisites:
+Telescope and Tagbar Requisites:
 
-scoop install fd
-scoop install ripgrep
-
-Tagbar Requisites:
-
-scoop bucket add extras
-scoop install universal-ctags
+choco install fd
+choco install ripgrep
+choco install universal-ctags
