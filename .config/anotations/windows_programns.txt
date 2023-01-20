@@ -1,6 +1,6 @@
 List of Programns to install using Windows Store:
 
-App Installer (winget)
+App Installer (choco)
 Windows Terminal
 Sticky Notes
 

@@ -1,8 +1,12 @@
+Tutorial: https://www.youtube.com/watch?v=8zpyRPRhCnQ
+
 sudo update-alternatives --config java
+sudo update-alternatives --config javac
 
-sudo apt install openjdk-8-jdk
-sudo apt install default-jre
-
-Depois disso, é só configurar a versão que vai utilizar em etc/environment.
-
-Depois dar reboot no pc e testar echo $JAVA_HOME
+1 - Download Java SE Oracle
+2 - Go to download and run sudo apt-get install ./[your .deb java]
+3 - Go to /usr/lib and check if the jvm folder appeared.
+4 - Go to etc/environment and open in gedit.
+5 - set JAVA_HOME="/usr/lib/jvm/jdk-17"
+6 - set in end of PATH :/usr/lib/jvm/jdk-17/bin
+7 - Reboot and test in terminal echo $JAVA_HOME
