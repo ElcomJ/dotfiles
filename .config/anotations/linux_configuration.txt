@@ -4,8 +4,15 @@ Linux and Neovim configurations:
 1 - Sources.list
 2 - sudo apt-get install xclip
 3 - JAVA_HOME and PATH
-4 - Create .fonts folder in your home[~], download Hack Nerd Font in Nerd Fonts, and extract in .fonts.
-5 - Use Hack Nerd Font in terminal.
+4 - Create .fonts folder in your home[~], download Hack Nerd Font in Nerd Fonts, and extract in .fonts
+5 - Use Hack Nerd Font in terminal
+
+
+Git Config:
+
+  - git config --global user.name "Your user name"
+  - git config --global user.email email_here
+  - git config --global core.editor neovim
 
 
 Diffview Log:

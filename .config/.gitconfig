@@ -1,8 +1,8 @@
 [user]
-	email = ¨37147897+ElcomJ@users.noreply.github.com¨
-	name = ¨Elçom
-[credential]
-    helper = store
+	name = Elçom Junior
+	email = juninho.rj31@gmail.com
+[core]
+  editor = neovim
 
 [alias]
     lg = lg1-specific --all
