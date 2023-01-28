@@ -150,3 +150,5 @@ nnoremap <F9> :PlugUpdate <bar> CocUpdate<CR>
 
 nnoremap <leader>th :vsplit<bar>terminal<CR>
 nnoremap <leader>tv :split<bar>terminal<CR>
+
+autocmd TermOpen * setlocal nonumber norelativenumber
