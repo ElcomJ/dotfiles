@@ -21,4 +21,5 @@ Diffview Log:
 
 Keyboard mapping:
 
-  - Inglês(EUA,intern., com teclas mortas)
+  - Portuguese (Brazil)
+  - English (US, alt. intl.)
