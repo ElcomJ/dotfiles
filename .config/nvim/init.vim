@@ -117,6 +117,9 @@ hi ALEWarningSign  guibg=NONE   guifg=Yellow
 nnoremap <leader>ff   <cmd>Telescope find_files<cr>
 nnoremap <leader>fg   <cmd>Telescope live_grep<cr>
 
+hi TelescopeBorder guibg=none
+hi TelescopeTitle guibg=none
+
 
 " Rainbow Brackets
 
