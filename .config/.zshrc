@@ -5,7 +5,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 
 # Theme here
-ZSH_THEME="spaceship"
+ZSH_THEME="simple"
 
 
 # Plugins here
