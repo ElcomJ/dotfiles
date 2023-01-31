@@ -4,10 +4,9 @@ Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
-Plug 'dense-analysis/ale'
 Plug 'rebelot/kanagawa.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'luochen1990/rainbow'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
@@ -49,8 +48,8 @@ hi ColorColumn     guibg=grey19
 
 hi clear SignColumn
 
-" hi Normal         guibg=NONE  ctermbg=NONE
-" hi EndOfBuffer    guibg=NONE  ctermbg=NONE
+hi Normal         guibg=NONE  ctermbg=NONE
+hi EndOfBuffer    guibg=NONE  ctermbg=NONE
 
 
 " Italics
@@ -75,50 +74,8 @@ nnoremap <silent>bp  :BufferLineTogglePin<CR>
 
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 nnoremap <C-a> :CocCommand explorer<CR>
-inoremap <silent><expr> <c-space> coc#refresh()
-nnoremap <silent> cd :CocDiagnostics<CR>
-
-nnoremap <silent> ac <Plug>(coc-codeaction-cursor)
-nnoremap <silent> gd <Plug>(coc-definition)
-nnoremap <silent> gr <Plug>(coc-references)
-nnoremap <silent> rn <Plug>(coc-rename)
-
-nnoremap <silent> ; :call <SID>show_documentation()<CR>
-
-function! s:show_documentation()
-   if (index(['vim','help'], &filetype) >= 0)
-     execute 'h '.expand('<cword>')
-   else
-     call CocAction('doHover')
-   endif
-endfunction
-
-hi QuickFixLine ctermbg=none
 
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
-
-
-" ALE
-
-let g:ale_fixers = {
-\   '*': ['trim_whitespace', 'remove_trailing_lines'],
-\}
-
-let g:ale_fix_on_save = 1
-let g:ale_sign_error = '⭕'
-let g:ale_sign_warning = '⭕'
-
-hi ALEErrorSign    guibg=NONE   guifg=Red
-hi ALEWarningSign  guibg=NONE   guifg=Yellow
-
-
-" Telescope
-
-nnoremap <leader>ff   <cmd>Telescope find_files<cr>
-nnoremap <leader>fg   <cmd>Telescope live_grep<cr>
-
-hi TelescopeBorder guibg=none
-hi TelescopeTitle guibg=none
 
 
 " Rainbow Brackets
