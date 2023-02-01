@@ -158,7 +158,9 @@ map <C-Down> <C-w>j
 map <C-Up> <C-w>k
 map <C-Right> <C-w>l
 
-
+nmap op o<Esc>k
+nmap oi O<Esc>j
+nmap oo A<CR>
 nmap tt :bp<bar>sp<bar>bn<bar>bd<CR>
 nmap ty :bn<CR>
 nmap tr :bp<CR>
