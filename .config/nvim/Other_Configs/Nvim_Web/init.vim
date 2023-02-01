@@ -15,7 +15,6 @@ Plug 'preservim/nerdcommenter'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
-Plug 'lukas-reineke/indent-blankline.nvim'
 
 call plug#end()
 
@@ -74,13 +73,6 @@ lua << END
 END
 
 nnoremap <silent>bp  :BufferLineTogglePin<CR>
-
-
-" Indent-blankline
-
-lua << END
-  require("indent_blankline").setup {}
-END
 
 
 " COC
