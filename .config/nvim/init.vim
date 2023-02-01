@@ -5,8 +5,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
 Plug 'rebelot/kanagawa.nvim'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
 Plug 'luochen1990/rainbow'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
@@ -76,6 +76,15 @@ inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 nnoremap <C-a> :CocCommand explorer<CR>
 
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
+
+
+" Telescope
+
+nnoremap <leader>ff   <cmd>Telescope find_files<cr>
+nnoremap <leader>fg   <cmd>Telescope live_grep<cr>
+
+hi TelescopeBorder guibg=none
+hi TelescopeTitle guibg=none
 
 
 " Rainbow Brackets
