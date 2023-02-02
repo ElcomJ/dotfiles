@@ -7,7 +7,7 @@ Linux and Neovim configurations:
 4 - Create .fonts folder in your home[~], download Hack Nerd Font in Nerd Fonts, and extract in .fonts
 5 - Use Hack Nerd Font in terminal
 6 - Install xclip (sudo apt install xclip) for use neovim and system clipboard
-7 - Install ranger and trash-cli
+7 - Install ranger (sudo apt-get install ranger) and trash-cli (sudo apt install trash-cli)
 
 
 Git Config:
