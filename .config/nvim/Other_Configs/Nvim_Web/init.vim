@@ -25,7 +25,7 @@ set scrolloff=10
 set cmdheight=1
 set updatetime=100
 set clipboard+=unnamedplus
-"set colorcolumn=100
+set colorcolumn=80,120
 set tabstop=2
 set shiftwidth=2
 set ignorecase
