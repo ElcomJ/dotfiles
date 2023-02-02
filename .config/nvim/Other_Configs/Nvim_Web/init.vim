@@ -10,6 +10,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
 Plug 'luochen1990/rainbow'
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'brenoprata10/nvim-highlight-colors'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'preservim/nerdcommenter'
 Plug 'easymotion/vim-easymotion'
@@ -24,7 +25,7 @@ set scrolloff=10
 set cmdheight=1
 set updatetime=100
 set clipboard+=unnamedplus
-set colorcolumn=100
+"set colorcolumn=100
 set tabstop=2
 set shiftwidth=2
 set ignorecase
@@ -74,6 +75,12 @@ END
 
 nnoremap <silent>bp  :BufferLineTogglePin<CR>
 
+
+" Highlight Colors
+
+lua << END
+   require('nvim-highlight-colors').setup {}
+END
 
 " COC
 
