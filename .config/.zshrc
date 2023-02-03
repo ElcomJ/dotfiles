@@ -3,10 +3,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-
 # Theme here
 ZSH_THEME="simple"
-
 
 # Plugins here
 plugins=(git
@@ -16,9 +14,7 @@ plugins=(git
 
 source $ZSH/oh-my-zsh.sh
 
-
 . "$HOME/.asdf/asdf.sh"
-
 
 # Comandos básicos
 
