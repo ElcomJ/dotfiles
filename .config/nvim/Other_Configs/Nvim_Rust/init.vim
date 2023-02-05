@@ -8,7 +8,6 @@ Plug 'dense-analysis/ale'
 Plug 'rebelot/kanagawa.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
-Plug 'CRAG666/code_runner.nvim'
 Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
 Plug 'luochen1990/rainbow'
 Plug 'kyazdani42/nvim-web-devicons'
@@ -51,7 +50,7 @@ colorscheme kanagawa
 hi CursorLine                     guibg=grey19
 hi CursorLineNr    guifg=#b57504  guibg=NONE
 hi Visual          guifg=none     guibg=grey30  gui=none
-hi ColorColumn     guibg=grey19
+hi ColorColumn     guibg=grey42
 
 hi clear SignColumn
 
@@ -74,27 +73,6 @@ let mapleader = "\<Space>"
 lua << END
   require("bufferline").setup{}
 END
-
-
-" Code_runner
-
-lua << END
-  require('code_runner').setup {
-    mode = "term",
-    startinsert = true,
-
-    term = {
-      position = "vert",
-      size = 60
-    },
-
-	  filetype = {
-	      rust = "cd $dir && rustc $fileName && $dir/$fileNameWithoutExt"
-	  },
-  }
-END
-
-  nnoremap <leader>r :RunFile<CR>
 
 
 " COC
