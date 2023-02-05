@@ -9,6 +9,7 @@ Plug 'rebelot/kanagawa.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
 Plug 'CRAG666/code_runner.nvim'
+Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
 Plug 'luochen1990/rainbow'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
@@ -170,6 +171,16 @@ nmap \ <Plug>(easymotion-overwin-line)
 
 map  / <Plug>(easymotion-bd-w)
 nmap / <Plug>(easymotion-overwin-w)
+
+
+" Tagbar
+
+let g:tagbar_width = 30
+let g:tagbar_autofocus = 0
+let g:tagbar_indent = 2
+let g:tagbar_sort = 0
+
+nmap <leader>tb :TagbarToggle<CR>
 
 
 " Remaps
