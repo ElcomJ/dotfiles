@@ -85,6 +85,16 @@ END
 
 " COC
 
+let g:coc_global_extensions = [
+\  'coc-explorer',
+\  'coc-prettier',
+\  'coc-html',
+\  'coc-css',
+\  'coc-emmet',
+\  'coc-tsserver',
+\  'coc-eslint'
+\]
+
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 nnoremap <C-a> :CocCommand explorer<CR>
 inoremap <silent><expr> <c-space> coc#refresh()

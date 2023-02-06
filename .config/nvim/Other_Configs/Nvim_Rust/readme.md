@@ -1,8 +1,3 @@
-## Coc Plugins
-
-  -  coc-rust-analyzer
-
-
 ## Tagbar
 
   -  sudo apt-get install universal-ctags
