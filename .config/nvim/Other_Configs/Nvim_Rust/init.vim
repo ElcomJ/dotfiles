@@ -207,7 +207,7 @@ nnoremap <F9> :PlugUpdate <bar> CocUpdate<CR>
 
 " Terminals
 
-nnoremap <leader>th :vsplit<bar>terminal<CR>
-nnoremap <leader>tv :split<bar>terminal<CR>
+nnoremap <leader>tv :vsplit<bar>terminal<CR>
+nnoremap <leader>th :split<bar>terminal<CR>
 
 autocmd TermOpen * setlocal nonumber norelativenumber
