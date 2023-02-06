@@ -97,6 +97,9 @@ function! s:show_documentation()
    endif
 endfunction
 
+nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-f>"
+nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-b>"
+
 hi QuickFixLine ctermbg=none
 
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
