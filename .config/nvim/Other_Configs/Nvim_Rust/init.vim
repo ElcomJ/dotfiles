@@ -168,6 +168,9 @@ let g:tagbar_width = 30
 let g:tagbar_autofocus = 0
 let g:tagbar_indent = 2
 let g:tagbar_sort = 0
+let g:tagbar_position = 'leftabove vertical'
+let g:tagbar_compact = 1
+let g:tagbar_show_data_type = 1
 
 nmap <leader>tb :TagbarToggle<CR>
 
