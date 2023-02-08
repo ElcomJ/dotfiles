@@ -52,3 +52,4 @@ Core Softwares:
   - live server (https://www.chiarulli.me/Neovim/20-live-server/)
   - ranger
   - trash-cli
+  - cmatrix
