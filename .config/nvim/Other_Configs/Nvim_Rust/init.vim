@@ -171,6 +171,8 @@ let g:tagbar_sort = 0
 let g:tagbar_position = 'leftabove vertical'
 let g:tagbar_compact = 1
 let g:tagbar_show_data_type = 1
+let g:tagbar_show_visibility = 1
+let g:tagbar_foldlevel = 99
 
 nmap <silent>tb :TagbarToggle<CR>
 
