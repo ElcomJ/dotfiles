@@ -9,7 +9,6 @@ Plug 'rebelot/kanagawa.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
 Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
-Plug 'folke/trouble.nvim'
 Plug 'luochen1990/rainbow'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
@@ -51,7 +50,7 @@ colorscheme kanagawa
 hi CursorLine                     guibg=grey19
 hi CursorLineNr    guifg=#b57504  guibg=NONE
 hi Visual          guifg=none     guibg=grey30  gui=none
-hi ColorColumn     guibg=grey42
+hi ColorColumn     guibg=grey35
 
 hi clear SignColumn
 
@@ -76,22 +75,6 @@ lua << END
 END
 
 
-" Trouble
-
-lua << END
-  require('trouble').setup {
-    position = "right",
-    width = 40,
-	icons = true,
-    padding = false,
-    auto_preview = false,
-	mode = "loclist"
-  }
-END
-
-nnoremap <silent> cd :TroubleToggle<CR>
-
-
 " COC
 
 let g:coc_global_extensions = [
@@ -103,6 +86,7 @@ let g:coc_global_extensions = [
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 nnoremap <C-a> :CocCommand explorer<CR>
 inoremap <silent><expr> <c-space> coc#refresh()
+nnoremap <silent> cd :CocDiagnostics<CR>
 
 nnoremap <silent> ac <Plug>(coc-codeaction-cursor)
 nnoremap <silent> gd <Plug>(coc-definition)
@@ -123,6 +107,8 @@ nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(
 nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-b>"
 inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Right>"
 inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Left>"
+
+hi QuickFixLine ctermbg=none
 
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
@@ -186,7 +172,7 @@ let g:tagbar_position = 'leftabove vertical'
 let g:tagbar_compact = 1
 let g:tagbar_show_data_type = 1
 
-nmap <leader>tb :TagbarToggle<CR>
+nmap <silent>tb :TagbarToggle<CR>
 
 
 " Remaps
