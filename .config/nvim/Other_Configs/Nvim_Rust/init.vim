@@ -9,6 +9,7 @@ Plug 'rebelot/kanagawa.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
 Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
+Plug 'folke/trouble.nvim'
 Plug 'luochen1990/rainbow'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
@@ -75,6 +76,22 @@ lua << END
 END
 
 
+" Trouble
+
+lua << END
+  require('trouble').setup {
+    position = "right",
+    width = 40,
+	icons = true,
+    padding = false,
+    auto_preview = false,
+	mode = "loclist"
+  }
+END
+
+nnoremap <silent> cd :TroubleToggle<CR>
+
+
 " COC
 
 let g:coc_global_extensions = [
@@ -86,7 +103,6 @@ let g:coc_global_extensions = [
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 nnoremap <C-a> :CocCommand explorer<CR>
 inoremap <silent><expr> <c-space> coc#refresh()
-nnoremap <silent> cd :CocDiagnostics<CR>
 
 nnoremap <silent> ac <Plug>(coc-codeaction-cursor)
 nnoremap <silent> gd <Plug>(coc-definition)
@@ -108,8 +124,6 @@ nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(
 inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Right>"
 inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Left>"
 
-hi QuickFixLine ctermbg=none
-
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
 
@@ -120,8 +134,8 @@ let g:ale_fixers = {
 \}
 
 let g:ale_fix_on_save = 1
-let g:ale_sign_error = '⭕'
-let g:ale_sign_warning = '⭕'
+let g:ale_sign_error = '--'
+let g:ale_sign_warning = '--'
 
 hi ALEErrorSign    guibg=NONE   guifg=Red
 hi ALEWarningSign  guibg=NONE   guifg=Yellow
@@ -129,8 +143,8 @@ hi ALEWarningSign  guibg=NONE   guifg=Yellow
 
 " Telescope
 
-nnoremap <leader>ff   <cmd>Telescope find_files<cr>
-nnoremap <leader>fg   <cmd>Telescope live_grep<cr>
+nnoremap <leader>ff   <cmd>Telescope find_files<CR>
+nnoremap <leader>fg   <cmd>Telescope live_grep<CR>
 
 hi TelescopeBorder guibg=none
 hi TelescopeTitle  guibg=none
@@ -199,7 +213,7 @@ nmap tn :tabnext<CR>
 tnoremap <A-Up> <C-\><C-n><C-w>k
 tnoremap <A-Left> <C-\><C-n><C-w>h
 
-nnoremap <C-q>            :exit<cr>
+nnoremap <C-q>            :exit<CR>
 nnoremap <S-Right>        :vertical resize -2<CR>
 nnoremap <S-Left>         :vertical resize +2<CR>
 nnoremap <S-Up>           :resize -2<CR>
