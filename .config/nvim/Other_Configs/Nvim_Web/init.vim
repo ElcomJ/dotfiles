@@ -21,6 +21,7 @@ call plug#end()
 
 
 set encoding=UTF-8
+set fileencoding=UTF-8
 set scrolloff=10
 set cmdheight=1
 set updatetime=100
