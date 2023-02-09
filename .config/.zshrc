@@ -22,6 +22,7 @@ alias att='sudo apt-get update && sudo apt-get upgrade'
 
 # Tmux
 
+alias tns='tmux new -s'
 alias tas='tmux attach-session -t'
 alias tls='tmux ls'
 alias tks='tmux kill-session -t'
