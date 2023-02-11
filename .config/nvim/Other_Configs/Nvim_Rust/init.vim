@@ -50,7 +50,7 @@ colorscheme kanagawa
 
 hi CursorLine                     guibg=grey19
 hi CursorLineNr    guifg=#b57504  guibg=NONE
-hi Visual          guifg=none     guibg=grey30  gui=none
+hi Visual          guifg=NONE     guibg=grey30  gui=NONE
 hi ColorColumn     guibg=grey35
 
 hi clear SignColumn
@@ -110,7 +110,7 @@ nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(
 inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Right>"
 inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Left>"
 
-hi QuickFixLine ctermbg=none
+hi QuickFixLine ctermbg=NONE
 
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
@@ -134,8 +134,8 @@ hi ALEWarningSign  guibg=NONE   guifg=Yellow
 nnoremap <leader>ff   <cmd>Telescope find_files<CR>
 nnoremap <leader>fg   <cmd>Telescope live_grep<CR>
 
-hi TelescopeBorder guibg=none
-hi TelescopeTitle  guibg=none
+hi TelescopeBorder guibg=NONE
+hi TelescopeTitle  guibg=NONE
 
 
 " Rainbow Brackets
