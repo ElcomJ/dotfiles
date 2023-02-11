@@ -45,6 +45,9 @@
     "inlayHint.display": true,
     "inlayHint.refreshOnInsertMode": true,
 
+	// Code Lens
+	"codeLens.enable": true,
+
     // Coc Explorer
     "explorer.width": 30,
     "explorer.position": "left",
