@@ -7,6 +7,9 @@ Linux and Neovim configurations:
 4 - Install xclip (sudo apt install xclip) for use neovim and system clipboard
 5 - Install ranger (sudo apt-get install ranger) and trash-cli (sudo apt install trash-cli)
 6 - Install Rust
+7 - Install ZSH + Oh My ZSH + Powerlevel10k
+8 - set "typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_last" in .p10k.zsh
+9 - enable rust-version in .p10k.zsh
 
 
 Git Config:
