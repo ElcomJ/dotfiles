@@ -54,3 +54,5 @@ Core Softwares:
   - trash-cli
   - cmatrix (sudo apt install cmatrix)
   - tree (sudo apt install tree)
+  - lolcat
+  - cowsay
