@@ -13,7 +13,7 @@ Plug 'luochen1990/rainbow'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'preservim/nerdcommenter'
-Plug 'easymotion/vim-easymotion'
+Plug 'phaazon/hop.nvim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 
@@ -74,6 +74,18 @@ let mapleader = "\<Space>"
 lua << END
   require("bufferline").setup{}
 END
+
+
+" Hop
+
+lua << END
+  require("hop").setup{}
+END
+
+nnoremap <silent> / :HopWord<CR>
+vnoremap <silent> / <cmd>HopWord<CR>
+nnoremap <silent> \ :HopLine<CR>
+vnoremap <silent> \ <cmd>HopLine<CR>
 
 
 " COC
@@ -153,15 +165,6 @@ let g:rainbow_conf = {
 hi GitGutterAdd      guibg=NONE   guifg=#36e809
 hi GitGutterChange   guibg=NONE   guifg=#e0da14
 hi GitGutterDelete   guibg=NONE   guifg=#e80909
-
-
-" Easymotion
-
-map \ <Plug>(easymotion-bd-jk)
-nmap \ <Plug>(easymotion-overwin-line)
-
-map  / <Plug>(easymotion-bd-w)
-nmap / <Plug>(easymotion-overwin-w)
 
 
 " Tagbar

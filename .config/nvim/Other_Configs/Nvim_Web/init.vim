@@ -13,7 +13,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'brenoprata10/nvim-highlight-colors'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'preservim/nerdcommenter'
-Plug 'easymotion/vim-easymotion'
+Plug 'phaazon/hop.nvim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 
@@ -51,7 +51,7 @@ colorscheme kanagawa
 hi CursorLine                     guibg=grey19
 hi CursorLineNr    guifg=#b57504  guibg=NONE
 hi Visual          guifg=none     guibg=grey30  gui=none
-hi ColorColumn     guibg=grey19
+hi ColorColumn     guibg=grey35
 
 hi clear SignColumn
 
@@ -78,11 +78,24 @@ END
 nnoremap <silent>bp  :BufferLineTogglePin<CR>
 
 
+" Hop
+
+lua << END
+  require("hop").setup{}
+END
+
+nnoremap <silent> / :HopWord<CR>
+vnoremap <silent> / <cmd>HopWord<CR>
+nnoremap <silent> \ :HopLine<CR>
+vnoremap <silent> \ <cmd>HopLine<CR>
+
+
 " Highlight Colors
 
 lua << END
    require('nvim-highlight-colors').setup {}
 END
+
 
 " COC
 
@@ -159,15 +172,6 @@ let g:rainbow_conf = {
 hi GitGutterAdd      guibg=NONE   guifg=#36e809
 hi GitGutterChange   guibg=NONE   guifg=#e0da14
 hi GitGutterDelete   guibg=NONE   guifg=#e80909
-
-
-" Easymotion
-
-map \ <Plug>(easymotion-bd-jk)
-nmap \ <Plug>(easymotion-overwin-line)
-
-map  / <Plug>(easymotion-bd-w)
-nmap / <Plug>(easymotion-overwin-w)
 
 
 " Remaps
