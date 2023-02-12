@@ -10,7 +10,8 @@ Linux and Neovim configurations:
 7 - Install ZSH + Oh My ZSH + Powerlevel10k
 8 - set "typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_last" in .p10k.zsh
 9 - enable rust-version in .p10k.zsh
-
+10 - sudo apt install python3-pip
+11 - pip3 install pynvim
 
 Git Config:
 
