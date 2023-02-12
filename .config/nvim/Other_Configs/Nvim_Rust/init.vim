@@ -188,16 +188,20 @@ nmap <silent>tb :TagbarToggle<CR>
 let g:vimspector_install_gadgets = [ 'CodeLLDB' ]
 
 let g:vimspector_sidebar_width = 45
-let g:vimspector_bottombar_height = 15
+let g:vimspector_bottombar_height = 10
+let g:vimspector_terminal_maxwidth = 50
 
-nnoremap <Leader>vl  :call vimspector#Launch()<CR>
-nnoremap <Leader>vr  :call vimspector#Reset()<CR>
-nnoremap <Leader>vb  :call vimspector#ToggleBreakpoint()<CR>
-nnoremap <Leader>vcb :call vimspector#ClearBreakpoints()<CR>
-nnoremap <leader>ve  :VimspectorEval
-nnoremap <leader>vw  :VimspectorWatch
-nnoremap <Leader>vo  <Plug>VimspectorStepOver
-nnoremap <Leader>dr  <Plug>VimspectorRestart
+nnoremap <leader>dl  :call vimspector#Launch()<CR>
+nnoremap <leader>dr  :call vimspector#Reset()<CR>
+nnoremap <leader>dc  :call vimspector#Continue()<CR>
+
+nnoremap <leader>db  :call vimspector#ToggleBreakpoint()<CR>
+nnoremap <leader>dB  :call vimspector#ClearBreakpoints()<CR>
+
+nnoremap <leader>dR  <Plug>VimspectorRestart
+nnoremap <leader>do  <Plug>VimspectorStepOver
+nnoremap <leader>de  <Plug>VimspectorBalloonEval
+nnoremap <leader>dw  :call vimspector#AddWatch()<CR>
 
 
 " Remaps
