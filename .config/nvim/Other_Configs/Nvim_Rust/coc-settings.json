@@ -48,6 +48,9 @@
     // Code Lens
     "codeLens.enable": true,
 
+    // Rust Analyzer
+    "rust-analyzer.debug.runtime": "vimspector",
+
     // Coc Explorer
     "explorer.width": 30,
     "explorer.position": "left",

@@ -14,6 +14,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'preservim/nerdcommenter'
 Plug 'phaazon/hop.nvim'
+Plug 'puremourning/vimspector'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 
@@ -180,6 +181,23 @@ let g:tagbar_show_visibility = 1
 let g:tagbar_foldlevel = 99
 
 nmap <silent>tb :TagbarToggle<CR>
+
+
+" Vimspector
+
+let g:vimspector_install_gadgets = [ 'CodeLLDB' ]
+
+let g:vimspector_sidebar_width = 45
+let g:vimspector_bottombar_height = 15
+
+nnoremap <Leader>vl  :call vimspector#Launch()<CR>
+nnoremap <Leader>vr  :call vimspector#Reset()<CR>
+nnoremap <Leader>vb  :call vimspector#ToggleBreakpoint()<CR>
+nnoremap <Leader>vcb :call vimspector#ClearBreakpoints()<CR>
+nnoremap <leader>ve  :VimspectorEval
+nnoremap <leader>vw  :VimspectorWatch
+nnoremap <Leader>vo  <Plug>VimspectorStepOver
+nnoremap <Leader>dr  <Plug>VimspectorRestart
 
 
 " Remaps
