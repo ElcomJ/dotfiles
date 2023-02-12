@@ -200,7 +200,7 @@ nnoremap <leader>dB  :call vimspector#ClearBreakpoints()<CR>
 
 nnoremap <leader>dR  <Plug>VimspectorRestart
 nnoremap <leader>do  <Plug>VimspectorStepOver
-nnoremap <leader>de  <Plug>VimspectorBalloonEval
+vnoremap <leader>de  <Plug>VimspectorBalloonEval
 nnoremap <leader>dw  :call vimspector#AddWatch()<CR>
 
 
