@@ -6,6 +6,12 @@
       "configuration": {
         "request": "launch",
         "program": "${workspaceRoot}/target/debug/proj"
+      },
+      "breakpoints": {
+        "exception": {
+          "cpp_throw": "",
+          "cpp_catch": ""
+        }
       }
     }
   }
