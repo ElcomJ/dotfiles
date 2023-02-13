@@ -26,8 +26,8 @@ set scrolloff=10
 set cmdheight=1
 set updatetime=100
 set clipboard+=unnamedplus
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set colorcolumn=80,100
 set ignorecase
 set number
@@ -103,7 +103,6 @@ inoremap <silent><expr> <c-space> coc#refresh()
 nnoremap <silent> cd :CocDiagnostics<CR>
 
 nnoremap <silent> ac <Plug>(coc-codeaction-cursor)
-nnoremap <silent> cl <Plug>(coc-codelens-action)
 nnoremap <silent> gd <Plug>(coc-definition)
 nnoremap <silent> gr <Plug>(coc-references)
 nnoremap <silent> rn <Plug>(coc-rename)
