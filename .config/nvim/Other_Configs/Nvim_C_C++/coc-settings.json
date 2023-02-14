@@ -30,8 +30,7 @@
 
     // Format Filetypes
     "coc.preferences.formatOnSaveFiletypes": [
-	    "c",
-	    "cpp"
+
       ],
 
     // Coc Diagnostics
