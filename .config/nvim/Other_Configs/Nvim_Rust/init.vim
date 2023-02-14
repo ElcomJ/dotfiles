@@ -15,6 +15,7 @@ Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'preservim/nerdcommenter'
 Plug 'phaazon/hop.nvim'
 Plug 'puremourning/vimspector'
+Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 
@@ -87,6 +88,23 @@ nnoremap <silent> / :HopWord<CR>
 vnoremap <silent> / <cmd>HopWord<CR>
 nnoremap <silent> \ :HopLine<CR>
 vnoremap <silent> \ <cmd>HopLine<CR>
+
+
+" Indent Blankline
+
+lua << END
+  require("indent_blankline").setup{
+	filetype_exclude = { "vim" },
+	show_trailing_blankline_indent = false,
+
+	context_patterns = {
+      "class", "return", "function", "method", "^if",
+      "^while", "^for", "^object", "^table", "block",
+      "arguments", "if_statement", "else_clause", "try_statement",
+      "catch_clause", "import_statement", "operation_type"
+    },
+  }
+END
 
 
 " COC
