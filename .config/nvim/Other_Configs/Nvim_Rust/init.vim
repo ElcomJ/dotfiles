@@ -94,10 +94,10 @@ vnoremap <silent> \ <cmd>HopLine<CR>
 
 lua << END
   require("indent_blankline").setup{
-	filetype_exclude = { "vim" },
-	show_trailing_blankline_indent = false,
+    filetype_exclude = { "vim" },
+    show_trailing_blankline_indent = false,
 
-	context_patterns = {
+    context_patterns = {
       "class", "return", "function", "method", "^if",
       "^while", "^for", "^object", "^table", "block",
       "arguments", "if_statement", "else_clause", "try_statement",
