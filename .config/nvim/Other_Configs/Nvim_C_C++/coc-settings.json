@@ -30,7 +30,6 @@
 
     // Format Filetypes
     "coc.preferences.formatOnSaveFiletypes": [
-	    "rust",
 	    "c",
 	    "cpp"
       ],

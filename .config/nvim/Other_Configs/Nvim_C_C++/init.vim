@@ -93,7 +93,6 @@ vnoremap <silent> \ <cmd>HopLine<CR>
 let g:coc_global_extensions = [
 \  'coc-explorer',
 \  'coc-prettier',
-\  'coc-rust-analyzer',
 \  'coc-clangd'
 \]
 
