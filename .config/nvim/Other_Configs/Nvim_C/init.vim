@@ -155,10 +155,6 @@ let g:ale_c_clangformat_options = '"-style={
 \ BasedOnStyle: google,
 \ IndentWidth: 4,
 \ ColumnLimit: 100,
-\ AllowShortBlocksOnASingleLine: Always,
-\ AllowShortFunctionsOnASingleLine: Inline,
-\ FixNamespaceComments: true,
-\ ReflowComments: false,
 \ }"'
 
 let g:ale_fix_on_save = 1

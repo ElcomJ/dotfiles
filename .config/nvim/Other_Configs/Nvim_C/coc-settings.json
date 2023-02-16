@@ -42,8 +42,8 @@
     "coc.preferences.formatOnSave": true,
 
     // Inlay Hint
-    "inlayHint.display": true,
-    "inlayHint.refreshOnInsertMode": true,
+    "inlayHint.display": false,
+    "inlayHint.refreshOnInsertMode": false,
 
     // Coc Explorer
     "explorer.width": 30,
