@@ -30,7 +30,7 @@
 
     // Format Filetypes
     "coc.preferences.formatOnSaveFiletypes": [
-      "rust"
+
       ],
 
     // Coc Diagnostics
