@@ -12,6 +12,8 @@ Linux and Neovim configurations:
 9 - enable rust-version in .p10k.zsh
 10 - sudo apt install python3-pip
 11 - pip3 install pynvim
+12 - Install ASDF and configure in ZSH shell
+13 - ASDF for Nodejs and Golang.
 
 Git Config:
 
