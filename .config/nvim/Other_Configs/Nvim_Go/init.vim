@@ -150,17 +150,9 @@ command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
 let g:ale_fixers = {
 \   '*': ['trim_whitespace', 'remove_trailing_lines'],
-\   'rust': ['rustfmt'],
 \   'go': ['gofmt'],
-\   'c': ['clang-format'],
 \}
 
-let g:ale_c_clangformat_options = '"-style={
-\ BasedOnStyle: google,
-\ IndentWidth: 4,
-\ ColumnLimit: 100,
-\ AllowShortFunctionsOnASingleLine: None,
-\ }"'
 
 let g:ale_fix_on_save = 1
 let g:ale_sign_error = '--'
