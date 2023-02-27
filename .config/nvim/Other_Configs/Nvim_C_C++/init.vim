@@ -149,6 +149,7 @@ command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 let g:ale_fixers = {
 \   '*': ['trim_whitespace', 'remove_trailing_lines'],
 \   'c': ['clang-format'],
+\   'cpp': ['clang-format'],
 \}
 
 let g:ale_c_clangformat_options = '"-style={
