@@ -9,6 +9,7 @@ Plug 'rebelot/kanagawa.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
 Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
+Plug 'mbbill/undotree', {'on': 'UndotreeToggle'}
 Plug 'luochen1990/rainbow'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
@@ -200,6 +201,14 @@ let g:tagbar_show_visibility = 1
 let g:tagbar_foldlevel = 99
 
 nmap <silent>tb :TagbarToggle<CR>
+
+
+" Undotree
+
+let g:undotree_WindowLayout = 2
+let g:undotree_SetFocusWhenToggle = 1
+
+nmap <leader>ut :UndotreeToggle<CR>
 
 
 " Vimspector
