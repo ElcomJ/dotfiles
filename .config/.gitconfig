@@ -2,7 +2,7 @@
 	name = Elçom Junior
 	email = juninho.rj31@gmail.com
 [core]
-  editor = neovim
+  editor = nvim
 
 [alias]
     lg = lg1-specific --all
