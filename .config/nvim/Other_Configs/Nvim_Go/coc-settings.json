@@ -46,10 +46,7 @@
     "inlayHint.refreshOnInsertMode": false,
 
     // Code Lens
-    "codeLens.enable": true,
-
-    // Rust Analyzer
-    "rust-analyzer.debug.runtime": "vimspector",
+    "codeLens.enable": false,
 
     // Coc Explorer
     "explorer.width": 30,
