@@ -4,7 +4,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
-Plug 'rebelot/kanagawa.nvim'
+Plug 'EdenEast/nightfox.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
 Plug 'luochen1990/rainbow'
@@ -40,7 +40,7 @@ set background=dark
 set termguicolors
 set t_Co=256
 
-colorscheme kanagawa
+colorscheme carbonfox
 
 
 " Highlights
