@@ -5,7 +5,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
 Plug 'dense-analysis/ale'
-Plug 'EdenEast/nightfox.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
 Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
@@ -15,7 +14,6 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'preservim/nerdcommenter'
 Plug 'phaazon/hop.nvim'
-Plug 'puremourning/vimspector'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
@@ -31,7 +29,7 @@ set updatetime=100
 set clipboard+=unnamedplus
 set tabstop=4
 set shiftwidth=4
-set colorcolumn=80,100
+set colorcolumn=80
 set ignorecase
 set number
 set relativenumber
@@ -46,20 +44,19 @@ set background=dark
 set termguicolors
 set t_Co=256
 
-colorscheme carbonfox
-
 
 " Highlights
 
-hi CursorLine                     guibg=grey19
-hi CursorLineNr    guifg=#b57504  guibg=NONE
+hi CursorLine                     guibg=NONE
+hi CursorLineNr    guifg=grey93   guibg=NONE
 hi Visual          guifg=NONE     guibg=grey30  gui=NONE
-hi ColorColumn     guibg=grey35
+hi ColorColumn     guibg=grey62
 
 hi clear SignColumn
 
-hi Normal         guibg=NONE  ctermbg=NONE
-hi EndOfBuffer    guibg=NONE  ctermbg=NONE
+hi Normal         guibg=grey0  guibg=grey0
+hi EndOfBuffer    guibg=grey0  guibg=grey0
+hi StatusLine     guibg=white  guifg=grey0
 
 
 " Italics
@@ -95,10 +92,10 @@ vnoremap <silent> \ <cmd>HopLine<CR>
 
 lua << END
   require("indent_blankline").setup{
-    filetype_exclude = { "vim" },
-    show_trailing_blankline_indent = false,
+	filetype_exclude = { "vim" },
+	show_trailing_blankline_indent = false,
 
-    context_patterns = {
+	context_patterns = {
       "class", "return", "function", "method", "^if",
       "^while", "^for", "^object", "^table", "block",
       "arguments", "if_statement", "else_clause", "try_statement",
@@ -113,7 +110,8 @@ END
 let g:coc_global_extensions = [
 \  'coc-explorer',
 \  'coc-prettier',
-\  'coc-rust-analyzer'
+\  'coc-rust-analyzer',
+\  'coc-clangd'
 \]
 
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
@@ -150,12 +148,21 @@ command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 " ALE
 
 let g:ale_fixers = {
-\   '*': ['trim_whitespace', 'remove_trailing_lines'],
+\   '*':    ['trim_whitespace', 'remove_trailing_lines'],
 \   'rust': ['rustfmt'],
+\   'c':    ['clang-format'],
+\   'cpp':  ['clang-format'],
 \}
 
-let g:ale_fix_on_save = 1
-let g:ale_sign_error = '--'
+let g:ale_c_clangformat_options = '"-style={
+\ BasedOnStyle: google,
+\ IndentWidth: 4,
+\ ColumnLimit: 100,
+\ AllowShortFunctionsOnASingleLine: None,
+\ }"'
+
+let g:ale_fix_on_save  = 1
+let g:ale_sign_error   = '--'
 let g:ale_sign_warning = '--'
 
 hi ALEErrorSign    guibg=NONE   guifg=Red
@@ -209,27 +216,6 @@ let g:undotree_WindowLayout = 2
 let g:undotree_SetFocusWhenToggle = 1
 
 nmap <leader>ut :UndotreeToggle<CR>
-
-
-" Vimspector
-
-let g:vimspector_install_gadgets = [ 'CodeLLDB' ]
-
-let g:vimspector_sidebar_width = 45
-let g:vimspector_bottombar_height = 10
-let g:vimspector_terminal_maxwidth = 50
-
-nnoremap <leader>dl  :call vimspector#Launch()<CR>
-nnoremap <leader>dr  :call vimspector#Reset()<CR>
-nnoremap <leader>dc  :call vimspector#Continue()<CR>
-
-nnoremap <leader>db  :call vimspector#ToggleBreakpoint()<CR>
-nnoremap <leader>dB  :call vimspector#ClearBreakpoints()<CR>
-
-nnoremap <leader>dR  <Plug>VimspectorRestart
-nnoremap <leader>do  <Plug>VimspectorStepOver
-vnoremap <leader>de  <Plug>VimspectorBalloonEval
-nnoremap <leader>dw  :call vimspector#AddWatch()<CR>
 
 
 " Remaps
