@@ -69,7 +69,12 @@ hi PmenuThumb     ctermbg=NONE  ctermfg=NONE  guibg=grey19  guifg=grey0
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
 
-" ======================================================================
+
+" Parentheses
+
+let g:loaded_matchparen=1
+
+" ============================================================================
 
 let mapleader = "\<Space>"
 
