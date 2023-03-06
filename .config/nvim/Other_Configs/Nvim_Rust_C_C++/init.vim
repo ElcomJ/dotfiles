@@ -58,6 +58,11 @@ hi Normal         guibg=grey0  guibg=grey0
 hi EndOfBuffer    guibg=grey0  guibg=grey0
 hi StatusLine     guibg=white  guifg=grey0
 
+hi Pmenu          ctermbg=NONE  ctermfg=NONE  guibg=grey0   guifg=grey100
+hi PmenuSel       ctermbg=NONE  ctermfg=NONE  guibg=grey19  guifg=grey0
+hi PmenuSbar      ctermbg=NONE  ctermfg=NONE  guibg=grey0   guifg=grey0
+hi PmenuThumb     ctermbg=NONE  ctermfg=NONE  guibg=grey19  guifg=grey0
+
 
 " Italics
 
