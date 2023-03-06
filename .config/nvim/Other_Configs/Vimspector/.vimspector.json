@@ -1,22 +1,46 @@
+// Vimspector for Python:
+
 {
-    "configurations": {
-        "run": {
-            "adapter": "debugpy",
-            "default": true,
-            "configuration": {
-                "request": "launch",
-                "type": "python",
-                "cwd": "${workspaceRoot}",
-                "stopOnEntry": true,
-                "program": "${file}"
-            },
-            "breakpoints": {
-                "exception": {
-                    "raised": "N",
-                    "uncaught": "",
-                    "userUnhandled": ""
-                }
-            }
+  "configurations": {
+    "run": {
+      "adapter": "debugpy",
+      "default": true,
+      "configuration": {
+        "request": "launch",
+        "type": "python",
+        "cwd": "${workspaceRoot}",
+        "stopOnEntry": true,
+        "program": "${file}"
+      },
+      "breakpoints": {
+        "exception": {
+          "raised": "",
+          "uncaught": "",
+          "userUnhandled": ""
         }
+      }
     }
+  }
+}
+
+
+// Vimspector for Rust:
+
+{
+  "configurations": {
+    "launch": {
+      "adapter": "CodeLLDB",
+      "filetypes": [ "rust" ],
+      "configuration": {
+        "request": "launch",
+        "program": "${workspaceRoot}/target/debug/proj"
+      },
+      "breakpoints": {
+        "exception": {
+          "cpp_throw": "",
+          "cpp_catch": ""
+        }
+      }
+    }
+  }
 }
