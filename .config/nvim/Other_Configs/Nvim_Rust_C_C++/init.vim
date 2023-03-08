@@ -150,7 +150,7 @@ nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(
 inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Right>"
 inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Left>"
 
-autocmd FileType qf setlocal colorcolumn=
+autocmd FileType qf setlocal nonumber norelativenumber colorcolumn=
 hi QuickFixLine ctermbg=NONE
 
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
