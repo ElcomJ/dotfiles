@@ -131,6 +131,7 @@ nnoremap <silent> cd :CocDiagnostics<CR>
 
 nnoremap <silent> ac <Plug>(coc-codeaction-cursor)
 nnoremap <silent> cl <Plug>(coc-codelens-action)
+nnoremap <silent> fj <Plug>(coc-float-jump)
 nnoremap <silent> gd <Plug>(coc-definition)
 nnoremap <silent> gr <Plug>(coc-references)
 nnoremap <silent> rn <Plug>(coc-rename)
@@ -144,11 +145,6 @@ function! s:show_documentation()
      call CocAction('doHover')
    endif
 endfunction
-
-nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-f>"
-nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-b>"
-inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Right>"
-inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Left>"
 
 autocmd FileType qf setlocal nonumber norelativenumber colorcolumn=
 hi QuickFixLine ctermbg=NONE
