@@ -9,7 +9,7 @@ alias clang++='clang++-15'<br />
 Install Clang-format `sudo apt install clang-format`<br />
 Remove Clang-format `sudo apt purge clang-format`
 
-Add in <b>coc-settings.json<b/> : `"clangd.path": "/usr/bin/clangd-15"`
+Add in **coc-settings.json** : `"clangd.path": "/usr/bin/clangd-15"`
 
 ## For Rust
 
