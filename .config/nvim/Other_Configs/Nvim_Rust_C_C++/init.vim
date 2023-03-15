@@ -168,13 +168,6 @@ let g:ale_c_clangformat_options = '"-style={
 \ AllowShortFunctionsOnASingleLine: None,
 \ }"'
 
-let g:ale_fix_on_save  = 1
-let g:ale_sign_error   = '--'
-let g:ale_sign_warning = '--'
-
-hi ALEErrorSign    guibg=NONE   guifg=Red
-hi ALEWarningSign  guibg=NONE   guifg=Yellow
-
 
 " Telescope
 

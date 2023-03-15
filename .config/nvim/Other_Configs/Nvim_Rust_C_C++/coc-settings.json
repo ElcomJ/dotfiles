@@ -34,8 +34,10 @@
       ],
 
     // Coc Diagnostics
-    "diagnostic.displayByAle": true,
     "diagnostic.refreshOnInsertMode": true,
+    "diagnostic.errorSign": "--",
+    "diagnostic.warningSign": "--",
+    "diagnostic.infoSign": "--",
 
     // Coc Preferences
     "coc.preferences.colorSupport": true,
