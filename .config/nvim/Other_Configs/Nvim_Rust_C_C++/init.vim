@@ -161,12 +161,25 @@ let g:ale_fixers = {
 \   'cpp':  ['clang-format'],
 \}
 
-let g:ale_c_clangformat_options = '"-style={
+let g:ale_c_clangformat_options  = '"-style={
 \ BasedOnStyle: google,
 \ IndentWidth: 4,
 \ ColumnLimit: 100,
 \ AllowShortFunctionsOnASingleLine: None,
 \ }"'
+
+let g:ale_sign_highlight_linenrs = 1
+let g:ale_fix_on_save            = 1
+let g:ale_sign_error             = '--'
+let g:ale_sign_warning           = '--'
+let g:ale_sign_info              = '--'
+
+hi ALEErrorSign            guibg=NONE   guifg=Red
+hi ALEErrorSignLineNr      guibg=NONE   guifg=Red
+hi ALEWarningSign          guibg=NONE   guifg=Yellow
+hi ALEWarningSignLineNr    guibg=NONE   guifg=White
+hi ALEInfoSign             guibg=NONE   guifg=Blue
+hi ALEInfoSignLineNr       guibg=NONE   guifg=Blue
 
 
 " Telescope
