@@ -47,8 +47,9 @@ set t_Co=256
 
 " Highlights
 
+hi LineNr          guifg=white
 hi CursorLine                     guibg=NONE
-hi CursorLineNr    guifg=grey93   guibg=NONE
+hi CursorLineNr    guifg=grey62   guibg=NONE
 hi Visual          guifg=NONE     guibg=grey30  gui=NONE
 hi ColorColumn     guibg=grey62
 
@@ -58,7 +59,7 @@ hi Normal         guibg=grey0  guibg=grey0
 hi EndOfBuffer    guibg=grey0  guibg=grey0
 hi StatusLine     guibg=white  guifg=grey0
 
-hi Pmenu          ctermbg=NONE  ctermfg=NONE  guibg=grey0   guifg=grey100
+hi Pmenu          ctermbg=NONE  ctermfg=NONE  guibg=grey6   guifg=grey100
 hi PmenuSel       ctermbg=NONE  ctermfg=NONE  guibg=grey19  guifg=grey0
 hi PmenuSbar      ctermbg=NONE  ctermfg=NONE  guibg=grey0   guifg=grey0
 hi PmenuThumb     ctermbg=NONE  ctermfg=NONE  guibg=grey19  guifg=grey0
@@ -177,7 +178,7 @@ let g:ale_sign_info              = '--'
 hi ALEErrorSign            guibg=NONE   guifg=Red
 hi ALEErrorSignLineNr      guibg=NONE   guifg=Red
 hi ALEWarningSign          guibg=NONE   guifg=Yellow
-hi ALEWarningSignLineNr    guibg=NONE   guifg=White
+hi ALEWarningSignLineNr    guibg=NONE   guifg=Yellow
 hi ALEInfoSign             guibg=NONE   guifg=Blue
 hi ALEInfoSignLineNr       guibg=NONE   guifg=Blue
 
