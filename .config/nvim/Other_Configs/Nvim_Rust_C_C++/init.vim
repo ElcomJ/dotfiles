@@ -55,9 +55,9 @@ hi ColorColumn     guibg=grey62
 
 hi clear SignColumn
 
-hi Normal         guibg=grey0  guibg=grey0
-hi EndOfBuffer    guibg=grey0  guibg=grey0
-hi StatusLine     guibg=white  guifg=grey0
+hi Normal         guibg=grey0   guibg=grey0
+hi EndOfBuffer    guibg=grey0   guibg=grey0
+hi StatusLine     guibg=white   guifg=grey0
 
 hi Pmenu          ctermbg=NONE  ctermfg=NONE  guibg=grey6   guifg=grey100
 hi PmenuSel       ctermbg=NONE  ctermfg=NONE  guibg=grey19  guifg=grey0
