@@ -274,7 +274,6 @@ nnoremap <F1> :on<CR>
 nnoremap <F2> :%bd<bar>e#<bar>bd#<CR>
 nnoremap <F3> :/
 nnoremap <F4> :noh<CR>
-nnoremap <F7> :CocSearch
 nnoremap <F9> :PlugUpdate <bar> CocUpdate<CR>
 
 
