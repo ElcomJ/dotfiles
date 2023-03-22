@@ -1,3 +1,13 @@
+## How to Install and Configure Neovim
+
+  - Follow this [Guide](https://www.manualdocodigo.com.br/vim-basico/)
+  - Install **asdf** for **NodeJs**
+  - Install [vim-plug](https://github.com/junegunn/vim-plug) for **Neovim**
+  - Copy **init.vim** and **coc-settings.json** from ~/.config/nvim/
+  - Install **pynvim**
+  - Open Neovim and run **PlugInstall**, before close and open again
+  - Enjoy :)
+
 ## For C/C++
 
 Install Clangd `bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"`<br />
