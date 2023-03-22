@@ -1,0 +1,28 @@
+C = Ctrl
+----------------------------------------------------------------------------------------------
+
+C - q               = Chama a doc do método
+C - d               = Duplica a linha para baixo
+C - b               = Vai até o método
+C - p               = Verificar os argumentos para ser passado no método / construtor
+C - o               = Abre a janela de overwrite de métodos
+C - f + C - r       = Pesquisa todas as referências com aquele valor, e troca (replace all)
+C - Alt - l         = Formata o código
+C - Alt - o         = Remove pacotes não utilizados
+C - Alt - m         = Extrai o código para um método
+C - Alt - /         = Abre uma janela de emoticons
+C - Shift - F9      = Builda o arquivo
+C - Shift - F10     = Builda e executa o arquivo
+C - pressed         = Vai para a classe e ve o retorno de um método
+C - Click           = Segurar Ctrl e clicar com o botão esquerdo na aba de arquivo abre todos os paths
+C - C               = Abre a janela para executar um arquivo sem estar nele
+C - Shift - f       = Janela para procurar nos arquivos
+C - f               = Procura no arquivo atual
+C - Shift - a       = Janela de actions
+C - Shift - v       = Abre uma janela com todos os C - c feitos fora e dentro do IntellJ
+C - RightClick      = Destaca o contexto do método atual
+Shift - Shift       = Janela com todas das funções
+Alt - Enter         = Menu de utilitários para o código
+Alt - Insert        = Menu de utilitários para a classe
+Alt - Shift - Click = Adiciona um novo cursor aonde clicar
+Scroll + Move       = Cria novos mouse para baixo ou cima OU seleciona um range de código

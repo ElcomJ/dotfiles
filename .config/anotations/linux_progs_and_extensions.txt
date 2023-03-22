@@ -33,6 +33,7 @@ Install Programns:
   - Discord
   - Ubuntu Cleaner
   - gnome-tweaks
+  - gnome-sushi
   - Htop
   - Neofetch
   - Neovim
