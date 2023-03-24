@@ -44,6 +44,10 @@ set background=dark
 set termguicolors
 set t_Co=256
 
+set statusline+=\ %t
+set statusline+=%=
+set statusline+=\ %p%%
+set statusline+=\ %l:%c
 
 " Highlights
 
@@ -55,9 +59,9 @@ hi ColorColumn     guibg=grey62
 
 hi clear SignColumn
 
-hi Normal         guibg=grey0   guibg=grey0
-hi EndOfBuffer    guibg=grey0   guibg=grey0
-hi StatusLine     guibg=white   guifg=grey0
+hi Normal         guibg=NONE   guibg=NONE
+hi EndOfBuffer    guibg=NONE   guibg=NONE
+hi clear StatusLine
 
 hi Pmenu          ctermbg=NONE  ctermfg=NONE  guibg=grey6   guifg=grey100
 hi PmenuSel       ctermbg=NONE  ctermfg=NONE  guibg=grey19  guifg=grey0
