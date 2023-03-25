@@ -50,6 +50,7 @@ set statusline+=%=
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
 
+
 " Highlights
 
 hi LineNr          guifg=white
@@ -236,6 +237,14 @@ let g:undotree_WindowLayout = 2
 let g:undotree_SetFocusWhenToggle = 1
 
 nmap <leader>ut :UndotreeToggle<CR>
+
+
+" Codeium
+
+let g:codeium_filetypes = {
+    \ "vim":  v:false,
+	\ "json": v:false,
+    \}
 
 
 " Remaps
