@@ -15,6 +15,7 @@ Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'preservim/nerdcommenter'
 Plug 'phaazon/hop.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'Exafunction/codeium.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 
