@@ -243,7 +243,7 @@ nmap <leader>ut :UndotreeToggle<CR>
 
 let g:codeium_filetypes = {
     \ "vim":  v:false,
-	\ "json": v:false,
+    \ "json": v:false,
     \}
 
 
