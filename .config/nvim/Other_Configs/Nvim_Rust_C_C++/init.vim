@@ -171,7 +171,7 @@ let g:ale_fixers = {
 let g:ale_c_clangformat_options  = '"-style={
 \ BasedOnStyle: google,
 \ IndentWidth: 4,
-\ ColumnLimit: 100,
+\ ColumnLimit: 80,
 \ AllowShortFunctionsOnASingleLine: None,
 \ }"'
 
