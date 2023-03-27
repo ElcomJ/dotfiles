@@ -65,9 +65,9 @@ hi Normal         guibg=NONE   guibg=NONE
 hi EndOfBuffer    guibg=NONE   guibg=NONE
 hi clear StatusLine
 
-hi Pmenu          ctermbg=NONE  ctermfg=NONE  guibg=grey6   guifg=grey100
+hi Pmenu          ctermbg=NONE  ctermfg=NONE  guibg=NONE    guifg=grey100
 hi PmenuSel       ctermbg=NONE  ctermfg=NONE  guibg=grey19  guifg=grey0
-hi PmenuSbar      ctermbg=NONE  ctermfg=NONE  guibg=grey0   guifg=grey0
+hi PmenuSbar      ctermbg=NONE  ctermfg=NONE  guibg=NONE    guifg=grey0
 hi PmenuThumb     ctermbg=NONE  ctermfg=NONE  guibg=grey19  guifg=grey0
 
 
