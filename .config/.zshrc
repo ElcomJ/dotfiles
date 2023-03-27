@@ -4,7 +4,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # Theme here
-ZSH_THEME="simple"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Plugins here
 plugins=(git
@@ -26,3 +26,8 @@ alias tns='tmux new -s'
 alias tas='tmux attach-session -t'
 alias tls='tmux ls'
 alias tks='tmux kill-session -t'
+
+# C and C++
+
+alias clang='clang-15'
+alias clang++='clang++-15'
