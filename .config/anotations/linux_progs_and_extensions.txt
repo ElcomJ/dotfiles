@@ -41,6 +41,7 @@ Install Programns:
   - DBeaver Community
   - Postman (opcional)
   - Synaptic
+  - VLC
 
 
 Core Softwares:
