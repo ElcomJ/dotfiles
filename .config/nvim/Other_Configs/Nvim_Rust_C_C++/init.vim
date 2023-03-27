@@ -270,6 +270,7 @@ nmap tn :tabnext<CR>
 
 tnoremap <A-Up> <C-\><C-n><C-w>k
 tnoremap <A-Left> <C-\><C-n><C-w>h
+tnoremap <A-Down> <C-\><C-n><C-w>j
 
 nnoremap <C-q>            :exit<CR>
 nnoremap <S-Right>        :vertical resize -2<CR>
