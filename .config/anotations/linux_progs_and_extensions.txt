@@ -56,5 +56,6 @@ Core Softwares:
   - trash-cli
   - cmatrix (sudo apt install cmatrix)
   - tree (sudo apt install tree)
+  - tldr (npm install -g tldr)
   - lolcat
   - cowsay
