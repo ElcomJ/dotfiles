@@ -57,5 +57,6 @@ Core Softwares:
   - cmatrix (sudo apt install cmatrix)
   - tree (sudo apt install tree)
   - tldr (npm install -g tldr)
+  - cal (sudo apt install ncal)
   - lolcat
   - cowsay

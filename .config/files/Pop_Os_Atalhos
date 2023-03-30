@@ -1,4 +1,5 @@
 Super = Windows Key
 
-Super and run 'name' = Abre o terminal e executa o comando.
+Super and run 'name'  = Abre o terminal e executa o comando.
 Super and find 'name' = Procura no sistema o arquivo ou pasta com aquele nome.
+Alt + Esc             = Viaja entre as janelas abertas
