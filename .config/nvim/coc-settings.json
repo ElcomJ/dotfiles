@@ -30,11 +30,7 @@
 
     // Format Filetypes
     "coc.preferences.formatOnSaveFiletypes": [
-      "json",
-      "html",
-      "css",
-      "javascript",
-      "markdown"
+
       ],
 
     // Coc Diagnostics
@@ -46,8 +42,14 @@
     "coc.preferences.formatOnSave": true,
 
     // Inlay Hint
-    "inlayHint.display": true,
-    "inlayHint.refreshOnInsertMode": true,
+    "inlayHint.display": false,
+    "inlayHint.refreshOnInsertMode": false,
+
+    // Code Lens
+    "codeLens.enable": false,
+
+    // Rust Analyzer
+    "rust-analyzer.debug.runtime": "vimspector",
 
     // Coc Explorer
     "explorer.width": 30,
@@ -78,6 +80,6 @@
     "explorer.git.icon.status.modified": "✹",
     "explorer.git.icon.status.ignored": "☒",
     "explorer.git.icon.status.mixed": "*",
-    "snippets.ultisnips.pythonPrompt": false
-
+    "snippets.ultisnips.pythonPrompt": false,
+    "clangd.path": "/usr/bin/clangd-15"
 }
