@@ -55,7 +55,7 @@ set statusline+=\ %l:%c
 
 hi LineNr          guifg=white
 hi CursorLine                     guibg=NONE
-hi CursorLineNr    guifg=grey62   guibg=NONE
+hi CursorLineNr    guifg=orange   guibg=NONE
 hi Visual          guifg=NONE     guibg=grey30  gui=NONE
 hi ColorColumn     guibg=grey62
 
