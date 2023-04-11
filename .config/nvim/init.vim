@@ -18,7 +18,6 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'Exafunction/codeium.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
-Plug 'ap/vim-css-color'
 
 call plug#end()
 
@@ -293,8 +292,6 @@ nnoremap <F3> :/
 nnoremap <F4> :noh<CR>
 nnoremap <F9> :PlugUpdate <bar> CocUpdate<CR>
 
-nnoremap <leader>m1 :set tabstop=4 shiftwidth=4<CR>
-nnoremap <leader>m2 :set tabstop=2 shiftwidth=2<CR>
 
 " Terminals
 
