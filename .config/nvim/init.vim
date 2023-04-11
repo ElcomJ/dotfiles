@@ -18,6 +18,7 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'Exafunction/codeium.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
+Plug 'ap/vim-css-color'
 
 call plug#end()
 
@@ -109,7 +110,7 @@ vnoremap <silent> \ <cmd>HopLine<CR>
 
 lua << END
   require("indent_blankline").setup{
-	filetype_exclude = { "vim" },
+	filetype_exclude = { "vim", "html", "css" },
 	show_trailing_blankline_indent = false,
 
 	context_patterns = {
@@ -175,6 +176,7 @@ let g:ale_c_clangformat_options  = '"-style={
 \ AllowShortFunctionsOnASingleLine: None,
 \ }"'
 
+let g:ale_virtualtext_cursor     = 'disabled'
 let g:ale_sign_highlight_linenrs = 1
 let g:ale_fix_on_save            = 1
 let g:ale_sign_error             = '--'
@@ -291,6 +293,8 @@ nnoremap <F3> :/
 nnoremap <F4> :noh<CR>
 nnoremap <F9> :PlugUpdate <bar> CocUpdate<CR>
 
+nnoremap <leader>m1 :set tabstop=4 shiftwidth=4<CR>
+nnoremap <leader>m2 :set tabstop=2 shiftwidth=2<CR>
 
 " Terminals
 
