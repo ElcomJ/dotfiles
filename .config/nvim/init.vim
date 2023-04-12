@@ -18,6 +18,8 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'Exafunction/codeium.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
+Plug 'MattesGroeger/vim-bookmarks'
+Plug 'tom-anders/telescope-vim-bookmarks.nvim'
 
 call plug#end()
 
@@ -193,9 +195,14 @@ hi ALEInfoSignLineNr       guibg=NONE   guifg=Blue
 
 " Telescope
 
+lua << END
+  require('telescope').load_extension('vim_bookmarks')
+END
+
 nnoremap <leader>ff   <cmd>Telescope find_files<CR>
 nnoremap <leader>fg   <cmd>Telescope live_grep<CR>
 nnoremap <leader>fb   <cmd>Telescope buffers<CR>
+nnoremap <leader>fp   <cmd>Telescope vim_bookmarks all<cr>
 
 hi TelescopeBorder guibg=NONE
 hi TelescopeTitle  guibg=NONE
@@ -239,6 +246,16 @@ let g:undotree_WindowLayout = 2
 let g:undotree_SetFocusWhenToggle = 1
 
 nmap <leader>ut :UndotreeToggle<CR>
+
+
+" Vim-bookmarks
+
+let g:bookmark_save_per_working_dir = 1
+let g:bookmark_auto_save = 1
+
+hi BookmarkSign  guibg=NONE  guifg=DodgerBlue2
+
+nmap <leader>b <Plug>BookmarkToggle
 
 
 " Codeium
