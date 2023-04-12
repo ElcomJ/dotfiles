@@ -46,6 +46,7 @@ set termguicolors
 set t_Co=256
 
 set statusline+=\ %t
+set statusline+=\ %3{codeium#GetStatusString()}
 set statusline+=%=
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
@@ -242,10 +243,7 @@ nmap <leader>ut :UndotreeToggle<CR>
 
 " Codeium
 
-let g:codeium_filetypes = {
-    \ "vim":  v:false,
-    \ "json": v:false,
-    \}
+let g:codeium_enabled = v:false
 
 
 " Remaps
