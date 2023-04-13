@@ -224,11 +224,13 @@ let g:tagbar_width = 30
 let g:tagbar_autofocus = 0
 let g:tagbar_indent = 2
 let g:tagbar_sort = 0
-let g:tagbar_position = 'leftabove vertical'
+let g:tagbar_position = 'botright vertical'
 let g:tagbar_compact = 1
 let g:tagbar_show_data_type = 1
 let g:tagbar_show_visibility = 1
 let g:tagbar_foldlevel = 99
+
+hi TagbarHighlight  guibg=grey30
 
 nmap <silent>tb :TagbarToggle<CR>
 

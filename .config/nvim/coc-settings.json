@@ -41,6 +41,9 @@
     "coc.preferences.colorSupport": true,
     "coc.preferences.formatOnSave": true,
 
+    //Inlay Hint
+    "inlayHint.display": false,
+
     // Coc Explorer
     "explorer.width": 30,
     "explorer.position": "left",
