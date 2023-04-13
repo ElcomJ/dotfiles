@@ -1,6 +1,6 @@
 ### install pynvim
 
-### copy and paste .vimspector.json in your project root (only python)
+### copy and paste .vimspector.json in your project root
 
 ### Vimspector Config:
 
@@ -23,7 +23,7 @@ nnoremap <leader>db  :call vimspector#ToggleBreakpoint()<CR>
 nnoremap <leader>dB  :call vimspector#ClearBreakpoints()<CR>
 
 nnoremap <leader>dR  <Plug>VimspectorRestart
+nnoremap <leader>ds  <Plug>VimspectorStop
 nnoremap <leader>do  <Plug>VimspectorStepOver
-vnoremap <leader>de  <Plug>VimspectorBalloonEval
 nnoremap <leader>dw  :call vimspector#AddWatch()<CR>
 ```
