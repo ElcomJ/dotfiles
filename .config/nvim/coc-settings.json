@@ -41,16 +41,6 @@
     "coc.preferences.colorSupport": true,
     "coc.preferences.formatOnSave": true,
 
-    // Inlay Hint
-    "inlayHint.display": false,
-    "inlayHint.refreshOnInsertMode": false,
-
-    // Code Lens
-    "codeLens.enable": false,
-
-    // Rust Analyzer
-    "rust-analyzer.debug.runtime": "vimspector",
-
     // Coc Explorer
     "explorer.width": 30,
     "explorer.position": "left",

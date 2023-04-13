@@ -141,7 +141,6 @@ inoremap <silent><expr> <c-space> coc#refresh()
 nnoremap <silent> cd :CocDiagnostics<CR>
 
 nnoremap <silent> ac <Plug>(coc-codeaction-cursor)
-nnoremap <silent> cl <Plug>(coc-codelens-action)
 nnoremap <silent> fj <Plug>(coc-float-jump)
 nnoremap <silent> gd <Plug>(coc-definition)
 nnoremap <silent> gr <Plug>(coc-references)
