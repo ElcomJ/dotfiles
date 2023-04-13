@@ -5,6 +5,8 @@
 ### Vimspector Config:
 
 ```
+Plug 'puremourning/vimspector'
+
 " Vimspector
 
 let g:vimspector_install_gadgets = [ 'CodeLLDB' ]
