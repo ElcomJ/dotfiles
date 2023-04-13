@@ -33,6 +33,7 @@ set clipboard+=unnamedplus
 set tabstop=4
 set shiftwidth=4
 set colorcolumn=80
+set signcolumn=yes:3
 set ignorecase
 set number
 set relativenumber
@@ -189,8 +190,6 @@ hi ALEErrorSign            guibg=NONE   guifg=Red
 hi ALEErrorSignLineNr      guibg=NONE   guifg=Red
 hi ALEWarningSign          guibg=NONE   guifg=Yellow
 hi ALEWarningSignLineNr    guibg=NONE   guifg=Yellow
-hi ALEInfoSign             guibg=NONE   guifg=Blue
-hi ALEInfoSignLineNr       guibg=NONE   guifg=Blue
 
 
 " Telescope
