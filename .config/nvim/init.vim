@@ -157,7 +157,7 @@ function! s:show_documentation()
    endif
 endfunction
 
-autocmd FileType qf setlocal nonumber norelativenumber colorcolumn=
+autocmd FileType qf setlocal nonu nornu cc= scl=no
 hi QuickFixLine ctermbg=NONE
 
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
@@ -180,16 +180,11 @@ let g:ale_c_clangformat_options  = '"-style={
 \ }"'
 
 let g:ale_virtualtext_cursor     = 'disabled'
-let g:ale_sign_highlight_linenrs = 1
 let g:ale_fix_on_save            = 1
-let g:ale_sign_error             = '--'
-let g:ale_sign_warning           = '--'
-let g:ale_sign_info              = '--'
 
 hi ALEErrorSign            guibg=NONE   guifg=Red
-hi ALEErrorSignLineNr      guibg=NONE   guifg=Red
 hi ALEWarningSign          guibg=NONE   guifg=Yellow
-hi ALEWarningSignLineNr    guibg=NONE   guifg=Yellow
+hi ALEInfoSign             guibg=NONE
 
 
 " Telescope
