@@ -158,6 +158,7 @@ let g:coc_global_extensions = [
 \  'coc-explorer',
 \  'coc-prettier',
 \  'coc-rust-analyzer',
+\  'coc-go',
 \  'coc-clangd'
 \]
 
@@ -193,6 +194,7 @@ command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 let g:ale_fixers = {
 \   '*':    ['trim_whitespace', 'remove_trailing_lines'],
 \   'rust': ['rustfmt'],
+\   'go':   ['gofmt'],
 \   'c':    ['clang-format'],
 \   'cpp':  ['clang-format'],
 \}
