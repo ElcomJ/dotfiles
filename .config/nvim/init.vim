@@ -34,7 +34,7 @@ set clipboard+=unnamedplus
 set tabstop=4
 set shiftwidth=4
 set colorcolumn=80
-set signcolumn=yes:3
+set signcolumn=auto:3
 set ignorecase
 set number
 set relativenumber
