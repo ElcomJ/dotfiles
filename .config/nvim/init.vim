@@ -114,7 +114,7 @@ vnoremap <silent> \ <cmd>HopLine<CR>
 
 lua << END
   require("indent_blankline").setup{
-    filetype_exclude = { "vim", "html", "css" },
+    filetype_exclude = { "vim", "html", "css", "json" },
     show_trailing_blankline_indent = false,
 
     context_patterns = {
