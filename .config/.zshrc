@@ -19,6 +19,8 @@ source $ZSH/oh-my-zsh.sh
 # Comandos básicos
 
 alias att='sudo apt-get update && sudo apt-get upgrade'
+alias running_services='systemctl list-units  --type=service  --state=running'
+alias cal='ncal -y'
 
 # Tmux
 
