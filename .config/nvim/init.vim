@@ -11,7 +11,7 @@ Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
 Plug 'mbbill/undotree', {'on': 'UndotreeToggle'}
 Plug 'luochen1990/rainbow'
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
 Plug 'preservim/nerdcommenter'
 Plug 'phaazon/hop.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
