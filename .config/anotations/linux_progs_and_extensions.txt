@@ -58,5 +58,6 @@ Core Softwares:
   - tree (sudo apt install tree)
   - tldr (npm install -g tldr)
   - cal (sudo apt install ncal)
+  - bat (sudo apt install bat)
   - lolcat
   - cowsay
