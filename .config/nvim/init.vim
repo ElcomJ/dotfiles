@@ -21,6 +21,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'MattesGroeger/vim-bookmarks'
 Plug 'tom-anders/telescope-vim-bookmarks.nvim'
 Plug 'saecki/crates.nvim', { 'tag': 'v0.3.0' }
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 call plug#end()
 
