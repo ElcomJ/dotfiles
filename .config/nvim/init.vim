@@ -68,7 +68,7 @@ hi clear SignColumn
 
 hi Normal         guibg=NONE   guibg=NONE
 hi EndOfBuffer    guibg=NONE   guibg=NONE
-hi clear StatusLine
+hi StatusLine     guibg=white  guifg=grey30
 
 hi Pmenu          ctermbg=NONE  ctermfg=NONE  guibg=NONE    guifg=grey100
 hi PmenuSel       ctermbg=NONE  ctermfg=NONE  guibg=grey19  guifg=grey0
