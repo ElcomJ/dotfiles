@@ -170,6 +170,7 @@ nnoremap <silent> cd :CocDiagnostics<CR>
 nnoremap <silent> ac <Plug>(coc-codeaction-cursor)
 nnoremap <silent> fj <Plug>(coc-float-jump)
 nnoremap <silent> gd <Plug>(coc-definition)
+nnoremap <silent> gi <Plug>(coc-implementation)
 nnoremap <silent> gr <Plug>(coc-references)
 nnoremap <silent> rn <Plug>(coc-rename)
 
