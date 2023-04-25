@@ -7,7 +7,7 @@ Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
 Plug 'dense-analysis/ale'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
-Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
+Plug 'liuchengxu/vista.vim', {'on': 'Vista'}
 Plug 'mbbill/undotree', {'on': 'UndotreeToggle'}
 Plug 'luochen1990/rainbow'
 Plug 'kyazdani42/nvim-web-devicons'
@@ -247,21 +247,11 @@ hi GitGutterChange   guibg=NONE   guifg=#e0da14
 hi GitGutterDelete   guibg=NONE   guifg=#e80909
 
 
-" Tagbar
+" Vista
 
-let g:tagbar_width = 30
-let g:tagbar_autofocus = 0
-let g:tagbar_indent = 2
-let g:tagbar_sort = 0
-let g:tagbar_position = 'botright vertical'
-let g:tagbar_compact = 1
-let g:tagbar_show_data_type = 1
-let g:tagbar_show_visibility = 1
-let g:tagbar_foldlevel = 99
+let g:vista_stay_on_open = 0
 
-hi TagbarHighlight  guibg=grey30
-
-nmap <silent>tb :TagbarToggle<CR>
+nmap <leader>v :Vista<CR>
 
 
 " Undotree
