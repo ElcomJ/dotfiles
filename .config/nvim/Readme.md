@@ -24,10 +24,9 @@ Add in **coc-settings.json** : `"clangd.path": "/usr/bin/clangd-15"`
 
 ## For Rust
 
-### Tagbar
+### Vista
 
   -  sudo apt-get install universal-ctags
-  -  Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
 
 ### Vimspector
 
