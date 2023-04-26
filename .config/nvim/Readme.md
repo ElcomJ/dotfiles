@@ -24,7 +24,7 @@ Add in **coc-settings.json** : `"clangd.path": "/usr/bin/clangd-15"`
 
 ## For Rust
 
-  - Install [rust](https://www.rust-lang.org/tools/install)
+  - Install [Rust](https://www.rust-lang.org/tools/install)
 
 ### Vista
 
