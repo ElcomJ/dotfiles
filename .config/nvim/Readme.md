@@ -24,6 +24,8 @@ Add in **coc-settings.json** : `"clangd.path": "/usr/bin/clangd-15"`
 
 ## For Rust
 
+  - Install [rust](https://www.rust-lang.org/tools/install)
+
 ### Vista
 
   -  sudo apt-get install universal-ctags
