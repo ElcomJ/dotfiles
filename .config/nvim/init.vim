@@ -104,6 +104,9 @@ lua << END
   require("bufferline").setup{}
 END
 
+nnoremap <leader>bs :BufferLinePick<CR>
+nnoremap <leader>bp :BufferLineTogglePin<CR>
+
 
 " Hop
 
