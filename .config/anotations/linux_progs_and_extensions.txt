@@ -59,5 +59,6 @@ Core Softwares:
   - tldr (npm install -g tldr)
   - cal (sudo apt install ncal)
   - bat (sudo apt install bat)
+  - fzf (sudo apt install fzf)
   - lolcat
   - cowsay
