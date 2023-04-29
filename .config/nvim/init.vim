@@ -21,6 +21,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'MattesGroeger/vim-bookmarks'
 Plug 'tom-anders/telescope-vim-bookmarks.nvim'
 Plug 'saecki/crates.nvim', { 'tag': 'v0.3.0' }
+Plug 'AckslD/nvim-neoclip.lua'
 
 call plug#end()
 
@@ -162,6 +163,15 @@ function! s:show_documentation_crates()
 endfunction
 
 
+" Neoclip
+
+lua << END
+  require('neoclip').setup{
+    default_register = '"'
+  }
+END
+
+
 " COC
 
 let g:coc_global_extensions = [
@@ -230,12 +240,14 @@ hi ALEInfoSign             guibg=NONE
 
 lua << END
   require('telescope').load_extension('vim_bookmarks')
+  require('telescope').load_extension('neoclip')
 END
 
 nnoremap <leader>ff   <cmd>Telescope find_files<CR>
 nnoremap <leader>fg   <cmd>Telescope live_grep<CR>
 nnoremap <leader>fb   <cmd>Telescope buffers<CR>
-nnoremap <leader>fp   <cmd>Telescope vim_bookmarks all<cr>
+nnoremap <leader>fp   <cmd>Telescope vim_bookmarks all<CR>
+nnoremap <leader>fy   <cmd>Telescope neoclip<CR>
 
 hi TelescopeBorder guibg=NONE
 hi TelescopeTitle  guibg=NONE
@@ -316,6 +328,7 @@ nmap tc :tabclose<CR>
 nmap tn :tabnext<CR>
 
 tnoremap <A-Up> <C-\><C-n><C-w>k
+tnoremap <A-Right> <C-\><C-n><C-w>l
 tnoremap <A-Left> <C-\><C-n><C-w>h
 tnoremap <A-Down> <C-\><C-n><C-w>j
 
