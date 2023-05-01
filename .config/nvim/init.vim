@@ -36,6 +36,7 @@ set tabstop=4
 set shiftwidth=4
 set colorcolumn=80
 set signcolumn=auto:3
+set laststatus=3
 set ignorecase
 set number
 set relativenumber
