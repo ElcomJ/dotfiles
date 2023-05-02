@@ -1,5 +1,6 @@
 let mapleader = "\<Space>"
 
+
 map <C-Left> <C-w>h
 map <C-Down> <C-w>j
 map <C-Up> <C-w>k
