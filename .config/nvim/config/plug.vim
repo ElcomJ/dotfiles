@@ -22,5 +22,6 @@ Plug 'MattesGroeger/vim-bookmarks'
 Plug 'tom-anders/telescope-vim-bookmarks.nvim'
 Plug 'saecki/crates.nvim', { 'tag': 'v0.3.0' }
 Plug 'AckslD/nvim-neoclip.lua'
+Plug 'f-person/git-blame.nvim'
 
 call plug#end()
