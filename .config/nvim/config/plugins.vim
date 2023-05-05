@@ -16,3 +16,4 @@ source ~/.config/nvim/config/plugins_config/undotree.vim
 source ~/.config/nvim/config/plugins_config/vim_bookmarks.vim
 source ~/.config/nvim/config/plugins_config/codeium.vim
 source ~/.config/nvim/config/plugins_config/git_blame.vim
+source ~/.config/nvim/config/plugins_config/diffview.vim

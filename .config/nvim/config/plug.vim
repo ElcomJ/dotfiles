@@ -23,5 +23,6 @@ Plug 'tom-anders/telescope-vim-bookmarks.nvim'
 Plug 'saecki/crates.nvim', { 'tag': 'v0.3.0' }
 Plug 'AckslD/nvim-neoclip.lua'
 Plug 'f-person/git-blame.nvim'
+Plug 'sindrets/diffview.nvim'
 
 call plug#end()
