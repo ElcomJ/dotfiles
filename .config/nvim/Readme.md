@@ -4,7 +4,7 @@
   - Install [asdf](https://asdf-vm.com/) for **NodeJs**
   - Install [vim-plug](https://github.com/junegunn/vim-plug) for **Neovim**
   - Install [xclip](https://howtoinstall.co/en/xclip) to use system clipboard
-  - Copy **init.vim** and **coc-settings.json** from ~/.config/nvim/
+  - Copy **init.vim**, **coc-settings.json** and **config folder** from ~/.config/nvim/
   - Install [pip](https://www.educative.io/answers/installing-pip3-in-ubuntu) and install [pynvim](https://pypi.org/project/pynvim/)
   - Install [ripgrep](https://github.com/BurntSushi/ripgrep) for [telescope](https://github.com/nvim-telescope/telescope.nvim) extension
   - Open Neovim and run **PlugInstall**, before close and open again
