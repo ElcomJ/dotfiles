@@ -11,17 +11,12 @@ Plug 'liuchengxu/vista.vim', {'on': 'Vista'}
 Plug 'mbbill/undotree', {'on': 'UndotreeToggle'}
 Plug 'luochen1990/rainbow'
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
 Plug 'preservim/nerdcommenter'
 Plug 'phaazon/hop.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'Exafunction/codeium.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
-Plug 'MattesGroeger/vim-bookmarks'
-Plug 'tom-anders/telescope-vim-bookmarks.nvim'
-Plug 'saecki/crates.nvim', { 'tag': 'v0.3.0' }
-Plug 'AckslD/nvim-neoclip.lua'
 Plug 'f-person/git-blame.nvim'
 
 call plug#end()
