@@ -22,6 +22,7 @@ alias att='sudo apt-get update && sudo apt-get upgrade'
 alias running_services='systemctl list-units  --type=service  --state=running'
 alias cal='ncal -y'
 alias bat='batcat'
+alias v='nvim'
 
 # Exa
 
