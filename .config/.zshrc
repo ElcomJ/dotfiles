@@ -23,6 +23,13 @@ alias running_services='systemctl list-units  --type=service  --state=running'
 alias cal='ncal -y'
 alias bat='batcat'
 
+# Exa
+
+alias exa1='exa --icons --group-directories-first'
+alias exa2='exa --icons --group-directories-first -1'
+alias exa3='exa --icons --group-directories-first -1 -a'
+alias exa4='exa --icons --group-directories-first -1 -a -l -h'
+
 # Tmux
 
 alias tns='tmux new -s'

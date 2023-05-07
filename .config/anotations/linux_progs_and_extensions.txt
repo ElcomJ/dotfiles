@@ -59,6 +59,7 @@ Core Softwares:
   - tldr (npm install -g tldr)
   - cal (sudo apt install ncal)
   - bat (sudo apt install bat)
+  - exa (sudo apt install exa)
   - fzf (sudo apt install fzf)
   - jq (sudo apt install jq)
   - tidy (sudo apt-get install tidy)
