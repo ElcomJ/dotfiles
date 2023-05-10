@@ -20,10 +20,10 @@ sudo apt-get update -y
 
 pip3 install pynvim
 
-sudo apt-get -y install xclip
-sudo apt-get -y install fd-find
-sudo apt-get -y install ripgrep
-sudo apt-get -y install universal-ctags
+sudo apt-get install xclip -y
+sudo apt-get install fd-find -y
+sudo apt-get install ripgrep -y
+sudo apt-get install universal-ctags -y
 
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
