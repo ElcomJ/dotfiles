@@ -1,6 +1,6 @@
 lua << END
   require("indent_blankline").setup{
-    filetype = { "rust", "c", "cpp", "go" },
+    filetype = { "rust" },
     show_trailing_blankline_indent = false,
 
     context_patterns = {

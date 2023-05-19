@@ -30,9 +30,7 @@
 
     // Format Filetypes
     "coc.preferences.formatOnSaveFiletypes": [
-      "javascript",
-      "html",
-      "css"
+
       ],
 
     // Coc Diagnostics
