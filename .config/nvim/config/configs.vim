@@ -51,6 +51,10 @@ hi Normal         guibg=NONE   guibg=NONE
 hi EndOfBuffer    guibg=NONE   guibg=NONE
 hi StatusLine     guibg=white  guifg=grey23
 
+hi TabLineFill    guifg=grey23
+hi TabLineSel     guibg=grey10  guifg=orange
+hi TabLine        guifg=white   guibg=grey23  gui=NONE
+
 hi Pmenu          ctermbg=NONE  ctermfg=NONE  guibg=NONE    guifg=grey100
 hi PmenuSel       ctermbg=NONE  ctermfg=NONE  guibg=grey19  guifg=grey0
 hi PmenuSbar      ctermbg=NONE  ctermfg=NONE  guibg=NONE    guifg=grey0
