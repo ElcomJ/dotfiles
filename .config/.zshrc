@@ -38,6 +38,10 @@ alias tas='tmux attach-session -t'
 alias tls='tmux ls'
 alias tks='tmux kill-session -t'
 
+# Node
+
+alias npm_user_packages='npm list -g --depth=0'
+
 # C and C++
 
 alias clang='clang-15'
