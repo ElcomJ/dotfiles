@@ -23,6 +23,7 @@ alias running_services='systemctl list-units  --type=service  --state=running'
 alias cal='ncal -y'
 alias bat='batcat'
 alias v='nvim'
+alias my_ip='hostname -I'
 
 # Exa
 
