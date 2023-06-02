@@ -43,6 +43,7 @@ sudo apt install fzf -y
 sudo apt install htop -y
 sudo apt install tmux -y
 sudo apt install neofetch -y
+sudo apt-get install ranger -y
 
 echo "----System Tools Instaled----"
 
