@@ -18,5 +18,6 @@ Plug 'Exafunction/codeium.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'f-person/git-blame.nvim'
+Plug 'ThePrimeagen/harpoon'
 
 call plug#end()

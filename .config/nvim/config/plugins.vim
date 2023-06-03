@@ -12,3 +12,4 @@ source ~/.config/nvim/config/plugins_config/vista.vim
 source ~/.config/nvim/config/plugins_config/undotree.vim
 source ~/.config/nvim/config/plugins_config/codeium.vim
 source ~/.config/nvim/config/plugins_config/git_blame.vim
+source ~/.config/nvim/config/plugins_config/harpoon.vim
