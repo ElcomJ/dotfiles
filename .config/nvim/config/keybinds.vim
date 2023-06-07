@@ -16,6 +16,8 @@ nmap td :bd<CR>
 nmap th :split<CR>
 nmap tv :vsplit<CR>
 
+nmap wc <C-w>c
+
 nmap te :tabe<CR>
 nmap tc :tabclose<CR>
 nmap tn :tabnext<CR>

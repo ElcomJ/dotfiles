@@ -1,6 +1,7 @@
 let g:ale_fixers = {
 \   '*':    ['trim_whitespace', 'remove_trailing_lines'],
 \   'rust': ['rustfmt'],
+\   'go':   ['gofmt'],
 \}
 
 let g:ale_virtualtext_cursor     = 'disabled'
