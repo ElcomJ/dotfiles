@@ -17,6 +17,7 @@ nmap th :split<CR>
 nmap tv :vsplit<CR>
 
 nmap wc <C-w>c
+nmap wr <C-w>r
 nmap w= <C-w>=
 
 nmap te :tabe<CR>
