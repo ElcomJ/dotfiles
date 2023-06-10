@@ -1,6 +1,7 @@
 let g:coc_global_extensions = [
 \  'coc-explorer',
 \  'coc-prettier',
+\  'coc-docker',
 \  'coc-yaml',
 \  'coc-rust-analyzer',
 \  'coc-go'

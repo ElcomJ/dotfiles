@@ -24,6 +24,8 @@ alias cal='ncal -y'
 alias bat='batcat'
 alias v='nvim'
 alias my_ip='hostname -I'
+alias lgit='lazygit'
+alias ldocker='lazydocker'
 
 # Exa
 
