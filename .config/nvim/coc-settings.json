@@ -31,7 +31,8 @@
     // Format Filetypes
     "coc.preferences.formatOnSaveFiletypes": [
       "javascript",
-      "typescript"
+      "typescript",
+      "html"
       ],
 
     // Coc Diagnostics

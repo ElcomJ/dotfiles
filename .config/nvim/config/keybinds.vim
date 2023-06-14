@@ -53,5 +53,6 @@ nnoremap <F9> :PlugUpdate <bar> CocUpdate<CR>
 
 nnoremap <leader>tv :vsplit<bar>terminal<CR>
 nnoremap <leader>th :split<bar>terminal<CR>
+nnoremap <leader>tt :terminal<CR>
 
 autocmd TermOpen * setlocal nonu nornu scl=no

@@ -5,7 +5,8 @@ let g:coc_global_extensions = [
 \  'coc-yaml',
 \  'coc-rust-analyzer',
 \  'coc-go',
-\  'coc-tsserver'
+\  'coc-tsserver',
+\  'coc-html'
 \]
 
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
