@@ -19,5 +19,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'f-person/git-blame.nvim'
 Plug 'ThePrimeagen/harpoon'
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
