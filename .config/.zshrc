@@ -16,6 +16,12 @@ source $ZSH/oh-my-zsh.sh
 
 . "$HOME/.asdf/asdf.sh"
 
+# Exports
+
+export PATH=$PATH:$JAVA_HOME/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/emulator
+
 # Comandos básicos
 
 alias att='sudo apt-get update && sudo apt-get upgrade'
